@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+/.git/
+/**/_backstage
+/**/Thumbs.db
+/**/*.DS_Store
+/readme.md
+/.bowerrc
+/app/sass/
+.idea
+/debug.log

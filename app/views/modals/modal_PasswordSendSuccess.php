@@ -1,7 +1,5 @@
 <div class="modal" id="modal-passwordSend" data-component="modal">
     <div class="modal-wrapper">
-        <div class="modal-overlay" data-modal-hide></div>
-
         <div class="modal-content">
             <div class="modal-content__body">
 
@@ -14,7 +12,7 @@
                 <p class="text-size_default c-dark text-center"><b>Пароль успешно отправлен на почту партнёру!</b></p>
                 <br>
                 <p class="text-center">
-                    <a href="#" class="link c-dark link_decoration" data-modal-show="#modal-passwordReset"><b>Партнёры и Рекламодатели</b></a>
+                    <a href="#" class="link c-dark link_decoration" data-modal="#modal-passwordReset"><b>Партнёры и Рекламодатели</b></a>
                 </p>
 
             </div>

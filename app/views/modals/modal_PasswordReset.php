@@ -1,7 +1,5 @@
 <div class="modal" id="modal-passwordReset" data-component="modal">
     <div class="modal-wrapper">
-        <div class="modal-overlay" data-modal-hide></div>
-
         <div class="modal-content">
             <div class="modal-content__body">
 
@@ -14,7 +12,7 @@
                 <p class="text-size_default c-dark text-center"><b>Вы действительно хотите сбросить пароль?</b></p>
                 <br>
                 <p class="text-center">
-                    <button class="button button_accent js-reset-password">Сбросить</button>
+                    <button class="button button_accent">Сбросить</button>
                     <button class="button button_dark" data-modal-hide>Отмена</button>
                 </p>
 

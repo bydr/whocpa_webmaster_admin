@@ -1,0 +1,58 @@
+@import "_mixins/box";
+
+.text-left {
+  text-align: left !important;
+}
+
+.o-hidden {
+  overflow: hidden !important;
+}
+
+.ui-icon {
+  @include box(18px, 18px);
+}
+
+.custom-scroll {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $gray-lighten;
+    border-radius: 50px;
+    width: 3px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+    border-radius: 50px;
+    width: 5px;
+  }
+}
+
+* {
+  &.text-underline {
+    &_dashed {
+      text-decoration: dashed;
+    }
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}

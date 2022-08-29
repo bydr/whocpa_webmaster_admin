@@ -1,0 +1,156 @@
+@import "vars";
+@import "_mixins/box";
+
+.button_reset {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-align: left;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.icon-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.icon-visible {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.button_menu {
+  .ui-icon {
+    @include box(16px, 16px);
+    transition: all 0.2s ease-in-out;
+
+    &.ui-icon_close {
+      @extend .icon-hidden;
+    }
+  }
+
+  &.is-active {
+    .ui-icon {
+      &.ui-icon_menu {
+        @extend .icon-hidden;
+      }
+      &.ui-icon_close {
+        @extend .icon-visible;
+      }
+    }
+  }
+}
+
+.button {
+  @extend .button_reset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-family: $default-font;
+  font-size: $fs-medium;
+  border-radius: 10px;
+  min-width: $control-height;
+  min-height: $control-height;
+
+  &:hover,
+  &:active {
+    background: $gray-lighten;
+  }
+
+  &.button {
+    &_accent {
+      background: $accent;
+      color: $white;
+
+      &:hover,
+      &:active {
+        color: $white;
+        background: $accent-darken;
+      }
+    }
+
+    &_dark {
+      background: $dark;
+      color: $white;
+
+      &:hover,
+      &:active {
+        background: $darken;
+        color: $white;
+      }
+    }
+
+    &_secondary {
+      background: $secondary;
+      color: $white;
+
+      &:hover,
+      &:active {
+        background: $secondary-darken;
+        color: $white;
+      }
+    }
+  }
+
+  span {
+    margin: 0;
+    + .ui-icon {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  .ui-icon {
+    + span {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  &_clean {
+    @extend .button_reset;
+    padding: 0;
+    margin: 0;
+  }
+
+  &_link {
+    padding: 0;
+    display: inline-flex;
+    border-bottom: 2px dashed $dark;
+    min-height: initial;
+    border-radius: 0;
+    background: transparent;
+
+    &:hover,
+    &:active {
+      background: transparent;
+    }
+  }
+
+  &_group {
+    flex-wrap: wrap;
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+}
+
+button {
+  @extend .button_reset;
+}

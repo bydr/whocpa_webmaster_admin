@@ -1,0 +1,11 @@
+@import "text";
+
+.text-size_default {
+  @extend #text-size_default;
+}
+.text-size_medium {
+  @extend #text-size_medium;
+}
+.text-size_small {
+  @extend #text-size_small;
+}

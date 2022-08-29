@@ -1,0 +1,42 @@
+$default-font-size: 16px;
+$default-font: "ptsans", sans-serif;
+$secondary-font: "jost", sans-serif;
+
+$accent: #d80cfe;
+$accent-darken: #c409e7;
+$secondary: #2544d3;
+$secondary-darken: #1a36b6;
+$dark: #2e2e50;
+$darken: #1f1f39;
+$white: #fff;
+$red: red;
+$green: #34c759;
+$orange: #fec02e;
+
+$gray-lighten: #fbf8fe;
+$gray: #ccccd5;
+$gray-dark: #b0b0b9;
+$gray-darken: #6e6e86;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+
+$grid-breakpoints-xxl: 1400px;
+$grid-breakpoints-xl: 1200px;
+$grid-breakpoints-lg: 992px;
+$grid-breakpoints-md: 768px;
+$grid-breakpoints-sm: 576px;
+$grid-breakpoints-xs: 375px;
+
+$gutter: $grid-gutter-width;
+
+$fs-default: 1rem;
+$fs-medium: 0.88rem;
+$fs-small: 0.75rem;
+
+$sidebar-width-default: 240px;
+
+$border-radius-field: 10px;
+
+$control-height: 40px;

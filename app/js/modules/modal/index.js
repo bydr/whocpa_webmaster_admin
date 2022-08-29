@@ -1,6 +1,7 @@
-import { getCurrentTarget } from "../helpers/utils"
+import { getCurrentTarget, setGlobalImplementation } from "../helpers/utils"
 const bodyScrollLock = require("body-scroll-lock")
 
+const MODULE_NAME = "modal"
 let openedModals = []
 const disableBodyScroll = bodyScrollLock.disableBodyScroll
 const enableBodyScroll = bodyScrollLock.enableBodyScroll
@@ -13,8 +14,10 @@ const COMPONENT_SELECTOR = `[data-component="modal"]`
 export const hideModal = (modalElement) => {
   console.log("hideModal ", modalElement)
   modalElement.classList.remove(IS_ACTIVE_CLASS)
+
   openedModals = openedModals.filter((m) => m !== modalElement.id)
-  console.log("openedModals ", openedModals)
+  window.whocpa[MODULE_NAME].opened = openedModals
+
   if (openedModals.length === 0) {
     enableBodyScroll(modalElement)
     clearAllBodyScrollLocks()
@@ -23,7 +26,10 @@ export const hideModal = (modalElement) => {
 export const showModal = (modalElement) => {
   console.log("showModal ", modalElement)
   modalElement.classList.add(IS_ACTIVE_CLASS)
+
   openedModals = [...openedModals, modalElement.id]
+  window.whocpa[MODULE_NAME].opened = openedModals
+
   disableBodyScroll(modalElement)
 }
 
@@ -43,29 +49,39 @@ const modalHideHandler = (e) => {
   } else {
     modal = currentTarget.closest(COMPONENT_SELECTOR)
   }
-  console.log("hide handler ", modal)
   hideModal(modal)
 }
 const modalShowHandler = (e) => {
   let currentTarget = getCurrentTarget(
     e,
-    e.target.dataset.modalShow,
+    e.target.dataset.modal,
     "[data-modal]",
   )
   if (!currentTarget) {
     return
   }
-  console.log(
-    "showModal handle ",
-    document.querySelector(currentTarget.dataset.modalShow),
-  )
-  showModal(document.querySelector(currentTarget.dataset.modalShow))
+  showModal(document.querySelector(currentTarget.dataset.modal))
+}
+
+const modalHideBackdropHandler = (e) => {
+  if (e.target.classList.contains("modal-wrapper")) {
+    hideModal(e.target.closest(`[data-component="modal"]`))
+  }
 }
 
 const handleClick = (e) => {
-  console.log("handleClick")
+  modalHideBackdropHandler(e)
   modalHideHandler(e)
   modalShowHandler(e)
 }
 
 document.addEventListener("click", handleClick, false)
+
+setGlobalImplementation({
+  moduleName: MODULE_NAME,
+  payload: {
+    show: showModal,
+    hide: hideModal,
+    opened: openedModals,
+  },
+})

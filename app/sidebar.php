@@ -21,6 +21,10 @@ $nav = [
                 "icon" => "userRemove",
                 "name" => "Удалить"
             ],
+            [
+                "icon" => "userTag",
+                "name" => "Партнёры и Рекламодатели"
+            ],
         ]
     ],
     [
@@ -104,17 +108,12 @@ $nav = [
         <p class="paragraph_16 paragraph_bold">Алексей Костылев 2</p>
 
         <div data-component="copy" data-content="kostylev92@gmail.com">
-            <button class="button" data-target>
+            <button class="button">
                 <span class="paragraph_14 c-gray-darken">kostylev92@gmail.com</span>
                 <svg class="ui-icon">
                     <use xlink:href="img/_src/sprite.svg#copy"></use>
                 </svg>
             </button>
-            <div class="tooltip-simple">
-                <div class="tooltip-simple__inner">
-                    Успешно скопировано!
-                </div>
-            </div>
         </div>
 
     </div>

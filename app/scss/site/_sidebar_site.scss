@@ -1,0 +1,84 @@
+@import "app/scss/vars";
+
+.sidebar-site {
+  width: $sidebar-width-default;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 50px 0 0;
+  background: $white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 0px 25px rgba(216, 12, 254, 0.03);
+  z-index: 40;
+  transition: all 0.3s ease-in-out;
+
+  .nav {
+    flex: 1;
+    overflow: hidden auto;
+  }
+
+  &.is-active {
+    top: 60px;
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    height: calc(100vh - 60px);
+  }
+
+  @media (max-width: $grid-breakpoints-lg) {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px;
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+.sidebar-bar {
+  @extend .panel;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px;
+  border-bottom: 1px solid transparent;
+  z-index: 40;
+  display: none;
+
+  &.is-active {
+    border-radius: 0;
+    border-color: $gray-lighten;
+    position: sticky;
+    top: 0;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: 40px;
+    margin: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-lg) {
+    display: flex;
+  }
+}

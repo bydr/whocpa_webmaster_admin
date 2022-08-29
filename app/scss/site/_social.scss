@@ -1,0 +1,25 @@
+.social {
+  &__list {
+    width: 100%;
+    grid-gap: 10px;
+    gap: 10px;
+  }
+  &__item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    > * {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $gray-darken;
+    }
+
+    .ui-icon {
+      color: $dark;
+      margin-right: 5px;
+    }
+  }
+}

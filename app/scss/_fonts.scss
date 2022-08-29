@@ -1,0 +1,12 @@
+@import "_mixins/font-face";
+
+@include font-face(
+  "ptsans",
+  "../fonts/PTSans-Regular",
+  normal,
+  normal,
+  false,
+  true
+);
+@include font-face("ptsans", "../fonts/PTSans-Bold", bold, normal, false, true);
+@include font-face("jost", "../fonts/Jost-Bold", bold, normal, false, true);

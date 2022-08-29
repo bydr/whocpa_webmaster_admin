@@ -1,0 +1,103 @@
+.chart {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+
+  &-config {
+    display: none;
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    display: flex;
+    grid-template-columns: initial;
+    flex-direction: column;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-legend {
+    margin-left: 10px;
+    width: 100%;
+
+    @media (max-width: $grid-breakpoints-sm) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    &__list {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__item {
+      @extend #text-size_medium;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      margin: 0 0 10px 0;
+      flex: 1;
+      font-weight: bold;
+      color: $gray-darken;
+      cursor: pointer;
+
+      &.is-hidden {
+        opacity: 0.5;
+      }
+    }
+
+    &__segment {
+      width: 14px;
+      height: 14px;
+      min-height: 14px;
+      min-width: 14px;
+      border-radius: 50px;
+      margin: 0 12px 0 0;
+    }
+
+    &__name {
+      white-space: normal;
+      margin: 0;
+    }
+
+    &__container {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+  &_pie {
+    .chart-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &_line {
+    .chart-wrapper {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+      overflow: auto hidden;
+    }
+  }
+
+  &.chart_week {
+    .chart-wrapper {
+      height: 280px;
+    }
+  }
+}

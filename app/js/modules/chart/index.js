@@ -68,7 +68,6 @@ const createChartPie = (
   dataValues = [],
   legendContainer = null,
 ) => {
-  console.log("createChartPie ", ctx)
   let data = {
     labels: labels,
     datasets: [
@@ -158,8 +157,6 @@ const createChartLine = (
       gradient.addColorStop(0, hexToRgbA(color, 0.7))
       gradient.addColorStop(1, hexToRgbA(color, 0))
 
-      console.log("ctx ", ctx)
-
       return {
         borderWidth: 3,
         borderColor: color,
@@ -233,10 +230,17 @@ const chartPieInit = () => {
     if (canvas) {
       const ctx = canvas.getContext("2d")
 
+      const values = [
+        ...(chart.querySelector(`[name="values"]`)?.options || []),
+      ].map((option) => option.value)
+      const labels = [
+        ...(chart.querySelector(`[name="labels"]`)?.options || []),
+      ].map((option) => option.value)
+
       createChartPie(
         ctx,
-        ["Индонезия", "Таиланд", "Донецк"],
-        [58.3, 20, 24],
+        labels,
+        values,
         chart.querySelector(".chart-legend") || null,
       )
     }
@@ -249,37 +253,32 @@ const chartLineInit = () => {
     return
   }
 
-  const labels = _getTimesLabels({
-    step: 2,
-  })
-
-  const dataValues = [
-    2200, 2400, 3500, 3000, 3250, 3490, 2500, 2400, 2900, 3000, 3250, 3490,
-    3000,
-  ]
-
   charts.forEach((chart) => {
     const canvas = chart.querySelector("canvas")
     if (canvas) {
       const ctx = canvas.getContext("2d")
 
+      const values = [
+        ...(chart.querySelector(`[name="values"]`)?.options || []),
+      ].map((option) => option.value)
+      const labels = [
+        ...(chart.querySelector(`[name="labels"]`)?.options || []),
+      ].map((option) => option.value)
+
+      const datasetItems = [...chart.querySelectorAll("[data-set]")]
+      const datasets = datasetItems.map((item) => {
+        return {
+          label: item.querySelector(`[data-label]`)?.value || "",
+          data: [...(item.querySelector(`[data-values]`)?.options || [])].map(
+            (option) => option.value,
+          ),
+        }
+      })
+
       createChartLine(
         ctx,
         labels,
-        [
-          {
-            label: "Сегодня",
-            data: dataValues,
-          },
-          {
-            label: "Вчера",
-            data: dataValues.map((item) => item - item * 0.4),
-          },
-          {
-            label: "Позавчера",
-            data: dataValues.map((item) => item - item * 0.2),
-          },
-        ],
+        datasets,
         chart.querySelector(".chart-legend") || null,
       )
     }

@@ -1,0 +1,151 @@
+@import "vars";
+@import "_mixins/box";
+
+.dropdown {
+  position: relative;
+
+  &-popup {
+    margin: 0;
+    min-width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    background: $white;
+    border-radius: $border-radius-field;
+    width: auto;
+    left: 0;
+    right: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.15s ease-in-out, transform 0.2s ease-in-out;
+    z-index: 8;
+    box-shadow: 0 3px 11px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &-target {
+    min-width: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: $border-radius-field;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    font-size: $fs-medium;
+    background: transparent;
+    border: none;
+    text-align: left;
+    justify-content: flex-start;
+
+    &:hover,
+    &:active {
+      color: $dark;
+      background: $gray-lighten;
+    }
+
+    .ui-icon {
+      margin: 0;
+    }
+
+    > span {
+      flex: 1;
+      align-items: center;
+      display: flex;
+
+      > span {
+        + .ui-icon {
+          margin-left: 10px;
+        }
+      }
+
+      > .ui-icon {
+        + span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    @include box(12px, 12px);
+    color: $dark;
+    transform: rotate(180deg);
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.dropdown__bordered {
+    margin-bottom: 6px;
+
+    .dropdown {
+      &-target {
+        border: 1px solid $gray;
+      }
+      &-popup {
+        border: 1px solid $gray;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        ul {
+          li {
+            border-bottom: 1px solid $gray;
+            font-size: $fs-medium;
+            color: $secondary;
+            font-weight: normal;
+            padding: 4px;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.dropdown__small {
+    .dropdown {
+      &-target {
+        padding: 4px;
+      }
+    }
+  }
+}
+
+[data-component="dropdown"] {
+  &.is-active {
+    .dropdown {
+      &-icon {
+        transform: rotate(0);
+      }
+
+      &-popup {
+        opacity: 1;
+        visibility: visible;
+        user-select: initial;
+        pointer-events: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &.dropdown__bordered {
+      .dropdown {
+        &-popup {
+          border-top: none;
+          border-radius: 0 0 5px 5px;
+        }
+        &-target {
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

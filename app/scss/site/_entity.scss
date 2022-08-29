@@ -1,0 +1,25 @@
+$ACTION_SIZE: 14px;
+
+.entity {
+  &__state {
+    display: flex;
+    align-items: center;
+
+    button,
+    p {
+      margin-left: 5px;
+    }
+
+    .action {
+      &-target {
+        &__point {
+          border: none;
+          width: $ACTION_SIZE;
+          height: $ACTION_SIZE;
+          min-width: $ACTION_SIZE;
+          min-height: $ACTION_SIZE;
+        }
+      }
+    }
+  }
+}

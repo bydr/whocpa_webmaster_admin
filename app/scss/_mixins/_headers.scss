@@ -1,0 +1,21 @@
+@mixin headers(
+$header-class,
+$header-size,
+$header-height,
+$header-font: $default-font,
+$header-weight: bold,
+$header-style: normal
+) {
+
+  .#{$header-class} {
+    font-family: $header-font;
+    color: inherit;
+    margin: 0 0 15px 0;
+    padding: 0;
+    position: relative;
+    font-style: $header-style;
+    font-weight: $header-weight;
+    font-size: $header-size;
+    line-height: $header-height;
+  }
+}

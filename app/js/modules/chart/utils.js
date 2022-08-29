@@ -15,8 +15,14 @@ export const _getTimesLabels = ({ step = 2 }) => {
   return labels
 }
 
-export const _getRandomColor = () =>
-  `#${Math.floor(Math.random() * 16777215).toString(16)}`
+export const _getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 export const PALETTE_DEFAULT = ["#D80CFE", "#2544D3"]
 

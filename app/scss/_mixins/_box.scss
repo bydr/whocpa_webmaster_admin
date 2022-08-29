@@ -1,0 +1,6 @@
+@mixin box($width: "auto", $height: "auto") {
+  width: $width;
+  height: $height;
+  min-width: $width;
+  min-height: $height;
+}

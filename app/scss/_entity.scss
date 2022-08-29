@@ -1,0 +1,22 @@
+@import "vars";
+
+.entity {
+  &__list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
+  }
+  &__col {
+    display: flex;
+    padding: 10px;
+    flex: 1;
+    border-top: 1px solid $gray;
+  }
+}

@@ -1,0 +1,104 @@
+@import "vars";
+@import "_mixins/box";
+
+.nav {
+  & {
+    @extend .custom-scroll;
+    width: 100%;
+    padding-right: 10px;
+
+    ul {
+      width: inherit;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        width: inherit;
+      }
+    }
+
+    &-item {
+      font-size: $fs-medium;
+      width: 100%;
+      text-decoration: none;
+      color: $gray-darken;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+      padding: 8px 10px;
+      border-radius: $border-radius-field;
+      transition: all 0.1s ease-in-out;
+
+      &:hover,
+      &:active {
+        color: $dark;
+        background: $gray-lighten;
+      }
+
+      .ui-icon {
+        &:not(.dropdown-icon) {
+          @include box(20px, 20px);
+          color: $dark;
+          margin: 0 10px 0 0;
+
+          + span {
+            margin: 0;
+          }
+        }
+      }
+
+      .dropdown {
+        width: 100%;
+
+        &-target {
+          width: 100%;
+          font-size: $fs-medium;
+          padding: 0;
+
+          > span {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        &-popup {
+          margin-left: 10px;
+          box-shadow: none;
+        }
+
+        &.is-active {
+          .dropdown {
+            &-popup {
+              position: relative;
+            }
+          }
+        }
+      }
+
+      &.nav-item {
+        &__dropdown {
+          padding: 0;
+
+          &:hover,
+          &:active {
+            background: transparent;
+          }
+
+          .dropdown-target {
+            padding: 8px 10px;
+            color: $gray-darken;
+
+            &:hover,
+            &:active {
+              color: $dark;
+              background: $gray-lighten;
+            }
+          }
+        }
+      }
+    }
+  }
+}

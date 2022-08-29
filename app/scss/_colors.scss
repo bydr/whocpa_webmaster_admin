@@ -1,0 +1,16 @@
+@import "vars";
+
+.c {
+  &-gray-darken {
+    color: $gray-darken;
+  }
+  &-accent {
+    color: $accent;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+  &-dark {
+    color: $dark;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin texts($text-class, $text-size, $text-height, $text-font: $default-font) {
+  ##{$text-class} {
+    font-family: $text-font;
+    font-size: $text-size;
+    line-height: $text-height;
+  }
+}

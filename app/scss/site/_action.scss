@@ -1,0 +1,143 @@
+$ACTION_SIZE: 22px;
+
+.action {
+  position: relative;
+
+  &-target {
+    @extend .button_reset;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    color: $gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:active {
+      scale: 0.98;
+    }
+
+    &__point {
+      border: 1px solid $gray;
+      border-radius: 50px;
+      width: $ACTION_SIZE;
+      height: $ACTION_SIZE;
+      min-width: $ACTION_SIZE;
+      min-height: $ACTION_SIZE;
+      display: flex;
+      position: relative;
+      color: inherit;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 72%;
+        height: 72%;
+        border-radius: inherit;
+        background-color: $gray;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &-popup {
+    @extend .dropdown-popup;
+    max-width: initial;
+    right: auto;
+    transform: translateY(-10px) translateX(-50%);
+    left: 50%;
+  }
+
+  &-list {
+    @extend .dropdown-list;
+
+    li {
+      padding: 0;
+      margin: 0;
+
+      &:last-child {
+        .action-control {
+          border-bottom: transparent;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    @extend .dropdown-icon;
+    color: inherit;
+  }
+
+  &-control {
+    padding: 6px 10px;
+    border-bottom: 1px solid $gray;
+    max-width: 100%;
+    border-radius: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+      background-color: $gray-lighten;
+    }
+  }
+
+  &.is-active {
+    .action {
+      &-popup {
+        transform: translateY(0) translateX(-50%);
+      }
+    }
+  }
+
+  &.action {
+    &_orange {
+      .action {
+        &-target {
+          color: $orange;
+
+          &__point {
+            border-color: $orange;
+
+            &:before {
+              background-color: $orange;
+            }
+          }
+        }
+      }
+    }
+    &_red {
+      .action {
+        &-target {
+          color: $red;
+
+          &__point {
+            border-color: $red;
+
+            &:before {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+    &_green {
+      .action {
+        &-target {
+          color: $green;
+
+          &__point {
+            border-color: $green;
+
+            &:before {
+              background-color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

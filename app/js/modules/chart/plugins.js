@@ -26,6 +26,8 @@ export const htmlLegendPlugin = {
     const items = chart.options.plugins.legend.labels.generateLabels(chart)
 
     items.forEach((item) => {
+      console.log("item ", item)
+
       const li = document.createElement("li")
       li.classList.add("chart-legend__item")
       if (!!item.hidden) {

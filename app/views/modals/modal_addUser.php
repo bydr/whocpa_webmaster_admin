@@ -1,7 +1,5 @@
 <div class="modal" id="modal-thanks" data-component="modal">
     <div class="modal-wrapper">
-        <div class="modal-overlay" data-modal-hide></div>
-
         <div class="modal-content">
             <div class="modal-content__body">
                 <div class="modal-title">
@@ -35,7 +33,7 @@
                         </div>
                     </div>
                     <div class="form-group justify-center text-center">
-                        <button type="button" class="button button_accent" data-modal-show="#modal-passwordSend">Добавить</button>
+                        <button type="button" class="button button_accent" data-modal="#modal-passwordSend">Добавить</button>
                     </div>
                 </form>
 
