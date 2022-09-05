@@ -2,6 +2,18 @@ $ACTION_SIZE: 22px;
 
 .action {
   position: relative;
+  display: inline-flex;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &-label {
+    margin: 0 0 0 5px;
+    color: $gray-darken;
+  }
 
   &-target {
     @extend .button_reset;
@@ -48,6 +60,8 @@ $ACTION_SIZE: 22px;
     right: auto;
     transform: translateY(-10px) translateX(-50%);
     left: 50%;
+    top: 100%;
+    margin-top: 5px;
   }
 
   &-list {
@@ -124,6 +138,21 @@ $ACTION_SIZE: 22px;
         }
       }
     }
+    &_red-lighten {
+      .action {
+        &-target {
+          color: $red-lighten;
+
+          &__point {
+            border-color: $red-lighten;
+
+            &:before {
+              background-color: $red-lighten;
+            }
+          }
+        }
+      }
+    }
     &_green {
       .action {
         &-target {
@@ -136,6 +165,52 @@ $ACTION_SIZE: 22px;
               background-color: $green;
             }
           }
+        }
+      }
+    }
+  }
+
+  &.action {
+    &_placement {
+      &-right {
+        .action-target {
+          display: inline-flex;
+          flex-direction: row;
+        }
+        .action-icon {
+          margin: 0 0 0 5px;
+        }
+      }
+    }
+  }
+
+  &[data-placement-popup="right"] {
+    .action-popup {
+      right: 0;
+      transform: translateY(-10px);
+      left: auto;
+    }
+
+    &.is-active {
+      .action {
+        &-popup {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  &[data-placement-popup="left"] {
+    .action-popup {
+      right: auto;
+      transform: translateY(-10px);
+      left: 0;
+    }
+
+    &.is-active {
+      .action {
+        &-popup {
+          transform: translateY(0);
         }
       }
     }

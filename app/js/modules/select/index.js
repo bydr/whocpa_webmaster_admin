@@ -3,13 +3,12 @@ import Choices from "choices.js"
 const selectInit = () => {
   const elements = [...document.querySelectorAll(".custom-select")]
   for (const element of elements) {
-    console.log("element.dataset.searchEnabled ", element.dataset.searchenabled)
-
+    console.log("element.dataset.search ", element.dataset.search !== undefined)
     const themeName = element.dataset.theme
     const themeSelector = !!themeName ? `${themeName}-theme` : ""
 
     new Choices(element, {
-      searchEnabled: !!element.dataset.searchenabled,
+      searchEnabled: element.dataset.search !== undefined,
       items: [],
       choices: [],
       itemSelectText: "",

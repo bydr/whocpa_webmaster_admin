@@ -28,6 +28,7 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify": "^3.0.2",
 		"sass": "^1.53.0",
+		"vanillajs-datepicker": "^1.2.0",
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
@@ -37,8 +38,6 @@
 		"chartjs-plugin-datalabels": "^2.1.0",
 		"choices.js": "^10.1.0",
 		"gulp-blade": "^1.0.1",
-		"gulp-connect-php": "^0.0.2",
-		"sweetalert2": "^11.4.26",
-		"tippy.js": "^6.3.7"
+		"gulp-connect-php": "^0.0.2"
 	}
 }

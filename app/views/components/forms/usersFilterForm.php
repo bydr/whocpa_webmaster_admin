@@ -48,10 +48,9 @@
         <label class="checkbox checkbox-type__radio checkbox-text__top">
             <input type="checkbox" name="checkbox">
             <span class="checkbox-inner">
-                        <span class="checkbox-box"></span>
-                        <span class="checkbox-text">Мои вебмастера</span>
-                    </span>
+                <span class="checkbox-box"></span>
+                <span class="checkbox-text">Мои вебмастера</span>
+            </span>
         </label>
-
     </div>
 </form>

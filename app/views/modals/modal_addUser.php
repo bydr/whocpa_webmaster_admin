@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="form-group form-group_row">
-                        <div class="form-control is-error">
+                        <div class="form-control form-control_view-col is-error">
                             <select name="typeUser" id="typeUser" class="js-choice custom-select"
                                     data-searchenabled>
                                 <option value="" disabled selected>Тип</option>
@@ -26,7 +26,7 @@
                             </select>
                             <p class="message-error">Пример ошибки поля</p>
                         </div>
-                        <div class="form-control is-error">
+                        <div class="form-control form-control_view-col is-error">
                             <input name="manager" type="text" placeholder="Назначить менеджера">
                             <p class="message-error">Пример ошибки поля</p>
 

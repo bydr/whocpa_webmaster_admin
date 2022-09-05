@@ -1,0 +1,397 @@
+.messenger {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: $grid-breakpoints-xl) {
+    display: grid;
+    grid-template-areas: "folders folders" "dialogs detail";
+    grid-template-columns: 4fr 8fr;
+
+    @media (max-width: $grid-breakpoints-sm) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-folder {
+    &s {
+      @extend .custom-scroll;
+      width: 12%;
+      padding: 10px;
+      border-right: 1px solid $gray;
+      height: 100%;
+      overflow: hidden auto;
+      -webkit-overflow-scrolling: touch;
+      grid-area: folders;
+
+      &::-webkit-scrollbar-thumb {
+        background: $gray-dark;
+      }
+
+      @media (max-width: $grid-breakpoints-xxl) {
+        width: 20%;
+      }
+
+      @media (max-width: $grid-breakpoints-xl) {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid $gray;
+        overflow: auto hidden;
+      }
+
+      @media (max-width: $grid-breakpoints-sm) {
+        display: none;
+      }
+    }
+
+    &__list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      @media (max-width: $grid-breakpoints-xl) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+    &__item {
+      padding: 0;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 0 10px 0;
+      flex: 1;
+      min-width: 15%;
+    }
+  }
+
+  &-dialog {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    color: $dark;
+    text-decoration: none;
+    padding: 15px 0;
+    transition: all 0.2s ease-in-out;
+
+    &s {
+      width: 23%;
+      padding: 20px 0;
+      height: 100%;
+      grid-area: dialogs;
+
+      @media (max-width: $grid-breakpoints-xl) {
+        width: 100%;
+      }
+
+      @media (max-width: $grid-breakpoints-sm) {
+        display: none;
+      }
+    }
+
+    &.is-active {
+      background-color: $gray-lighten;
+      border-radius: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &:hover,
+    &:active {
+      background: transparentize($dark, 0.99);
+    }
+
+    &__item {
+      width: 100%;
+      border-top: 1px solid $gray;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &.is-active {
+        border-color: transparent;
+
+        & + .messenger-dialog__item {
+          border-color: transparent;
+        }
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $dark;
+      text-decoration: none;
+    }
+
+    .dialog-name {
+      @extend #text-size_default;
+      color: inherit;
+      font-weight: bold;
+      margin: 0 10px 0 0;
+    }
+
+    &__detail {
+      flex: 1;
+      width: 100%;
+      padding: 20px;
+      height: 100%;
+      grid-area: detail;
+
+      @media (max-width: $grid-breakpoints-sm) {
+        padding: 10px;
+        min-height: 80vh;
+      }
+    }
+
+    &__list {
+      width: 100%;
+      padding: 0 10px;
+      margin: 0;
+      list-style: none;
+      @extend .custom-scroll;
+      overflow: hidden auto;
+      -webkit-overflow-scrolling: touch;
+      height: 100%;
+
+      &::-webkit-scrollbar-thumb {
+        background: $gray-dark;
+      }
+    }
+
+    &__container {
+      padding: 20px;
+      background-color: $gray-lighten;
+      border-radius: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .panel {
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+
+    &__scrolling {
+      @extend .custom-scroll;
+      flex: 1;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden auto;
+      width: 100%;
+
+      &::-webkit-scrollbar-thumb {
+        background: $gray-dark;
+      }
+    }
+
+    &__fixed {
+      width: 100%;
+
+      .form-control {
+        & > * {
+          background-color: transparent;
+        }
+
+        .choices__inner {
+          font-weight: normal;
+          background-color: transparent;
+        }
+
+        .datepicker-container {
+          .datepicker-input {
+            background-color: transparent;
+          }
+        }
+      }
+
+      .form {
+        .form-group {
+          &:first-child {
+            .form-control {
+              &:first-child {
+                flex: 0.6;
+              }
+            }
+
+            @media (max-width: $grid-breakpoints-xxl) {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+
+              .form-control {
+                &:first-child {
+                  grid-column: 1/-1;
+                  grid-row: 1;
+                  flex: 1;
+                }
+              }
+            }
+
+            @media (max-width: $grid-breakpoints-md) {
+              display: flex;
+              flex-direction: column;
+
+              .form-control {
+                &:first-child {
+                  grid-column: initial;
+                  grid-row: initial;
+                  flex: 1;
+                }
+              }
+
+              .datepicker-container {
+                width: 100%;
+                display: flex;
+
+                .datepicker-input {
+                  width: 40%;
+                  flex: initial;
+                }
+                .datepicker-label {
+                  flex: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-controls {
+    padding-top: 20px;
+    textarea {
+      max-height: 100px;
+      overflow: hidden auto;
+    }
+  }
+
+  &-bar {
+    &__top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      > * {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 0;
+
+        &:last-child {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-right: 0;
+        }
+      }
+
+      .socs {
+        &__list {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        &__item {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: $grid-breakpoints-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+        > * {
+          margin-right: 0;
+
+          &:nth-last-child(3) {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  &-tabs {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    background: transparentize($gray-lighten, 0.5);
+    height: 56px;
+
+    .tab {
+      flex: 1;
+      padding: 8px 5px;
+
+      .button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+
+      &.is-active {
+        .button {
+          @extend .button_accent;
+        }
+      }
+    }
+
+    &__responsive {
+      display: none;
+
+      @media (max-width: $grid-breakpoints-sm) {
+        display: flex;
+      }
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    [data-tab-content] {
+      position: absolute;
+      z-index: 2;
+      background: $white;
+      top: 56px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 0 0 10px 10px;
+
+      .messenger-folder__list {
+        display: block;
+        column-count: 2;
+      }
+      .messenger-folder__item {
+        width: 100%;
+        flex: initial;
+      }
+
+      &.is-active {
+        display: flex;
+      }
+
+      @media (max-width: $grid-breakpoints-xs) {
+        .messenger-folder__list {
+          display: flex;
+          flex-direction: column;
+          column-count: 1;
+        }
+      }
+    }
+  }
+}

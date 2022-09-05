@@ -19,6 +19,8 @@
 <?php require_once('views/modals/modal_PasswordSendSuccess.php'); ?>
 <?php require_once('views/modals/modal_PasswordReset.php'); ?>
 <?php require_once('views/modals/modal_ApproveChangeStatusOffer.php'); ?>
-<?php require_once('views/modals/modal_sendNewProfileData.php'); ?>
+<?php require_once('views/modals/modal_SendNewProfileData.php'); ?>
 <?php require_once('views/modals/modal_editProfile.php'); ?>
+<?php require_once('views/modals/modal_SendNewProfileDataSuccess.php'); ?>
+<?php require_once('views/modals/modal_ApproveChangeStatusOfferSuccess.php'); ?>
 <?php require_once('foot.php'); ?>

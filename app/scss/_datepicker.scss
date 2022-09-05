@@ -1,0 +1,28 @@
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background: $accent;
+}
+
+.datepicker {
+  &-container {
+    display: inline-flex;
+    align-items: center;
+
+    label,
+    label.datepicker-label {
+      @extend #text-size_medium;
+      font-weight: normal;
+    }
+
+    .datepicker-input {
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid $gray-darken;
+      padding: 0 5px;
+      color: $gray-darken;
+      text-align: center;
+      width: auto;
+      flex: auto;
+    }
+  }
+}

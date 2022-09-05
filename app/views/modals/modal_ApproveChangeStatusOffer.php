@@ -12,7 +12,7 @@
                 <p class="text-size_default c-dark text-center"><b>Вы действительно хотите изменить статус на “Отключен”?</b></p>
                 <br>
                 <p class="text-center">
-                    <button class="button button_accent">Подтвердить</button>
+                    <button class="button button_accent" data-modal="#modal-approveChangeStatusOfferSuccess">Подтвердить</button>
                 </p>
 
             </div>

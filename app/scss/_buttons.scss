@@ -73,6 +73,14 @@
   }
 
   &.button {
+    &_variant {
+      &-box {
+        padding: 8px;
+      }
+    }
+  }
+
+  &.button {
     &_accent {
       background: $accent;
       color: $white;

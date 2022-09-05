@@ -29,7 +29,7 @@ $partnerData = [
         "title" => "Менеджер",
         "value" => "nickstore",
     ],
-    "managerSocial" => [
+    "managersocs" => [
         "skype" => [
             "title" => "",
             "value" => "live:nickstore_box3",
@@ -46,24 +46,6 @@ $partnerData = [
         "value" => "VIP",
         "isAccent" => true
     ],
-];
-
-$traffic = [
-  "Гэмблинг",
-  "Товарка",
-  "Нутра",
-  "Гэйминг",
-  "Слоты",
-  "Категория",
-  "Трафик №4",
-];
-
-$vertical = [
-    "Нутра",
-    "Казино",
-    "Установка",
-    "Слоты",
-    "Товарка",
 ];
 
 ?>
@@ -88,7 +70,7 @@ $vertical = [
     <div class="profile-info">
       <div class="profile-info__list">
         <?php foreach($partnerData as $key => $item): ?>
-          <div class="profile-info__item <?=$key === "managerSocial" ? "is-clean" : "" ?>">
+          <div class="profile-info__item <?=$key === "managersocs" ? "is-clean" : "" ?>">
               <?php if(strlen($item["title"]) > 0) :?>
                 <div class="title"><span><?=$item["title"]?>:</span></div>
               <?php endif;?>
@@ -101,10 +83,10 @@ $vertical = [
                     </svg>
                   </div>
                 <?php else: ?>
-                    <?php if($key === "managerSocial") :?>
-                      <div class="social__list">
+                    <?php if($key === "managersocs") :?>
+                      <div class="socs__list">
                           <?php foreach($item as $k => $i): ?>
-                            <div class="social__item">
+                            <div class="socs__item">
                               <a href="<?=$i["link"] ?>">
                                 <svg class="ui-icon">
                                   <use xlink:href="img/_src/sprite.svg#<?=$k ?>"></use>
@@ -188,39 +170,13 @@ $vertical = [
       </div>
     </div>
   </div>
+
   <div class="panel-group">
+    <?php include_once "tagsTraffic.php" ?>
 
-    <div class="panel panel-stats">
-      <div class="panel-inner">
-        <div class="panel-header panel-header_underline">
-          <p class="text-size_default"><b>Трафик</b></p>
-        </div>
-        <div class="panel-body">
-          <div class="button_group button_group-row">
-            <?php foreach ($traffic as $item) : ?>
-              <button class="button button_secondary"><?=$item?></button>
-            <?php endforeach; ?>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-stats">
-      <div class="panel-inner">
-        <div class="panel-header panel-header_underline">
-          <p class="text-size_default"><b>Вертикаль</b></p>
-        </div>
-        <div class="panel-body">
-          <div class="button_group button_group-row">
-              <?php foreach ($vertical as $item) : ?>
-                <button class="button button_dark"><?=$item?></button>
-              <?php endforeach; ?>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <?php include_once "tagsVertical.php" ?>
   </div>
+
   <div class="panel-stats panel_compare_leads">
     <div class="panel-inner">
       <div class="panel-header panel-header_underline">

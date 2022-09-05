@@ -83,7 +83,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -215,7 +215,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -348,7 +348,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -482,7 +482,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -614,7 +614,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -747,7 +747,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -881,7 +881,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -1013,7 +1013,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -1146,7 +1146,7 @@
               <p>15896334</p>
             </div>
             <div class="panel-col">
-              <ul class="social">
+              <ul class="socs">
                 <li>
                   <a href="#">
                     <svg class="ui-icon">
@@ -1202,26 +1202,4 @@
   </div>
 </section>
 
-<section class="pagination">
-  <div class="pagination-bar">
-    <button class="pagination-nav pagination-nav__prev">
-      <svg class="ui-icon">
-        <use xlink:href="img/_src/sprite.svg#angleUp"></use>
-      </svg>
-    </button>
-    <div class="pagination-pages">
-      <button class="pagination-page is-active">01</button>
-      <button class="pagination-page">02</button>
-      <button class="pagination-page">03</button>
-      <button class="pagination-page">04</button>
-      <button class="pagination-page">...</button>
-      <button class="pagination-page">34</button>
-    </div>
-    <button class="pagination-nav pagination-nav__next">
-      <svg class="ui-icon">
-        <use xlink:href="img/_src/sprite.svg#angleUp"></use>
-      </svg>
-    </button>
-  </div>
-  <button class="button button_accent" data-modal="#modal-thanks">Добавить</button>
-</section>
+<?php include_once "paginationWithButton.php" ?>

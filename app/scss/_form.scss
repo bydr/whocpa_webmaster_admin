@@ -32,7 +32,9 @@
       }
     }
 
-    input {
+    input,
+    textarea {
+      font-family: $default-font;
       background: $white;
       border: 1px solid $gray;
       border-radius: $border-radius-field;
@@ -42,10 +44,20 @@
       height: $control-height;
       min-height: $control-height;
       min-width: 1px;
+      width: 100%;
+
+      &:focus {
+        border-color: $accent;
+      }
 
       &::placeholder {
         color: $gray-dark;
       }
+    }
+
+    textarea {
+      resize: vertical;
+      padding-top: 10px;
     }
 
     .choices {

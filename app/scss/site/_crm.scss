@@ -1,0 +1,29 @@
+.crm {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $grid-breakpoints-xl) {
+    height: auto;
+  }
+
+  &-panel {
+    @extend .panel;
+    @extend .panel_w-shadow;
+    padding: 0;
+    flex: 1;
+    height: 80%;
+
+    .messenger {
+      height: 100%;
+
+      @media (max-width: $grid-breakpoints-xl) {
+        height: auto;
+      }
+    }
+
+    @media (max-width: $grid-breakpoints-xl) {
+      height: auto;
+    }
+  }
+}

@@ -22,6 +22,7 @@
 @import "modal";
 @import "entity";
 @import "tooltip";
+@import "datepicker";
 
 @import "site/index";
 
@@ -167,7 +168,7 @@ p {
   }
 }
 
-.social {
+.socs {
   width: 100%;
   list-style: none;
   margin: 0;

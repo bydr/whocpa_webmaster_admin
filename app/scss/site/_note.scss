@@ -1,0 +1,35 @@
+.note {
+  @extend #text-size_medium;
+  font-weight: bold;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-date {
+    color: $dark;
+    margin: 0;
+  }
+
+  &-text {
+    color: $gray-darken;
+    margin: 0;
+  }
+
+  &.note {
+    &-variant {
+      &_messenger {
+        display: flex;
+        width: 100%;
+        margin-bottom: 5px;
+
+        .note {
+          &-date {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

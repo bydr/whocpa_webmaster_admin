@@ -21,7 +21,7 @@
                 </div>
                 <br>
                 <p class="text-center">
-                    <button class="button button_accent">Отправить новый пароль</button>
+                    <button class="button button_accent" type="button" data-modal="#modal-sendNewProfileDataSuccess">Отправить новый пароль</button>
                 </p>
 
             </div>
