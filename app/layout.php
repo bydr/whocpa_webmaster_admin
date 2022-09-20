@@ -23,4 +23,8 @@
 <?php require_once('views/modals/modal_editProfile.php'); ?>
 <?php require_once('views/modals/modal_SendNewProfileDataSuccess.php'); ?>
 <?php require_once('views/modals/modal_ApproveChangeStatusOfferSuccess.php'); ?>
+<?php require_once('views/modals/modal_CrmItemEdit.php'); ?>
+<?php require_once('views/modals/modal_actionFinance.php'); ?>
+<?php require_once('views/modals/modal_sourceInfo.php'); ?>
+<?php require_once('views/modals/modal_createTicket.php'); ?>
 <?php require_once('foot.php'); ?>

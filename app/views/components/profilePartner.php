@@ -114,6 +114,7 @@ $partnerData = [
     </div>
     <div class="profile-payload">
       <div class="profile-filters">
+
         <section class="pagination pagination_bordered">
           <div class="pagination-bar">
             <button class="pagination-nav pagination-nav__prev">
@@ -135,6 +136,7 @@ $partnerData = [
             </button>
           </div>
         </section>
+
         <form action="/" class="form form_view-row">
           <div class="form-control">
             <select name="status" id="status" class="js-choice custom-select">

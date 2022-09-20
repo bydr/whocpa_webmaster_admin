@@ -8,6 +8,7 @@ import "./modules/note"
 import "./modules/tooltip"
 import "./modules/select"
 import "./modules/datepicker"
+import "./modules/toggleButton"
 
 document.addEventListener("DOMContentLoaded", () => {
   menuToggleInit()

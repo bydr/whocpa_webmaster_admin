@@ -15,6 +15,18 @@ $pages = [
     [
         "title" => "CRM",
         "url" => "page_crm.php"
+    ],
+    [
+        "title" => "Финансы «Пополнение баланса» ",
+        "url" => "page_fin_refill_balance.php"
+    ],
+    [
+        "title" => "Источники",
+        "url" => "page_sources.php"
+    ],
+    [
+        "title" => "Тикеты",
+        "url" => "page_tickets.php"
     ]
 ]
 

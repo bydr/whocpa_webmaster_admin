@@ -165,7 +165,7 @@ $payload = [
               <li class="messenger-folder__item <?=$k === 2 ? 'is-active' : ''?>">
                 <div class="folder <?=$k === 2 ? 'is-active' : ''?>">
                   <div class="folder-composition">
-                    <div class="folder-indicator folder-indicator__<?=$item["color"] ?>"></div>
+                    <div class="folder-indicator indicator__<?=$item["color"] ?>"></div>
                     <svg class="ui-icon">
                       <use xlink:href="img/_src/sprite.svg#folder"></use>
                     </svg>
@@ -197,13 +197,7 @@ $payload = [
                     <div class="action-popup">
                       <ul class="action-list">
                         <li>
-                          <button class="action-control" data-modal="#modal-passwordReset">Сбросить пароль</button>
-                        </li>
-                        <li>
-                          <button class="action-control" data-modal="#modal-activateAccount">Активировать</button>
-                        </li>
-                        <li>
-                          <button class="action-control">Деактивировать</button>
+                          <button class="action-control" data-modal="#modal-crmItemEdit">Редактировать</button>
                         </li>
                       </ul>
                     </div>
@@ -229,13 +223,7 @@ $payload = [
                   <div class="action-popup">
                     <ul class="action-list">
                       <li>
-                        <button class="action-control" data-modal="#modal-passwordReset">Сбросить пароль</button>
-                      </li>
-                      <li>
-                        <button class="action-control" data-modal="#modal-activateAccount">Активировать</button>
-                      </li>
-                      <li>
-                        <button class="action-control">Деактивировать</button>
+                        <button class="action-control" data-modal="#modal-crmItemEdit">Редактировать</button>
                       </li>
                     </ul>
                   </div>
@@ -301,36 +289,7 @@ $payload = [
           <div class="messenger-dialog__fixed">
             <div class="messenger-controls">
               <div class="messenger-write">
-                <form action="/" class="form">
-                  <div class="form-group form-group_row">
-                    <div class="form-control">
-                      <select name="status" id="status" class="js-choice custom-select">
-                        <option value="" disabled selected>Статус</option>
-                        <option value="status1">Статус 1</option>
-                        <option value="status2">Статус 2</option>
-                        <option value="status3">Статус 3</option>
-                      </select>
-                    </div>
-                    <div class="form-control">
-                      <div class="datepicker-container">
-                        <label class="datepicker-label">Дата напоминания:</label>
-                        <input type="text" class="datepicker-input" data-component="datepicker">
-                      </div>
-                    </div>
-                    <div class="form-control">
-                      <div class="datepicker-container">
-                        <label class="datepicker-label">Время напоминания:</label>
-                        <input type="time" class="datepicker-input">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group_row">
-                    <div class="form-control">
-                      <textarea name="message" placeholder="Ваше сообщение"></textarea>
-                    </div>
-                    <button class="button button_accent">Отправить</button>
-                  </div>
-                </form>
+                  <?php include_once "views/components/forms/crmMessageForm.php" ?>
               </div>
             </div>
           </div>

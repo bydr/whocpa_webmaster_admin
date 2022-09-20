@@ -117,9 +117,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -249,9 +249,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -382,9 +382,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -516,9 +516,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -648,9 +648,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -781,9 +781,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -915,9 +915,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -1047,9 +1047,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">
@@ -1180,9 +1180,9 @@
               </ul>
             </div>
             <div class="panel-col">
-              <p><span class="c-dark">Доступно:</span><span class="c-accent price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Холд:</span><span class="c-secondary price"> 999 999 999$</span></p>
-              <p><span class="c-dark">Кредит:</span><span class="c-gray-darken price"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Доступно:</span><span class="price c-accent"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Холд:</span><span class="price c-secondary"> 999 999 999$</span></p>
+              <p class="stats-price"><span class="c-dark">Кредит:</span><span class="price c-gray-darken"> -999 999 999$</span></p>
             </div>
           </div>
           <div class="panel-block">

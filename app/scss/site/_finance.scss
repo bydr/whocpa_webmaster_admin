@@ -1,0 +1,57 @@
+.finance {
+  &__list {
+    margin-top: 20px;
+  }
+
+  &-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .button_group-row {
+      gap: 20px;
+    }
+
+    @media (max-width: $grid-breakpoints-md) {
+      flex-direction: column;
+    }
+  }
+
+  &__panel {
+    @extend .panel;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+    .panel {
+      &-header {
+        p {
+          margin-right: 20px;
+
+          span:nth-child(2) {
+            color: $gray-darken;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      &-block {
+        padding: 0;
+        justify-content: space-between;
+      }
+
+      &-body {
+        padding: 0;
+
+        .panel-row {
+          gap: 20px;
+        }
+
+        .panel-block {
+          border-top: 1px solid $gray;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

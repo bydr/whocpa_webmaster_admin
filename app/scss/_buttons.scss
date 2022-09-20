@@ -72,6 +72,13 @@
     background: $gray-lighten;
   }
 
+  &[disabled] {
+    color: initial;
+    opacity: 0.2 !important;
+    pointer-events: none;
+    user-select: none;
+  }
+
   &.button {
     &_variant {
       &-box {
@@ -155,6 +162,27 @@
       display: flex;
       flex-direction: row;
       gap: 10px;
+    }
+  }
+
+  &_size {
+    &_small {
+      min-width: calc(#{$control-height} / 1.8);
+      min-height: calc(#{$control-height} / 1.8);
+
+      .ui-icon {
+        @include box(12px, 12px);
+      }
+    }
+  }
+
+  &_outline {
+    border: 1px solid $gray;
+    background: transparent;
+
+    &:hover,
+    &:active {
+      border: 1px solid $gray-darken;
     }
   }
 }

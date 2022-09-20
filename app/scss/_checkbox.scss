@@ -66,6 +66,49 @@
     }
   }
 
+  &-type__check {
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    .checkbox {
+      &-inner {
+        display: flex;
+        align-items: center;
+      }
+      &-box {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        border: 1px solid $gray;
+        border-radius: 2px;
+        transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+        .ui-icon {
+          opacity: 0;
+          visibility: hidden;
+          color: $white;
+          transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+          transform: scale(0);
+        }
+      }
+      &-text {
+        margin-left: 10px;
+      }
+    }
+
+    [type="checkbox"]:checked ~ .checkbox-inner .checkbox-box {
+      background: $green;
+      border-color: $green;
+
+      .ui-icon {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
   &-text__top {
     .checkbox {
       &-inner {

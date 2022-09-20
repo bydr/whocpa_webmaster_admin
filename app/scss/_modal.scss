@@ -67,6 +67,12 @@
     }
   }
 
+  &.modal-650 {
+    .modal-content {
+      max-width: 650px;
+    }
+  }
+
   & &-content {
     width: 100%;
     position: relative;

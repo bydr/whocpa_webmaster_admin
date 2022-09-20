@@ -11,10 +11,10 @@
                 <br>
                 <p class="text-size_default c-dark text-center"><b>Вы действительно хотите активировать аккаунт?</b></p>
                 <br>
-                <p class="text-center">
+                <div class="button_group button_group-row w-100 justify-center">
                     <button class="button button_accent">Подтвердить</button>
                     <button class="button button_dark" data-modal-hide>Отмена</button>
-                </p>
+                </div>
             </div>
             <button type="button" class="button modal-close" data-modal-hide>
                 <svg class="ui-icon">

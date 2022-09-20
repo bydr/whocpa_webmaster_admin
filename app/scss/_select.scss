@@ -4,7 +4,7 @@
   color: $gray-darken;
   font-style: $fs-medium;
   min-width: 120px;
-  font-weight: bold;
+  font-weight: normal;
   width: 100%;
 
   &__inner {
@@ -33,7 +33,7 @@
     opacity: 0;
     transition: all 0.2s ease-in-out;
     transform: translateY(-15px);
-    z-index: 10;
+    z-index: 20;
 
     .choices__item {
       padding: 10px;

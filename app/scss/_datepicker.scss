@@ -3,7 +3,8 @@
   background: $accent;
 }
 
-.datepicker {
+.datepicker,
+.rangepicker {
   &-container {
     display: inline-flex;
     align-items: center;
@@ -23,6 +24,45 @@
       text-align: center;
       width: auto;
       flex: auto;
+      max-width: 120px;
+
+      &.in-edit {
+        &:focus,
+        &:active {
+          box-shadow: none;
+        }
+      }
     }
   }
+
+  &-range {
+    display: flex;
+
+    [class^="rangepicker-"] {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.datepicker-cell {
+  border-radius: 2px;
+}
+
+.datepicker-cell.range-end:not(.selected),
+.datepicker-cell.range-start:not(.selected) {
+  background-color: $accent;
+}
+
+.datepicker-cell.range {
+  background-color: lighten($accent, 40%);
+}
+
+.datepicker-cell.range:not(.disabled):not(.focused):not(.today):hover {
+  background-color: $accent-darken;
+  color: $white;
+}
+
+.datepicker-dropdown {
+  z-index: 50;
 }

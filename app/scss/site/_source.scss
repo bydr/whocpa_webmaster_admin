@@ -1,0 +1,15 @@
+.source {
+  &__panel {
+    @extend .panel;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+    .panel-body {
+      padding: 0;
+    }
+    .panel-block {
+      grid-gap: 10px 20px;
+    }
+  }
+}

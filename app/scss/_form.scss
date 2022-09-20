@@ -9,12 +9,11 @@
   &-control {
     display: inline-flex;
     align-items: center;
-    margin: 0 10px 10px 0;
+    margin: 0 0 10px 0;
     flex: 1;
     width: 100%;
 
     label {
-      @extend #text-size_default;
       font-weight: bold;
       margin-right: 10px;
       flex: 1;
@@ -109,9 +108,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    grid-gap: 20px;
-    align-items: baseline;
-    margin-bottom: 10px;
+    grid-gap: 10px;
+    align-items: flex-start;
+    margin: 0;
+
+    & + & {
+      margin-top: 10px;
+    }
+
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
     @media (max-width: $grid-breakpoints-sm) {
       flex-direction: column;
@@ -124,7 +132,7 @@
 
   &-col {
     flex: 1;
-    width: calc(50% - 20px);
+    //width: calc(50% - 20px);
   }
 
   [type="submit"] {
@@ -136,6 +144,7 @@
   position: relative;
   display: inline-flex;
   flex-wrap: nowrap;
+  width: 100%;
 
   &__w-button {
     input {

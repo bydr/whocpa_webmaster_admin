@@ -61,3 +61,90 @@
 .m-0 {
   margin: 0;
 }
+
+.flex-initial {
+  flex: initial;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-content-center {
+  align-items: center;
+}
+
+.wallet-logo {
+  width: 40px;
+}
+
+.stats-price {
+  margin: 0;
+  align-items: center;
+  display: inline-flex;
+
+  span {
+    &:nth-child(2) {
+      font-size: $fs-default;
+      margin-left: 4px;
+    }
+
+    &:first-child {
+      color: $gray-darken;
+    }
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  z-index: 2;
+
+  &__accent {
+    background-color: $accent;
+  }
+
+  &__red {
+    background-color: $red;
+  }
+
+  &__red-lighten {
+    background-color: $red-lighten;
+  }
+
+  &__blue {
+    background-color: $secondary;
+  }
+
+  &__orange-darken {
+    background-color: $orange-darken;
+  }
+
+  &__orange {
+    background-color: $orange;
+  }
+
+  &__green {
+    background-color: $green;
+  }
+}
