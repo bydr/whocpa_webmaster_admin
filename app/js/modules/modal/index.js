@@ -1,11 +1,7 @@
 import { getCurrentTarget, setGlobalImplementation } from "../helpers/utils"
-const bodyScrollLock = require("body-scroll-lock")
 
 const MODULE_NAME = "modal"
 let openedModals = []
-const disableBodyScroll = bodyScrollLock.disableBodyScroll
-const enableBodyScroll = bodyScrollLock.enableBodyScroll
-const clearAllBodyScrollLocks = bodyScrollLock.clearAllBodyScrollLocks
 
 const IS_ACTIVE_CLASS = "is-active"
 
@@ -19,8 +15,8 @@ export const hideModal = (modalElement) => {
   window.whocpa[MODULE_NAME].opened = openedModals
 
   if (openedModals.length === 0) {
-    enableBodyScroll(modalElement)
-    clearAllBodyScrollLocks()
+    // enableBodyScroll(modalElement)
+    // clearAllBodyScrollLocks()
   }
 }
 export const showModal = (modalElement) => {
@@ -30,7 +26,9 @@ export const showModal = (modalElement) => {
   openedModals = [...openedModals, modalElement.id]
   window.whocpa[MODULE_NAME].opened = openedModals
 
-  disableBodyScroll(modalElement)
+  // disableBodyScroll(modalElement, {
+  //   reserveScrollBarGap: true,
+  // })
 }
 
 const modalHideHandler = (e) => {

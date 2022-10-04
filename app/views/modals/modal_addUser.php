@@ -18,7 +18,7 @@
                     <div class="form-group form-group_row">
                         <div class="form-control form-control_view-col is-error">
                             <select name="typeUser" id="typeUser" class="js-choice custom-select"
-                                    data-searchenabled>
+                                    data-search>
                                 <option value="" disabled selected>Тип</option>
                                 <option value="typeUser1">Тип 1</option>
                                 <option value="typeUser2">Тип 2</option>

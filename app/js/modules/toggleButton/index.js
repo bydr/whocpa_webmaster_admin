@@ -10,9 +10,13 @@ const toggleHandle = (target, { cbDisable, cbActive } = {}) => {
   }
 
   if (button.dataset.toggleText) {
-    const toggleText = button.dataset.toggleText
-    button.dataset.toggleText = button.innerText
-    button.innerText = toggleText
+    const element = button.querySelector("[data-content]") || button
+
+    if (element !== undefined) {
+      const toggleText = button.dataset.toggleText
+      button.dataset.toggleText = element.innerText
+      element.innerText = toggleText
+    }
   }
 
   if (button.classList.contains("is-toggled")) {

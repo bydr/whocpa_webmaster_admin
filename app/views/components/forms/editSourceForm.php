@@ -64,7 +64,7 @@
     <div class="form-col">
       <div class="form-control">
         <label for="status">Комментарий:</label>
-        <textarea name="message" placeholder="Объяснение примерно в 50 символов печатного текста"></textarea>
+        <textarea class="textarea-element" name="message" placeholder="Объяснение примерно в 50 символов печатного текста"></textarea>
       </div>
     </div>
   </div>

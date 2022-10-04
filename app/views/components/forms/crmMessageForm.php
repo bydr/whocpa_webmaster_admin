@@ -30,7 +30,7 @@
   <div class="form-row">
     <div class="form-col">
       <div class="form-control">
-        <textarea name="message" placeholder="Ваше сообщение"></textarea>
+        <textarea class="textarea-element" name="message" placeholder="Ваше сообщение"></textarea>
       </div>
     </div>
     <div class="form-col flex-initial">

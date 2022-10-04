@@ -1,4 +1,5 @@
-<section class="pagination">
+
+<section class="pagination <?=$WITH_BORDERED ? 'pagination_bordered' : '' ?>">
     <div class="pagination-bar">
         <button class="pagination-nav pagination-nav__prev">
             <svg class="ui-icon">
@@ -19,4 +20,22 @@
             </svg>
         </button>
     </div>
+
+  <?php if ($WITH_BUTTON_ADD) : ?>
+    <button class="button button_accent" data-modal="<?=$OPEN_MODAL ?>">Добавить</button>
+  <?php endif; ?>
+
+    <?php if ($WITH_PER_PAGE) : ?>
+    <div class="form-control">
+      <label for="per_page">
+        <span class="text-size_medium c-gray-darken nowrap">Показать на странице:</span>
+      </label>
+      <select name="per_page" id="per_page" class="js-choice custom-select">
+        <option value="" disabled selected>10</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="500">500</option>
+      </select>
+    </div>
+    <?php endif; ?>
 </section>

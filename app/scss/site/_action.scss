@@ -85,14 +85,25 @@ $ACTION_SIZE: 22px;
   }
 
   &-control {
-    padding: 6px 10px;
+    padding: 10px 10px;
     border-bottom: 1px solid $gray;
     max-width: 100%;
     border-radius: 0;
     width: 100%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    align-items: center;
+
+    .ui-icon {
+      @include box(12px, 12px);
+      color: $gray-darken;
+      margin-right: 10px;
+    }
+
+    span {
+      flex: 1;
+    }
 
     &:hover {
       background-color: $gray-lighten;

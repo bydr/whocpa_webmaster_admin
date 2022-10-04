@@ -9,6 +9,18 @@
     position: absolute;
   }
 
+  &-wrapper {
+    @extend .panel_w-shadow;
+    background: $white;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+
+    .checkbox {
+      margin-bottom: 0;
+    }
+  }
+
   &-type__radio {
     .checkbox {
       &-text {
@@ -28,12 +40,12 @@
         display: -ms-flexbox;
         display: flex;
         background: $gray;
-        transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+        transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
 
         &:after {
           content: "";
           position: absolute;
-          transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+          transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
           width: 18px;
           min-width: 18px;
           height: 18px;
@@ -82,13 +94,13 @@
         min-height: 20px;
         border: 1px solid $gray;
         border-radius: 2px;
-        transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+        transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
 
         .ui-icon {
           opacity: 0;
           visibility: hidden;
           color: $white;
-          transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+          transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
           transform: scale(0);
         }
       }

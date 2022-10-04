@@ -19,7 +19,7 @@
       </div>
       <div class="form-col">
         <div class="form-control">
-          <textarea name="comment" placeholder="Комментарий менеджера"></textarea>
+          <textarea class="textarea-element" name="comment" placeholder="Комментарий менеджера"></textarea>
         </div>
       </div>
     </div>

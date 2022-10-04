@@ -1,0 +1,35 @@
+.promo {
+  @extend .tickets;
+  margin-bottom: 20px;
+
+  &__list {
+    @extend .tools__list;
+  }
+  &__panel {
+    @extend .tools__panel;
+
+    .panel {
+      &-inner {
+        p {
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: $grid-breakpoints-sm) {
+          display: grid;
+          grid-template-areas: "general header body" "footer footer footer";
+        }
+      }
+      &-side_info {
+        grid-area: footer;
+
+        .button_group-row {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+      &-block {
+        align-items: flex-start;
+      }
+    }
+  }
+}

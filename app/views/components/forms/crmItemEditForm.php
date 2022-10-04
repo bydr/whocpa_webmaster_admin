@@ -21,7 +21,7 @@
   </div>
   <div class="form-row">
     <div class="form-control">
-      <textarea name="comment" placeholder="Комментарий"></textarea>
+      <textarea class="textarea-element" name="comment" placeholder="Комментарий"></textarea>
     </div>
   </div>
   <div class="form-row">

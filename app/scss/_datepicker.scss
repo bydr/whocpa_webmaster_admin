@@ -8,6 +8,7 @@
   &-container {
     display: inline-flex;
     align-items: center;
+    color: $gray-darken;
 
     label,
     label.datepicker-label {
@@ -22,9 +23,9 @@
       padding: 0 5px;
       color: $gray-darken;
       text-align: center;
-      width: auto;
       flex: auto;
-      max-width: 120px;
+      width: 100%;
+      max-width: 110px;
 
       &.in-edit {
         &:focus,

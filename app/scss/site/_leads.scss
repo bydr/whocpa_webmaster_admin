@@ -1,0 +1,167 @@
+.form.form-leads-filter {
+  .form-leads-grid-row {
+    display: grid;
+    grid-template-areas: "offer dateCreate dateClosed toggle toggle";
+    align-items: center;
+
+    > .form-col {
+      &:nth-child(1) {
+        grid-area: offer;
+      }
+      &:nth-child(2) {
+        grid-area: dateCreate;
+      }
+      &:nth-child(3) {
+        grid-area: dateClosed;
+      }
+      &:nth-child(4) {
+        grid-area: findSource;
+      }
+      &:nth-child(5) {
+        grid-area: findClickId;
+      }
+      &:nth-child(6) {
+        grid-area: findTid;
+      }
+      &:nth-child(7) {
+        grid-area: findCrId;
+      }
+      &:nth-child(8) {
+        grid-area: timezone;
+      }
+      &:nth-child(9) {
+        grid-area: perPage;
+      }
+
+      &.col-toggled {
+        grid-area: toggle;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+  @media (max-width: $grid-breakpoints-xl) {
+    .form-leads-grid-row {
+      grid-template-areas: "offer dateCreate dateClosed" "toggle toggle toggle";
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-md) {
+    .form-leads-grid-row {
+      grid-template-areas: "offer offer" "dateCreate dateClosed" "toggle toggle";
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    .form-leads-grid-row {
+      grid-template-areas: "offer" "dateCreate" "dateClosed" "toggle";
+    }
+  }
+
+  &.is-toggled {
+    .form-leads-grid-row {
+      grid-template-areas:
+        "offer dateCreate dateClosed findSource findSource findSource"
+        "findClickId findTid findCrId timezone perPage toggle";
+    }
+
+    @media (max-width: $grid-breakpoints-xl) {
+      .form-leads-grid-row {
+        grid-template-areas:
+          "offer dateCreate dateClosed dateClosed"
+          "findSource findClickId findTid findTid"
+          "findCrId timezone perPage toggle";
+      }
+    }
+
+    @media (max-width: $grid-breakpoints-md) {
+      .form-leads-grid-row {
+        grid-template-areas:
+          "offer offer"
+          "dateCreate dateClosed"
+          "findSource findClickId"
+          "findTid findTid"
+          "findCrId timezone"
+          "perPage toggle";
+      }
+    }
+
+    @media (max-width: $grid-breakpoints-sm) {
+      .form-leads-grid-row {
+        grid-template-areas:
+          "offer offer"
+          "dateCreate dateCreate"
+          "dateClosed dateClosed"
+          "findSource findClickId"
+          "findTid findTid"
+          "findCrId timezone"
+          "perPage toggle";
+      }
+    }
+  }
+}
+
+.leads {
+  &__list {
+    margin-top: 20px;
+  }
+
+  &-controls {
+    @extend .finance-controls;
+
+    .button_group-row {
+      flex-wrap: wrap;
+      align-items: center;
+
+      .checkbox {
+        margin: 0;
+      }
+    }
+  }
+  &__panel {
+    @extend .finance__panel;
+    @extend .panel_w-shadow;
+
+    .panel {
+      &-header,
+      &-body {
+        p {
+          margin-bottom: 10px;
+
+          span {
+            margin-left: 5px;
+          }
+
+          &.stats-price {
+            flex: 1;
+            align-items: flex-end;
+
+            span {
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+
+        .panel-block {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          align-content: flex-end;
+          align-self: flex-end;
+
+          @media (max-width: $grid-breakpoints-md) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @media (max-width: $grid-breakpoints-sm) {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        .panel-col {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

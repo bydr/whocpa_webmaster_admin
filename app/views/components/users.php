@@ -1202,4 +1202,7 @@
   </div>
 </section>
 
-<?php include_once "paginationWithButton.php" ?>
+<?php
+$WITH_BUTTON_ADD = true;
+$OPEN_MODAL = "#modal-thanks";
+include_once "pagination.php" ?>

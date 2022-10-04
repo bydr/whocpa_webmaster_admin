@@ -25,6 +25,17 @@
     }
   }
 
+  &[data-type*="select-one"] {
+    .choices__button {
+      background-color: $gray-lighten;
+      opacity: 1;
+    }
+
+    .choices__input {
+      border: none;
+    }
+  }
+
   &__list--dropdown,
   &__list[aria-expanded] {
     word-break: initial;

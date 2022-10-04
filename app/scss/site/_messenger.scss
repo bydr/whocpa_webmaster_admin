@@ -4,14 +4,14 @@
   display: flex;
 
   @media (max-width: $grid-breakpoints-xl) {
-    display: grid;
     grid-template-areas: "folders folders" "dialogs detail";
     grid-template-columns: 4fr 8fr;
+    display: grid;
+  }
 
-    @media (max-width: $grid-breakpoints-sm) {
-      display: flex;
-      flex-direction: column;
-    }
+  @media (max-width: $grid-breakpoints-lg) {
+    display: flex;
+    flex-direction: column;
   }
 
   &-folder {
@@ -41,7 +41,7 @@
         overflow: auto hidden;
       }
 
-      @media (max-width: $grid-breakpoints-sm) {
+      @media (max-width: $grid-breakpoints-lg) {
         display: none;
       }
     }
@@ -82,6 +82,7 @@
     text-decoration: none;
     padding: 15px 0;
     transition: all 0.2s ease-in-out;
+    border-radius: 10px;
 
     &s {
       width: 23%;
@@ -93,7 +94,7 @@
         width: 100%;
       }
 
-      @media (max-width: $grid-breakpoints-sm) {
+      @media (max-width: $grid-breakpoints-lg) {
         display: none;
       }
     }
@@ -147,7 +148,7 @@
       height: 100%;
       grid-area: detail;
 
-      @media (max-width: $grid-breakpoints-sm) {
+      @media (max-width: $grid-breakpoints-lg) {
         padding: 10px;
         min-height: 80vh;
       }
@@ -274,10 +275,6 @@
 
   &-controls {
     padding-top: 20px;
-    textarea {
-      max-height: 100px;
-      overflow: hidden auto;
-    }
   }
 
   &-bar {
@@ -356,7 +353,7 @@
     &__responsive {
       display: none;
 
-      @media (max-width: $grid-breakpoints-sm) {
+      @media (max-width: $grid-breakpoints-lg) {
         display: flex;
       }
     }
@@ -367,6 +364,8 @@
     height: 100%;
     overflow: hidden auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .message-indicator {
@@ -378,7 +377,7 @@
     margin-left: 5px;
   }
 
-  @media (max-width: $grid-breakpoints-sm) {
+  @media (max-width: $grid-breakpoints-lg) {
     [data-tab-content] {
       position: absolute;
       z-index: 2;
@@ -390,8 +389,11 @@
       border-radius: 0 0 10px 10px;
 
       .messenger-folder__list {
-        display: block;
-        column-count: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        align-self: flex-start;
+        column-count: initial;
       }
       .messenger-folder__item {
         width: 100%;
@@ -406,7 +408,7 @@
         .messenger-folder__list {
           display: flex;
           flex-direction: column;
-          column-count: 1;
+          column-count: initial;
         }
       }
     }

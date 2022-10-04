@@ -9,42 +9,19 @@ import "./modules/tooltip"
 import "./modules/select"
 import "./modules/datepicker"
 import "./modules/toggleButton"
+import "./modules/messenger/tabs"
+import "./modules/formsSteps"
 
 document.addEventListener("DOMContentLoaded", () => {
   menuToggleInit()
 
-  if (window !== undefined && window.innerWidth < 577) {
-    const messengerTabs = [...document.querySelectorAll(".messenger-tabs .tab")]
-    for (const tab of messengerTabs) {
-      tab.addEventListener("click", () => {
-        const currentIsActive = tab.classList.contains("is-active")
+  const textareas = [...document.querySelectorAll(".textarea-element")]
 
-        messengerTabs
-          .filter((t) => t.classList.contains("is-active"))
-          .map((t) => {
-            t.classList.remove("is-active")
-            const contentTab = document.querySelector(
-              `[data-tab-content="${t.id}"]`,
-            )
-            if (!!contentTab) {
-              contentTab.classList.remove("is-active")
-            }
-          })
-
-        if (currentIsActive) {
-          return
-        }
-
-        tab.classList.add("is-active")
-
-        const contentTab = document.querySelector(
-          `[data-tab-content="${tab.id}"]`,
-        )
-        if (!!contentTab) {
-          contentTab.classList.add("is-active")
-        }
-      })
-    }
+  for (const item of textareas) {
+    item.addEventListener("input", (e) => {
+      e.currentTarget.style.height = `${e.currentTarget.scrollHeight}px`
+      e.currentTarget.classList.add("auto")
+    })
   }
 })
 

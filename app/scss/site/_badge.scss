@@ -1,0 +1,27 @@
+.badge {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5px 7px;
+
+  &-icon {
+    @include box(14px, 14px);
+    margin-right: 5px;
+  }
+  span {
+    flex: 1;
+  }
+  &_private {
+    background-color: $dark;
+    color: $white;
+  }
+  &_top {
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}

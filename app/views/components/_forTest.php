@@ -27,6 +27,26 @@ $pages = [
     [
         "title" => "Тикеты",
         "url" => "page_tickets.php"
+    ],
+    [
+        "title" => "Лиды",
+        "url" => "page_leads.php"
+    ],
+    [
+        "title" => "События",
+        "url" => "page_events.php"
+    ],
+    [
+        "title" => "Инструменты - проверка",
+        "url" => "page_toolsCheck.php"
+    ],
+    [
+        "title" => "Новости",
+        "url" => "page_news.php"
+    ],
+    [
+        "title" => "Промо",
+        "url" => "page_promo.php"
     ]
 ]
 

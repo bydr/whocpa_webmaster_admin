@@ -1,6 +1,8 @@
-import tippy from "tippy.js"
+import tippy from "../../../libs/tippy.js"
 
-tippy("[data-tippy-content]", {
+const tooltips = [...document.querySelectorAll("[data-tippy-content]")]
+
+tippy(tooltips, {
   animation: "shift-away-subtle",
   theme: "purple",
   // trigger: "click",

@@ -27,4 +27,11 @@
 <?php require_once('views/modals/modal_actionFinance.php'); ?>
 <?php require_once('views/modals/modal_sourceInfo.php'); ?>
 <?php require_once('views/modals/modal_createTicket.php'); ?>
+<?php require_once('views/modals/modal_createTaskLead.php'); ?>
+<?php require_once('views/modals/modal_createEvent.php'); ?>
+<?php require_once('views/modals/modal_createNews.php'); ?>
+<?php require_once('views/modals/modal_createNewsOffers.php'); ?>
+<?php require_once('views/modals/modal_createNewsStopOffer.php'); ?>
+<?php require_once('views/modals/modal_createNewsSystem.php'); ?>
+<?php require_once('views/modals/modal_createPromo.php'); ?>
 <?php require_once('foot.php'); ?>

@@ -24,7 +24,7 @@
     </div>
     <div class="form-col">
       <div class="form-control">
-        <select name="publisher_lvl" id="publisher_lvl" class="js-choice custom-select">
+        <select name="publisher_lvl" id="publisher_lvl" class="js-choice custom-select" data-search>
           <option value="" disabled selected>Уровень паблишера</option>
           <option value="vertical1">Уровень паблишера 1</option>
           <option value="vertical2">Уровень паблишера 2</option>
@@ -37,7 +37,7 @@
   <div class="form-row">
     <div class="form-col">
       <div class="form-control">
-        <select name="publisher" id="publisher" class="js-choice custom-select">
+        <select name="publisher" id="publisher" class="js-choice custom-select" data-search>
           <option value="" disabled selected>Паблишер</option>
           <option value="vertical1">Паблишер 1</option>
           <option value="vertical2">Паблишер 2</option>

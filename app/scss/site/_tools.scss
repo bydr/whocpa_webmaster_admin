@@ -1,0 +1,48 @@
+.tools {
+  &__list {
+  }
+
+  &__panel {
+    @extend .finance__panel;
+    @extend .panel_w-shadow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .panel {
+      &-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .checkbox {
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+
+          span {
+            margin-left: 5px;
+          }
+
+          &.stats-price {
+            flex: 1;
+            align-items: flex-end;
+
+            span {
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+      &-side_info {
+        flex: initial;
+      }
+      &-block {
+        align-items: center;
+      }
+    }
+  }
+}

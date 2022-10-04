@@ -30,6 +30,8 @@
   }
 
   &-target {
+    appearance: none;
+    font-family: inherit;
     min-width: 100px;
     display: flex;
     width: 100%;

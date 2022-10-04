@@ -8,6 +8,10 @@
     align-items: center;
     gap: 20px;
 
+    > * {
+      flex: 1;
+    }
+
     .button_group-row {
       gap: 20px;
     }
@@ -19,6 +23,7 @@
 
   &__panel {
     @extend .panel;
+    @extend .panel_w-shadow;
     font-weight: bold;
     padding-top: 20px;
     margin-bottom: 10px;
@@ -37,7 +42,6 @@
 
       &-block {
         padding: 0;
-        justify-content: space-between;
       }
 
       &-body {

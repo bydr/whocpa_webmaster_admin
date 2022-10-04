@@ -58,6 +58,10 @@
   width: 100%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -92,6 +96,8 @@
   display: inline-flex;
 
   span {
+    margin-left: 0;
+
     &:nth-child(2) {
       font-size: $fs-default;
       margin-left: 4px;
@@ -147,4 +153,24 @@
   &__green {
     background-color: $green;
   }
+}
+
+.nowrap {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+.fw-normal {
+  font-weight: normal !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 200px;
 }

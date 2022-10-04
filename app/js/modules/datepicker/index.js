@@ -9,7 +9,6 @@ const datepickers = [
 const rangepickers = [
   ...document.querySelectorAll(`[data-component="rangepicker"]`),
 ]
-console.log("datepickers ", datepickers)
 for (const datepicker of datepickers) {
   const input = datepicker.querySelector("[data-input]")
   new Datepicker(input, {

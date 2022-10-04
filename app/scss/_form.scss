@@ -55,7 +55,6 @@
     }
 
     textarea {
-      resize: vertical;
       padding-top: 10px;
     }
 
@@ -91,6 +90,8 @@
       &_row {
         flex-direction: row;
         align-items: flex-start;
+        gap: 10px;
+        grid-gap: 10px;
 
         @media (max-width: $grid-breakpoints-xs) {
           flex-direction: column;
@@ -135,8 +136,28 @@
     //width: calc(50% - 20px);
   }
 
-  [type="submit"] {
-    margin-top: 10px;
+  &_visible {
+    &-partitial {
+      .visible-toggled {
+        display: none;
+      }
+
+      &.is-toggled {
+        .visible-toggled {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &-steps {
+    [data-step] {
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+    }
   }
 }
 
@@ -164,4 +185,10 @@
       }
     }
   }
+}
+
+.textarea-element {
+  @extend .custom-scroll;
+  resize: none;
+  max-height: 150px;
 }
