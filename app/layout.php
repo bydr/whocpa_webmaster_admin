@@ -15,15 +15,15 @@
 
 
 <?php require_once('views/modals/modal_addUser.php'); ?>
-<?php require_once('views/modals/modal_ActivateAccount.php'); ?>
-<?php require_once('views/modals/modal_PasswordSendSuccess.php'); ?>
-<?php require_once('views/modals/modal_PasswordReset.php'); ?>
-<?php require_once('views/modals/modal_ApproveChangeStatusOffer.php'); ?>
-<?php require_once('views/modals/modal_SendNewProfileData.php'); ?>
+<?php require_once('views/modals/modal_activateAccount.php'); ?>
+<?php require_once('views/modals/modal_passwordSendSuccess.php'); ?>
+<?php require_once('views/modals/modal_passwordReset.php'); ?>
+<?php require_once('views/modals/modal_approveChangeStatusOffer.php'); ?>
+<?php require_once('views/modals/modal_sendNewProfileData.php'); ?>
 <?php require_once('views/modals/modal_editProfile.php'); ?>
-<?php require_once('views/modals/modal_SendNewProfileDataSuccess.php'); ?>
-<?php require_once('views/modals/modal_ApproveChangeStatusOfferSuccess.php'); ?>
-<?php require_once('views/modals/modal_CrmItemEdit.php'); ?>
+<?php require_once('views/modals/modal_sendNewProfileDataSuccess.php'); ?>
+<?php require_once('views/modals/modal_approveChangeStatusOfferSuccess.php'); ?>
+<?php require_once('views/modals/modal_crmItemEdit.php'); ?>
 <?php require_once('views/modals/modal_actionFinance.php'); ?>
 <?php require_once('views/modals/modal_sourceInfo.php'); ?>
 <?php require_once('views/modals/modal_createTicket.php'); ?>
@@ -34,4 +34,8 @@
 <?php require_once('views/modals/modal_createNewsStopOffer.php'); ?>
 <?php require_once('views/modals/modal_createNewsSystem.php'); ?>
 <?php require_once('views/modals/modal_createPromo.php'); ?>
+<?php require_once('views/modals/modal_createPurpose.php'); ?>
+<?php require_once('views/modals/modal_createSpecialCondition.php'); ?>
+<?php require_once('views/modals/modal_connectWebmaster.php'); ?>
+<?php require_once('views/modals/modal_createLanding.php'); ?>
 <?php require_once('foot.php'); ?>

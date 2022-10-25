@@ -21,14 +21,8 @@
             </div>
 
             <div class="form-row">
-              <div class="button_group button_group-row w-100 justify-center">
-                <button type="button" class="button button_accent">
-                  <svg class="ui-icon">
-                    <use xlink:href="img/_src/sprite.svg#upload"></use>
-                  </svg>
-                  <span>Добавить файл</span>
-                </button>
-              </div>
+                <?php include "views/components/fileUploader.php"?>
+
             </div>
 
             <br>

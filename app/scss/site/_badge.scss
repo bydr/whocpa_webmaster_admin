@@ -1,3 +1,13 @@
+%badge_dark {
+  background-color: $dark;
+  color: $white;
+}
+
+%badge_accent {
+  background-color: $accent;
+  color: $white;
+}
+
 .badge {
   appearance: none;
   display: inline-flex;
@@ -5,19 +15,26 @@
   justify-content: space-between;
   border-radius: 5px;
   padding: 5px 7px;
+  margin: 0 4px 4px 0;
 
   &-icon {
-    @include box(14px, 14px);
+    @include box(16px, 16px);
     margin-right: 5px;
   }
   span {
     flex: 1;
   }
   &_private {
-    background-color: $dark;
-    color: $white;
+    @extend %badge_dark;
   }
   &_top {
+    @extend %badge_accent;
+  }
+  &_accent {
+    @extend %badge_accent;
+  }
+  &_dark {
+    @extend %badge_dark;
   }
 
   &__list {

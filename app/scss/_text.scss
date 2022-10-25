@@ -1,9 +1,9 @@
 @import "_mixins/texts";
 @import "vars";
 
-@include texts("text-size_medium", $fs-medium, 110%);
-@include texts("text-size_default", $fs-default, 110%);
-@include texts("text-size_small", $fs-small, 110%);
+@include texts("text-size_medium", $fs-medium, 130%);
+@include texts("text-size_default", $fs-default, 120%);
+@include texts("text-size_small", $fs-small, 120%);
 
 .font-family_default {
   font-family: $default-font;

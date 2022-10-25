@@ -8,6 +8,13 @@
   width: 100%;
   font-size: $fs-medium;
 
+  &.panel {
+    &_gray {
+      background-color: $gray-lighten;
+      box-shadow: none;
+    }
+  }
+
   &-group {
     width: 100%;
     display: flex;
@@ -69,6 +76,10 @@
             }
           }
         }
+
+        @media (max-width: $grid-breakpoints-md) {
+          grid-row-gap: 10px;
+        }
       }
 
       &-detail {
@@ -127,6 +138,7 @@
 
   &-header {
     padding-bottom: 10px;
+    width: 100%;
 
     p {
       margin: 0;
@@ -137,11 +149,11 @@
     }
   }
   &-body {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   &_w-shadow {
-    box-shadow: 0px 10px 15px rgba(216, 12, 254, 0.03);
+    box-shadow: $boxShadowDefault;
   }
 
   &-side_info {

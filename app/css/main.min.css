@@ -370,6 +370,14 @@
   background: #1a36b6;
   color: #fff;
 }
+.button.button_light, .button_light.pagination-page, .button_light.pagination-nav.pagination-nav__next, .button_light.pagination-nav.pagination-nav__prev {
+  background: #fff;
+  color: #2e2e50;
+}
+.button.button_light:hover, .button_light.pagination-page:hover, .button_light.pagination-nav.pagination-nav__next:hover, .button_light.pagination-nav.pagination-nav__prev:hover, .button.button_light:active, .button_light.pagination-page:active, .button_light.pagination-nav.pagination-nav__next:active, .button_light.pagination-nav.pagination-nav__prev:active {
+  background: #fbf8fe;
+  color: #1f1f39;
+}
 .button span, .pagination-page span, .pagination-nav.pagination-nav__next span, .pagination-nav.pagination-nav__prev span {
   margin: 0;
 }
@@ -436,22 +444,22 @@
 #text-size_medium, .news-content, .note, .chat-entity, .profile-info__item .value, #profile-entity__item .value, .profile-payout__panel .value, .profile-offer__panel .value, .chart-legend__item, .stats-indicator__name, .datepicker-container label,
 .datepicker-container label.datepicker-label,
 .rangepicker-container label,
-.rangepicker-container label.datepicker-label, .choices[data-type*=select-multiple] input.choices__input, .text-size_medium {
+.rangepicker-container label.datepicker-label, .choices[data-type*=select-multiple] input.choices__input, .table, .text-size_medium, .offer-description__inner, .toggler-content, .tabs .tab {
   font-family: "ptsans", sans-serif;
   font-size: 0.88rem;
-  line-height: 110%;
+  line-height: 130%;
 }
 
-#text-size_default, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .text-size_default {
+#text-size_default, .offers-entities__title, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .table .table-row__head th, .text-size_default, .toggler-control {
   font-family: "ptsans", sans-serif;
   font-size: 1rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 #text-size_small, .folder-number, .folder-name, .choices__list--multiple .choices__item, .text-size_small {
   font-family: "ptsans", sans-serif;
   font-size: 0.75rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 .font-family_default {
@@ -465,22 +473,22 @@
 #text-size_medium, .news-content, .note, .chat-entity, .profile-info__item .value, #profile-entity__item .value, .profile-payout__panel .value, .profile-offer__panel .value, .chart-legend__item, .stats-indicator__name, .datepicker-container label,
 .datepicker-container label.datepicker-label,
 .rangepicker-container label,
-.rangepicker-container label.datepicker-label, .choices[data-type*=select-multiple] input.choices__input, .text-size_medium {
+.rangepicker-container label.datepicker-label, .choices[data-type*=select-multiple] input.choices__input, .table, .text-size_medium, .offer-description__inner, .toggler-content, .tabs .tab {
   font-family: "ptsans", sans-serif;
   font-size: 0.88rem;
-  line-height: 110%;
+  line-height: 130%;
 }
 
-#text-size_default, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .text-size_default {
+#text-size_default, .offers-entities__title, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .table .table-row__head th, .text-size_default, .toggler-control {
   font-family: "ptsans", sans-serif;
   font-size: 1rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 #text-size_small, .folder-number, .folder-name, .choices__list--multiple .choices__item, .text-size_small {
   font-family: "ptsans", sans-serif;
   font-size: 0.75rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 .font-family_default {
@@ -489,6 +497,12 @@
 
 .font-family_secondary {
   font-family: "jost", sans-serif;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0 0 10px 0;
 }
 
 .text-left {
@@ -505,22 +519,31 @@
   min-width: 18px;
   min-height: 18px;
 }
+.ui-icon_accent {
+  color: #d80cfe;
+}
+.ui-icon_20 {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
 
-.custom-scroll, .news-item__detail, .messenger-chat, .messenger-dialog__scrolling, .messenger-dialog__list, .messenger-folders, .note-popup .note, .textarea-element, .nav {
+.custom-scroll, .news-item__detail, .messenger-chat, .messenger-dialog__scrolling, .messenger-dialog__list, .messenger-folders, .note-popup .note, .textarea-element, .nav, .table-container {
   /* width */
   /* Track */
   /* Handle */
 }
-.custom-scroll::-webkit-scrollbar, .news-item__detail::-webkit-scrollbar, .messenger-chat::-webkit-scrollbar, .messenger-dialog__scrolling::-webkit-scrollbar, .messenger-dialog__list::-webkit-scrollbar, .messenger-folders::-webkit-scrollbar, .note-popup .note::-webkit-scrollbar, .textarea-element::-webkit-scrollbar, .nav::-webkit-scrollbar {
+.custom-scroll::-webkit-scrollbar, .news-item__detail::-webkit-scrollbar, .messenger-chat::-webkit-scrollbar, .messenger-dialog__scrolling::-webkit-scrollbar, .messenger-dialog__list::-webkit-scrollbar, .messenger-folders::-webkit-scrollbar, .note-popup .note::-webkit-scrollbar, .textarea-element::-webkit-scrollbar, .nav::-webkit-scrollbar, .table-container::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-.custom-scroll::-webkit-scrollbar-track, .news-item__detail::-webkit-scrollbar-track, .messenger-chat::-webkit-scrollbar-track, .messenger-dialog__scrolling::-webkit-scrollbar-track, .messenger-dialog__list::-webkit-scrollbar-track, .messenger-folders::-webkit-scrollbar-track, .note-popup .note::-webkit-scrollbar-track, .textarea-element::-webkit-scrollbar-track, .nav::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track, .news-item__detail::-webkit-scrollbar-track, .messenger-chat::-webkit-scrollbar-track, .messenger-dialog__scrolling::-webkit-scrollbar-track, .messenger-dialog__list::-webkit-scrollbar-track, .messenger-folders::-webkit-scrollbar-track, .note-popup .note::-webkit-scrollbar-track, .textarea-element::-webkit-scrollbar-track, .nav::-webkit-scrollbar-track, .table-container::-webkit-scrollbar-track {
   background: #fbf8fe;
   border-radius: 50px;
   width: 3px;
 }
-.custom-scroll::-webkit-scrollbar-thumb, .news-item__detail::-webkit-scrollbar-thumb, .messenger-chat::-webkit-scrollbar-thumb, .messenger-dialog__scrolling::-webkit-scrollbar-thumb, .messenger-dialog__list::-webkit-scrollbar-thumb, .messenger-folders::-webkit-scrollbar-thumb, .note-popup .note::-webkit-scrollbar-thumb, .textarea-element::-webkit-scrollbar-thumb, .nav::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb, .news-item__detail::-webkit-scrollbar-thumb, .messenger-chat::-webkit-scrollbar-thumb, .messenger-dialog__scrolling::-webkit-scrollbar-thumb, .messenger-dialog__list::-webkit-scrollbar-thumb, .messenger-folders::-webkit-scrollbar-thumb, .note-popup .note::-webkit-scrollbar-thumb, .textarea-element::-webkit-scrollbar-thumb, .nav::-webkit-scrollbar-thumb, .table-container::-webkit-scrollbar-thumb {
   background: #d80cfe;
   border-radius: 50px;
   width: 5px;
@@ -568,6 +591,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .align-content-center {
@@ -644,6 +671,14 @@
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 .text-ellipsis {
@@ -778,125 +813,66 @@
   border-bottom-left-radius: 0;
 }
 
-.modal {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-  padding: 0;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(251, 248, 254, 0.4);
-  backdrop-filter: blur(6px);
-  will-change: backdrop-filter;
+.table {
+  min-width: 100%;
+  border-spacing: 0;
+  border: none;
+  outline: none;
+  border-collapse: collapse;
+  position: relative;
+  font-weight: normal;
 }
-.modal-priority__max.is-active {
-  z-index: 9999 !important;
-}
-.modal.is-active {
-  z-index: 30;
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-.modal.is-active .modal-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.modal.is-active .modal-wrapper {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-}
-.modal-wrapper {
-  max-width: 100%;
-  width: 100%;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 15px;
-  margin-left: 240px;
-  transform: translateY(-20px) scale(1.1);
-  transition: all 0.3s ease-in-out;
-  z-index: 2;
-  overflow: hidden auto;
-  -webkit-overflow-scrolling: touch;
-}
-@media (max-width: 992px) {
-  .modal-wrapper {
-    margin-left: 0;
-  }
-}
-.modal.modal-650 .modal-content {
-  max-width: 650px;
-}
-.modal .modal-content {
+.table-container {
   width: 100%;
   position: relative;
-  max-width: 520px;
-  border-radius: 10px;
-  padding: 20px;
+  display: flex;
+  overflow: scroll auto;
+  padding-bottom: 20px;
+}
+.table colgroup {
+  border-right: 1px solid rgba(110, 110, 134, 0.4);
+}
+.table colgroup:last-of-type {
+  border-right: none;
+}
+.table tr,
+.table td,
+.table th {
   border: none;
-  z-index: 2;
-  background: #fff;
-  box-shadow: 0px 10px 15px rgba(216, 12, 254, 0.03);
-  margin-top: 100px;
-  margin-bottom: 50px;
 }
-.modal .modal-content > * {
-  width: 100%;
+.table th,
+.table td {
+  min-width: 200px;
 }
-.modal .modal-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
+.table th {
+  padding: 5px 10px;
+  font-weight: normal;
 }
-.modal .modal-close {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  transition: all 0.2s ease-in-out;
-  padding: 0;
+.table td {
+  padding: 5px 10px;
 }
-.modal .modal-close .ui-icon {
-  width: 14px;
-  height: 14px;
-  min-width: 14px;
-  min-height: 14px;
-  color: #2e2e50;
+.table tr td:first-child {
+  border-radius: 4px 0 0 4px;
 }
-.modal .modal-close:hover {
-  transform: scale(1.05);
+.table tr td:last-child {
+  border-radius: 0 4px 4px 0;
 }
-.modal .modal-close * {
-  cursor: pointer;
+.table.table-striped tbody tr:nth-of-type(even) {
+  background-color: #6e6e86;
+  color: #fff;
 }
-.modal .modal-title {
+.table .table-cell {
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
   text-align: center;
 }
-.modal .modal-title > * {
-  margin: 0 0 20px 0;
+.table .table-row__head th {
+  font-weight: bold;
+  color: #2e2e50;
+}
+.table .table-row__head .table-cell {
+  border-bottom: 1px solid rgba(110, 110, 134, 0.4);
 }
 
 *[data-component=copy] {
@@ -1015,13 +991,17 @@
   background: #fbf8fe;
 }
 
-.panel, .events__panel, .ticket-panel, .news-panel, .source__panel, .finance__panel, .tools__panel, .promo__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .sidebar-bar, .panel-filters, .users__panel {
+.panel, .events__panel, .ticket-panel, .news-panel, .source__panel, .finance__panel, .tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .sidebar-bar, .panel-filters, .users__panel {
   position: relative;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
   font-size: 0.88rem;
+}
+.panel.panel_gray, .panel_gray.events__panel, .panel_gray.ticket-panel, .panel_gray.news-panel, .panel_gray.source__panel, .panel_gray.finance__panel, .panel_gray.tools__panel, .panel_gray.promo__panel, .panel_gray.offers__panel, .panel_gray.leads__panel, .panel_gray.crm-panel, .panel_gray.profile-panel, .panel_gray.panel-stats, .panel_gray.sidebar-bar, .panel_gray.panel-filters, .panel_gray.users__panel {
+  background-color: #fbf8fe;
+  box-shadow: none;
 }
 .panel-group {
   width: 100%;
@@ -1030,7 +1010,7 @@
   flex-direction: row;
   gap: 20px;
 }
-.panel-group > .panel, .panel-group > .events__panel, .panel-group > .ticket-panel, .panel-group > .news-panel, .panel-group > .source__panel, .panel-group > .finance__panel, .panel-group > .tools__panel, .panel-group > .promo__panel, .panel-group > .leads__panel, .panel-group > .crm-panel, .panel-group > .profile-panel, .panel-group > .panel-stats, .panel-group > .sidebar-bar, .panel-group > .panel-filters, .panel-group > .users__panel {
+.panel-group > .panel, .panel-group > .events__panel, .panel-group > .ticket-panel, .panel-group > .news-panel, .panel-group > .source__panel, .panel-group > .finance__panel, .panel-group > .tools__panel, .panel-group > .promo__panel, .offers-entities__list .panel-group > .panel, .offers-entities__list .panel-group > .users__panel, .offers-entities__list .panel-group > .panel-filters, .offers-entities__list .panel-group > .sidebar-bar, .offers-entities__list .panel-group > .panel-stats, .offers-entities__list .panel-group > .profile-panel, .offers-entities__list .panel-group > .crm-panel, .offers-entities__list .panel-group > .finance__panel, .offers-entities__list .panel-group > .source__panel, .offers-entities__list .panel-group > .ticket-panel, .offers-entities__list .panel-group > .leads__panel, .offers-entities__list .panel-group > .events__panel, .offers-entities__list .panel-group > .tools__panel, .offers-entities__list .panel-group > .news-panel, .offers-entities__list .panel-group > .promo__panel, .offers-entities__list .panel-group > .offers__panel, .panel-group > .offers__panel, .panel-group > .leads__panel, .panel-group > .crm-panel, .panel-group > .profile-panel, .panel-group > .panel-stats, .panel-group > .sidebar-bar, .panel-group > .panel-filters, .panel-group > .users__panel {
   flex: 1;
   width: auto;
   display: flex;
@@ -1076,6 +1056,11 @@
 .panel-with_general .panel-inner .panel-general .checkbox {
   margin-right: 0;
 }
+@media (max-width: 768px) {
+  .panel-with_general .panel-inner {
+    grid-row-gap: 10px;
+  }
+}
 .panel-with_general .panel-detail {
   display: grid;
   grid-template-columns: 0.5fr 10fr;
@@ -1103,7 +1088,7 @@
   transition: all 0.3s ease-in-out;
   transform: scale(0.98) translateY(-20px);
 }
-.panel.is-toggled .panel-detail, .is-toggled.events__panel .panel-detail, .is-toggled.ticket-panel .panel-detail, .is-toggled.news-panel .panel-detail, .is-toggled.source__panel .panel-detail, .is-toggled.finance__panel .panel-detail, .is-toggled.tools__panel .panel-detail, .is-toggled.promo__panel .panel-detail, .is-toggled.leads__panel .panel-detail, .is-toggled.crm-panel .panel-detail, .is-toggled.profile-panel .panel-detail, .is-toggled.panel-stats .panel-detail, .is-toggled.sidebar-bar .panel-detail, .is-toggled.panel-filters .panel-detail, .is-toggled.users__panel .panel-detail {
+.panel.is-toggled .panel-detail, .is-toggled.events__panel .panel-detail, .is-toggled.ticket-panel .panel-detail, .is-toggled.news-panel .panel-detail, .is-toggled.source__panel .panel-detail, .is-toggled.finance__panel .panel-detail, .is-toggled.tools__panel .panel-detail, .is-toggled.promo__panel .panel-detail, .is-toggled.offers__panel .panel-detail, .is-toggled.leads__panel .panel-detail, .is-toggled.crm-panel .panel-detail, .is-toggled.profile-panel .panel-detail, .is-toggled.panel-stats .panel-detail, .is-toggled.sidebar-bar .panel-detail, .is-toggled.panel-filters .panel-detail, .is-toggled.users__panel .panel-detail {
   opacity: 1;
   visibility: visible;
   position: relative;
@@ -1122,6 +1107,7 @@
 }
 .panel-header {
   padding-bottom: 10px;
+  width: 100%;
 }
 .panel-header p {
   margin: 0;
@@ -1130,10 +1116,10 @@
   border-bottom: 1px solid #ccccd5;
 }
 .panel-body {
-  padding-top: 10px;
+  padding-top: 20px;
 }
-.panel_w-shadow, .events__panel, .ticket-panel, .news-panel, .finance__panel, .tools__panel, .promo__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .checkbox-wrapper {
-  box-shadow: 0px 10px 15px rgba(216, 12, 254, 0.03);
+.panel_w-shadow, .events__panel, .ticket-panel, .news-panel, .finance__panel, .tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .radio-wrapper, .checkbox-wrapper {
+  box-shadow: 0 10px 15px rgba(216, 12, 254, 0.03);
 }
 .panel-side_info {
   flex: 1;
@@ -1157,7 +1143,7 @@
 .form-control label {
   font-weight: bold;
   margin-right: 10px;
-  flex: 1;
+  flex: initial;
 }
 .form-control.form-control_view-col {
   flex-direction: column;
@@ -1166,6 +1152,10 @@
 }
 .form-control.form-control_view-col label {
   margin-bottom: 10px;
+}
+.form-control.form-control_view-col textarea,
+.form-control.form-control_view-col input {
+  width: 100%;
 }
 .form-control input,
 .form-control textarea {
@@ -1179,7 +1169,8 @@
   height: 40px;
   min-height: 40px;
   min-width: 1px;
-  width: 100%;
+  width: auto;
+  flex: 1;
 }
 .form-control input:focus,
 .form-control textarea:focus {
@@ -1197,6 +1188,19 @@
 }
 .form-control.is-error input {
   border-color: red;
+}
+@media (max-width: 576px) {
+  .form-control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-control label {
+    margin-bottom: 6px;
+  }
+  .form-control input,
+.form-control textarea {
+    width: 100%;
+  }
 }
 .form_view-row {
   flex-direction: row;
@@ -1297,7 +1301,7 @@
 
 .choices {
   color: #6e6e86;
-  font-style: 0.88rem;
+  font-size: 0.88rem;
   min-width: 120px;
   font-weight: normal;
   width: 100%;
@@ -1489,12 +1493,12 @@
   display: -ms-flexbox;
   display: flex;
   background: #ccccd5;
-  transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.38);
 }
 .checkbox-type__radio .checkbox-box:after {
   content: "";
   position: absolute;
-  transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.38);
   width: 18px;
   min-width: 18px;
   height: 18px;
@@ -1571,6 +1575,102 @@
   align-items: center;
   justify-content: center;
   padding: 0 10px;
+}
+.checkbox_panel {
+  display: flex;
+  border-radius: 10px;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 10px 15px rgba(216, 12, 254, 0.03);
+  background: #fff;
+  min-height: 40px;
+}
+
+.radio {
+  cursor: pointer;
+}
+.radio [type=radio] {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+.radio-group .radio {
+  display: flex;
+  margin-bottom: 10px;
+}
+.radio-group_col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+@media (max-width: 375px) {
+  .radio-group_col-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.radio-wrapper {
+  background: #fff;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.radio-wrapper .radio {
+  margin-bottom: 0;
+}
+.radio .radio-text {
+  font-size: 0.88rem;
+  font-weight: normal;
+  color: #6e6e86;
+  margin: 0 10px 0 0;
+}
+.radio .radio-box {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  position: relative;
+  border-radius: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+  border: 1px solid #ccccd5;
+}
+.radio .radio-box:after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  opacity: 0;
+  transform: scale(0);
+  will-change: transform;
+}
+.radio .radio-box + .radio-text {
+  margin: 0 0 0 10px;
+}
+.radio .radio-inner {
+  display: flex;
+  align-items: center;
+}
+.radio [type=radio]:checked ~ .radio-inner .radio-box {
+  background: #34c759;
+}
+.radio [type=radio]:checked ~ .radio-inner .radio-box:after {
+  transform: scale(1);
+  opacity: 1;
+}
+.radio [type=radio]:checked ~ .radio-inner .radio-text {
+  color: #2e2e50;
 }
 
 .link {
@@ -1806,6 +1906,7 @@
 .rangepicker-container label,
 .rangepicker-container label.datepicker-label {
   font-weight: normal;
+  margin-right: 10px;
 }
 .datepicker-container .datepicker-input,
 .rangepicker-container .datepicker-input {
@@ -1824,9 +1925,68 @@
 .rangepicker-container .datepicker-input.in-edit:active {
   box-shadow: none;
 }
+.datepicker-container.datepicker_view-default,
+.rangepicker-container.datepicker_view-default {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  flex: 1;
+  width: 100%;
+}
+.datepicker-container.datepicker_view-default label,
+.datepicker-container.datepicker_view-default label.datepicker-label,
+.rangepicker-container.datepicker_view-default label,
+.rangepicker-container.datepicker_view-default label.datepicker-label {
+  font-weight: bold;
+  margin-right: 10px;
+  flex: initial;
+  color: #2e2e50;
+  min-width: 100px;
+}
+.datepicker-container.datepicker_view-default input.datepicker-input,
+.rangepicker-container.datepicker_view-default input.datepicker-input {
+  background: #fff;
+  border: 1px solid #ccccd5;
+  border-radius: 10px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  min-height: 40px;
+  min-width: 1px;
+  width: 100%;
+  max-width: 100%;
+}
+.datepicker-container.is_fullwidth .datepicker-input,
+.rangepicker-container.is_fullwidth .datepicker-input {
+  max-width: initial;
+}
+@media (max-width: 576px) {
+  .datepicker-container, .datepicker-container.datepicker_view-default,
+.rangepicker-container,
+.rangepicker-container.datepicker_view-default {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .datepicker-container label, .datepicker-container.datepicker_view-default label,
+.rangepicker-container label,
+.rangepicker-container.datepicker_view-default label {
+    margin-bottom: 6px;
+  }
+  .datepicker-container input,
+.datepicker-container textarea, .datepicker-container.datepicker_view-default input,
+.datepicker-container.datepicker_view-default textarea,
+.rangepicker-container input,
+.rangepicker-container textarea,
+.rangepicker-container.datepicker_view-default input,
+.rangepicker-container.datepicker_view-default textarea {
+    width: 100%;
+  }
+}
 .datepicker-range,
 .rangepicker-range {
   display: flex;
+  gap: 10px;
 }
 .datepicker-range [class^=rangepicker-],
 .rangepicker-range [class^=rangepicker-] {
@@ -1856,6 +2016,174 @@
   z-index: 50;
 }
 
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tabs-containers {
+  width: 100%;
+}
+.tabs-container {
+  width: 100%;
+}
+.tabs-controls {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: auto hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.tabs-controls > .tab {
+  min-width: 120px;
+  flex: 1;
+}
+.tabs-controls > .tab a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.tabs-controls > .tab:first-child {
+  border-radius: 10px 0 0 0;
+  border-left: none;
+}
+.tabs-controls > .tab:last-child {
+  border-radius: 0 10px 0 0;
+  border-right: none;
+}
+.tabs .tab {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0;
+  flex: 1;
+  cursor: pointer;
+  border-right: 1px solid #ccccd5;
+  border-bottom: 1px solid #ccccd5;
+  border-bottom: 1px solid #ccccd5;
+  color: #6e6e86;
+}
+.tabs .tab a {
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px;
+}
+.tabs .tab.is-active {
+  cursor: default;
+  background-color: #d80cfe;
+  color: #fff;
+  border-color: #d80cfe;
+}
+.tabs .tab-container {
+  padding: 15px;
+}
+
+.toggler-control .ui-icon__wrapper .ui-icon:last-child, .toggler-container.is-active .ui-icon__wrapper .ui-icon:first-child {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.toggler-control .ui-icon__wrapper .ui-icon:first-child, .toggler-container.is-active .ui-icon__wrapper .ui-icon:last-child {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.toggler-container {
+  margin-bottom: 10px;
+}
+.toggler-container.is-active .toggler-control {
+  border-bottom-color: transparent;
+}
+.toggler-container.is-active .toggler-content {
+  opacity: 1;
+  border-bottom-color: #ccccd5;
+  overflow: visible;
+}
+.toggler-control {
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0;
+  border-bottom: 1px solid #ccccd5;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.toggler-control .ui-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  color: #6e6e86;
+}
+.toggler-content {
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: max-height 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 0;
+  padding: 0;
+  color: #6e6e86;
+  border-bottom: 1px solid transparent;
+}
+.toggler-content__inner {
+  width: 100%;
+}
+.toggler-content p {
+  margin: 0;
+}
+
+.dropFileForm {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  background: #fbf8fe;
+  padding: 15px;
+  width: 100%;
+}
+.dropFileForm.fileHover .fileLabel {
+  border-color: #c409e7;
+  transform: scale(1.02);
+}
+.dropFileForm .fileInput {
+  display: none;
+}
+.dropFileForm .fileLabel {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  color: #2e2e50;
+  max-width: 100%;
+  padding: 20px;
+  border: 2px dashed #ccccd5;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+.dropFileForm .fileLabelText {
+  color: #2e2e50;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dropFileForm .fileLabelText .button, .dropFileForm .fileLabelText .pagination-page, .dropFileForm .fileLabelText .pagination-nav.pagination-nav__next, .dropFileForm .fileLabelText .pagination-nav.pagination-nav__prev {
+  margin-bottom: 10px;
+}
+.dropFileForm .fileLabelText > span {
+  text-decoration: none;
+}
 .text-left {
   text-align: left !important;
 }
@@ -1870,22 +2198,31 @@
   min-width: 18px;
   min-height: 18px;
 }
+.ui-icon_accent {
+  color: #d80cfe;
+}
+.ui-icon_20 {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
 
-.custom-scroll, .news-item__detail, .messenger-chat, .messenger-dialog__scrolling, .messenger-dialog__list, .messenger-folders, .note-popup .note, .nav, .textarea-element {
+.custom-scroll, .news-item__detail, .messenger-chat, .messenger-dialog__scrolling, .messenger-dialog__list, .messenger-folders, .note-popup .note, .table-container, .nav, .textarea-element {
   /* width */
   /* Track */
   /* Handle */
 }
-.custom-scroll::-webkit-scrollbar, .news-item__detail::-webkit-scrollbar, .messenger-chat::-webkit-scrollbar, .messenger-dialog__scrolling::-webkit-scrollbar, .messenger-dialog__list::-webkit-scrollbar, .messenger-folders::-webkit-scrollbar, .note-popup .note::-webkit-scrollbar, .nav::-webkit-scrollbar, .textarea-element::-webkit-scrollbar {
+.custom-scroll::-webkit-scrollbar, .news-item__detail::-webkit-scrollbar, .messenger-chat::-webkit-scrollbar, .messenger-dialog__scrolling::-webkit-scrollbar, .messenger-dialog__list::-webkit-scrollbar, .messenger-folders::-webkit-scrollbar, .note-popup .note::-webkit-scrollbar, .table-container::-webkit-scrollbar, .nav::-webkit-scrollbar, .textarea-element::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-.custom-scroll::-webkit-scrollbar-track, .news-item__detail::-webkit-scrollbar-track, .messenger-chat::-webkit-scrollbar-track, .messenger-dialog__scrolling::-webkit-scrollbar-track, .messenger-dialog__list::-webkit-scrollbar-track, .messenger-folders::-webkit-scrollbar-track, .note-popup .note::-webkit-scrollbar-track, .nav::-webkit-scrollbar-track, .textarea-element::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track, .news-item__detail::-webkit-scrollbar-track, .messenger-chat::-webkit-scrollbar-track, .messenger-dialog__scrolling::-webkit-scrollbar-track, .messenger-dialog__list::-webkit-scrollbar-track, .messenger-folders::-webkit-scrollbar-track, .note-popup .note::-webkit-scrollbar-track, .table-container::-webkit-scrollbar-track, .nav::-webkit-scrollbar-track, .textarea-element::-webkit-scrollbar-track {
   background: #fbf8fe;
   border-radius: 50px;
   width: 3px;
 }
-.custom-scroll::-webkit-scrollbar-thumb, .news-item__detail::-webkit-scrollbar-thumb, .messenger-chat::-webkit-scrollbar-thumb, .messenger-dialog__scrolling::-webkit-scrollbar-thumb, .messenger-dialog__list::-webkit-scrollbar-thumb, .messenger-folders::-webkit-scrollbar-thumb, .note-popup .note::-webkit-scrollbar-thumb, .nav::-webkit-scrollbar-thumb, .textarea-element::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb, .news-item__detail::-webkit-scrollbar-thumb, .messenger-chat::-webkit-scrollbar-thumb, .messenger-dialog__scrolling::-webkit-scrollbar-thumb, .messenger-dialog__list::-webkit-scrollbar-thumb, .messenger-folders::-webkit-scrollbar-thumb, .note-popup .note::-webkit-scrollbar-thumb, .table-container::-webkit-scrollbar-thumb, .nav::-webkit-scrollbar-thumb, .textarea-element::-webkit-scrollbar-thumb {
   background: #d80cfe;
   border-radius: 50px;
   width: 5px;
@@ -1933,6 +2270,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .align-content-center {
@@ -2011,6 +2352,14 @@
   margin-bottom: 10px;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -2019,13 +2368,17 @@
   max-width: 200px;
 }
 
-.panel, .events__panel, .ticket-panel, .news-panel, .source__panel, .finance__panel, .tools__panel, .promo__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .sidebar-bar, .panel-filters, .users__panel {
+.panel, .events__panel, .ticket-panel, .news-panel, .source__panel, .finance__panel, .tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .sidebar-bar, .panel-filters, .users__panel {
   position: relative;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
   font-size: 0.88rem;
+}
+.panel.panel_gray, .panel_gray.events__panel, .panel_gray.ticket-panel, .panel_gray.news-panel, .panel_gray.source__panel, .panel_gray.finance__panel, .panel_gray.tools__panel, .panel_gray.promo__panel, .panel_gray.offers__panel, .panel_gray.leads__panel, .panel_gray.crm-panel, .panel_gray.profile-panel, .panel_gray.panel-stats, .panel_gray.sidebar-bar, .panel_gray.panel-filters, .panel_gray.users__panel {
+  background-color: #fbf8fe;
+  box-shadow: none;
 }
 .panel-group {
   width: 100%;
@@ -2034,7 +2387,7 @@
   flex-direction: row;
   gap: 20px;
 }
-.panel-group > .panel, .panel-group > .events__panel, .panel-group > .ticket-panel, .panel-group > .news-panel, .panel-group > .source__panel, .panel-group > .finance__panel, .panel-group > .tools__panel, .panel-group > .promo__panel, .panel-group > .leads__panel, .panel-group > .crm-panel, .panel-group > .profile-panel, .panel-group > .panel-stats, .panel-group > .sidebar-bar, .panel-group > .panel-filters, .panel-group > .users__panel {
+.panel-group > .panel, .panel-group > .events__panel, .panel-group > .ticket-panel, .panel-group > .news-panel, .panel-group > .source__panel, .panel-group > .finance__panel, .panel-group > .tools__panel, .panel-group > .promo__panel, .offers-entities__list .panel-group > .panel, .offers-entities__list .panel-group > .users__panel, .offers-entities__list .panel-group > .panel-filters, .offers-entities__list .panel-group > .sidebar-bar, .offers-entities__list .panel-group > .panel-stats, .offers-entities__list .panel-group > .profile-panel, .offers-entities__list .panel-group > .crm-panel, .offers-entities__list .panel-group > .finance__panel, .offers-entities__list .panel-group > .source__panel, .offers-entities__list .panel-group > .ticket-panel, .offers-entities__list .panel-group > .leads__panel, .offers-entities__list .panel-group > .events__panel, .offers-entities__list .panel-group > .tools__panel, .offers-entities__list .panel-group > .news-panel, .offers-entities__list .panel-group > .promo__panel, .offers-entities__list .panel-group > .offers__panel, .panel-group > .offers__panel, .panel-group > .leads__panel, .panel-group > .crm-panel, .panel-group > .profile-panel, .panel-group > .panel-stats, .panel-group > .sidebar-bar, .panel-group > .panel-filters, .panel-group > .users__panel {
   flex: 1;
   width: auto;
   display: flex;
@@ -2080,6 +2433,11 @@
 .panel-with_general .panel-inner .panel-general .checkbox {
   margin-right: 0;
 }
+@media (max-width: 768px) {
+  .panel-with_general .panel-inner {
+    grid-row-gap: 10px;
+  }
+}
 .panel-with_general .panel-detail {
   display: grid;
   grid-template-columns: 0.5fr 10fr;
@@ -2107,7 +2465,7 @@
   transition: all 0.3s ease-in-out;
   transform: scale(0.98) translateY(-20px);
 }
-.panel.is-toggled .panel-detail, .is-toggled.events__panel .panel-detail, .is-toggled.ticket-panel .panel-detail, .is-toggled.news-panel .panel-detail, .is-toggled.source__panel .panel-detail, .is-toggled.finance__panel .panel-detail, .is-toggled.tools__panel .panel-detail, .is-toggled.promo__panel .panel-detail, .is-toggled.leads__panel .panel-detail, .is-toggled.crm-panel .panel-detail, .is-toggled.profile-panel .panel-detail, .is-toggled.panel-stats .panel-detail, .is-toggled.sidebar-bar .panel-detail, .is-toggled.panel-filters .panel-detail, .is-toggled.users__panel .panel-detail {
+.panel.is-toggled .panel-detail, .is-toggled.events__panel .panel-detail, .is-toggled.ticket-panel .panel-detail, .is-toggled.news-panel .panel-detail, .is-toggled.source__panel .panel-detail, .is-toggled.finance__panel .panel-detail, .is-toggled.tools__panel .panel-detail, .is-toggled.promo__panel .panel-detail, .is-toggled.offers__panel .panel-detail, .is-toggled.leads__panel .panel-detail, .is-toggled.crm-panel .panel-detail, .is-toggled.profile-panel .panel-detail, .is-toggled.panel-stats .panel-detail, .is-toggled.sidebar-bar .panel-detail, .is-toggled.panel-filters .panel-detail, .is-toggled.users__panel .panel-detail {
   opacity: 1;
   visibility: visible;
   position: relative;
@@ -2126,6 +2484,7 @@
 }
 .panel-header {
   padding-bottom: 10px;
+  width: 100%;
 }
 .panel-header p {
   margin: 0;
@@ -2134,10 +2493,10 @@
   border-bottom: 1px solid #ccccd5;
 }
 .panel-body {
-  padding-top: 10px;
+  padding-top: 20px;
 }
-.panel_w-shadow, .events__panel, .ticket-panel, .news-panel, .finance__panel, .tools__panel, .promo__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .checkbox-wrapper {
-  box-shadow: 0px 10px 15px rgba(216, 12, 254, 0.03);
+.panel_w-shadow, .events__panel, .ticket-panel, .news-panel, .finance__panel, .tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel, .leads__panel, .crm-panel, .profile-panel, .panel-stats, .checkbox-wrapper, .radio-wrapper {
+  box-shadow: 0 10px 15px rgba(216, 12, 254, 0.03);
 }
 .panel-side_info {
   flex: 1;
@@ -2345,6 +2704,14 @@
   background: #1a36b6;
   color: #fff;
 }
+.button.button_light, .button_light.pagination-page, .button_light.pagination-nav.pagination-nav__next, .button_light.pagination-nav.pagination-nav__prev {
+  background: #fff;
+  color: #2e2e50;
+}
+.button.button_light:hover, .button_light.pagination-page:hover, .button_light.pagination-nav.pagination-nav__next:hover, .button_light.pagination-nav.pagination-nav__prev:hover, .button.button_light:active, .button_light.pagination-page:active, .button_light.pagination-nav.pagination-nav__next:active, .button_light.pagination-nav.pagination-nav__prev:active {
+  background: #fbf8fe;
+  color: #1f1f39;
+}
 .button span, .pagination-page span, .pagination-nav.pagination-nav__next span, .pagination-nav.pagination-nav__prev span {
   margin: 0;
 }
@@ -2395,6 +2762,31 @@
   border: 1px solid #6e6e86;
 }
 
+.flag {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  margin-right: 10px;
+}
+.flag img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-position: left center;
+  object-fit: contain;
+}
+
+.badge_dark, .badge_private {
+  background-color: #2e2e50;
+  color: #fff;
+}
+
+.badge_accent, .badge_top {
+  background-color: #d80cfe;
+  color: #fff;
+}
+
 .badge {
   appearance: none;
   display: inline-flex;
@@ -2402,20 +2794,17 @@
   justify-content: space-between;
   border-radius: 5px;
   padding: 5px 7px;
+  margin: 0 4px 4px 0;
 }
 .badge-icon {
-  width: 14px;
-  height: 14px;
-  min-width: 14px;
-  min-height: 14px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   margin-right: 5px;
 }
 .badge span {
   flex: 1;
-}
-.badge_private {
-  background-color: #2e2e50;
-  color: #fff;
 }
 .badge__list {
   display: inline-flex;
@@ -2531,6 +2920,7 @@
   left: 50%;
   top: 100%;
   margin-top: 5px;
+  overflow: hidden;
 }
 .action-list li {
   padding: 0;
@@ -2549,7 +2939,7 @@
   border-radius: 0;
   width: 100%;
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
@@ -2785,25 +3175,25 @@
   }
 }
 
-#text-size_medium, .news-content, .note, .chat-entity, .profile-info__item .value, #profile-entity__item .value, .profile-payout__panel .value, .profile-offer__panel .value, .chart-legend__item, .stats-indicator__name, .text-size_medium, .choices[data-type*=select-multiple] input.choices__input, .datepicker-container label,
+#text-size_medium, .news-content, .note, .chat-entity, .profile-info__item .value, #profile-entity__item .value, .profile-payout__panel .value, .profile-offer__panel .value, .chart-legend__item, .stats-indicator__name, .text-size_medium, .offer-description__inner, .table, .choices[data-type*=select-multiple] input.choices__input, .datepicker-container label,
 .datepicker-container label.datepicker-label,
 .rangepicker-container label,
-.rangepicker-container label.datepicker-label {
+.rangepicker-container label.datepicker-label, .tabs .tab, .toggler-content {
   font-family: "ptsans", sans-serif;
   font-size: 0.88rem;
-  line-height: 110%;
+  line-height: 130%;
 }
 
-#text-size_default, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .text-size_default {
+#text-size_default, .offers-entities__title, .ticket-webmaster, .messenger-dialog .dialog-name, .profile-info__total .title, .profile-info__item .title, .text-size_default, .table .table-row__head th, .toggler-control {
   font-family: "ptsans", sans-serif;
   font-size: 1rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 #text-size_small, .folder-number, .folder-name, .text-size_small, .choices__list--multiple .choices__item {
   font-family: "ptsans", sans-serif;
   font-size: 0.75rem;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 .font-family_default {
@@ -3107,7 +3497,10 @@
 .profile-filters .form {
   width: auto;
   flex: 1;
-  align-items: center;
+  align-items: flex-start;
+}
+.profile-filters .form .tooltip {
+  min-height: 40px;
 }
 @media (max-width: 992px) {
   .profile-filters {
@@ -3416,14 +3809,9 @@
 .messenger {
   position: relative;
   width: 100%;
-  display: flex;
-}
-@media (max-width: 1200px) {
-  .messenger {
-    grid-template-areas: "folders folders" "dialogs detail";
-    grid-template-columns: 4fr 8fr;
-    display: grid;
-  }
+  grid-template-areas: "folders folders" "dialogs detail";
+  grid-template-columns: 2fr 8fr;
+  display: grid;
 }
 @media (max-width: 992px) {
   .messenger {
@@ -3432,30 +3820,18 @@
   }
 }
 .messenger-folders {
-  width: 12%;
   padding: 10px;
   border-right: 1px solid #ccccd5;
-  height: 100%;
-  overflow: hidden auto;
   -webkit-overflow-scrolling: touch;
   grid-area: folders;
+  width: 100%;
+  height: auto;
+  border-right: none;
+  border-bottom: 1px solid #ccccd5;
+  overflow: auto hidden;
 }
 .messenger-folders::-webkit-scrollbar-thumb {
   background: #b0b0b9;
-}
-@media (max-width: 1400px) {
-  .messenger-folders {
-    width: 20%;
-  }
-}
-@media (max-width: 1200px) {
-  .messenger-folders {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #ccccd5;
-    overflow: auto hidden;
-  }
 }
 @media (max-width: 992px) {
   .messenger-folders {
@@ -3466,14 +3842,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
-@media (max-width: 1200px) {
-  .messenger-folder__list {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
 }
 .messenger-folder__item {
   padding: 0;
@@ -3500,15 +3872,10 @@
   border-radius: 10px;
 }
 .messenger-dialogs {
-  width: 23%;
   padding: 20px 0;
-  height: 100%;
+  height: 100vh;
   grid-area: dialogs;
-}
-@media (max-width: 1200px) {
-  .messenger-dialogs {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media (max-width: 992px) {
   .messenger-dialogs {
@@ -3550,7 +3917,7 @@
   flex: 1;
   width: 100%;
   padding: 20px;
-  height: 100%;
+  height: 100vh;
   grid-area: detail;
 }
 @media (max-width: 992px) {
@@ -3566,7 +3933,7 @@
   list-style: none;
   overflow: hidden auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
+  height: 100vh;
 }
 .messenger-dialog__list::-webkit-scrollbar-thumb {
   background: #b0b0b9;
@@ -3580,7 +3947,7 @@
   flex-direction: column;
   width: 100%;
 }
-.messenger-dialog__container .panel, .messenger-dialog__container .events__panel, .messenger-dialog__container .ticket-panel, .messenger-dialog__container .news-panel, .messenger-dialog__container .source__panel, .messenger-dialog__container .finance__panel, .messenger-dialog__container .tools__panel, .messenger-dialog__container .promo__panel, .messenger-dialog__container .leads__panel, .messenger-dialog__container .crm-panel, .messenger-dialog__container .users__panel, .messenger-dialog__container .panel-filters, .messenger-dialog__container .sidebar-bar, .messenger-dialog__container .panel-stats, .messenger-dialog__container .profile-panel {
+.messenger-dialog__container .panel, .messenger-dialog__container .events__panel, .messenger-dialog__container .ticket-panel, .messenger-dialog__container .news-panel, .messenger-dialog__container .source__panel, .messenger-dialog__container .finance__panel, .messenger-dialog__container .tools__panel, .messenger-dialog__container .promo__panel, .messenger-dialog__container .offers__panel, .messenger-dialog__container .leads__panel, .messenger-dialog__container .crm-panel, .messenger-dialog__container .users__panel, .messenger-dialog__container .panel-filters, .messenger-dialog__container .sidebar-bar, .messenger-dialog__container .panel-stats, .messenger-dialog__container .profile-panel {
   padding: 0;
   background-color: transparent;
   box-shadow: none;
@@ -3808,7 +4175,6 @@
 }
 
 .crm {
-  height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -3821,14 +4187,6 @@
   padding: 0;
   flex: 1;
   height: 80%;
-}
-.crm-panel .messenger {
-  height: 100%;
-}
-@media (max-width: 1200px) {
-  .crm-panel .messenger {
-    height: auto;
-  }
 }
 @media (max-width: 1200px) {
   .crm-panel {
@@ -3863,44 +4221,44 @@
 .finance__list {
   margin-top: 20px;
 }
-.finance-controls, .leads-controls {
+.finance-controls, .leads-controls, .offers-controls {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.finance-controls > *, .leads-controls > * {
+.finance-controls > *, .leads-controls > *, .offers-controls > * {
   flex: 1;
 }
-.finance-controls .button_group-row, .leads-controls .button_group-row {
+.finance-controls .button_group-row, .leads-controls .button_group-row, .offers-controls .button_group-row {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .finance-controls, .leads-controls {
+  .finance-controls, .leads-controls, .offers-controls {
     flex-direction: column;
   }
 }
-.finance__panel, .tools__panel, .promo__panel, .leads__panel {
+.finance__panel, .tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel, .leads__panel {
   font-weight: bold;
   padding-top: 20px;
   margin-bottom: 10px;
 }
-.finance__panel .panel-header p, .tools__panel .panel-header p, .promo__panel .panel-header p, .leads__panel .panel-header p {
+.finance__panel .panel-header p, .tools__panel .panel-header p, .promo__panel .panel-header p, .offers-entities__list .panel .panel-header p, .offers-entities__list .users__panel .panel-header p, .offers-entities__list .panel-filters .panel-header p, .offers-entities__list .sidebar-bar .panel-header p, .offers-entities__list .panel-stats .panel-header p, .offers-entities__list .profile-panel .panel-header p, .offers-entities__list .crm-panel .panel-header p, .offers-entities__list .source__panel .panel-header p, .offers-entities__list .ticket-panel .panel-header p, .offers-entities__list .events__panel .panel-header p, .offers-entities__list .news-panel .panel-header p, .offers__panel .panel-header p, .leads__panel .panel-header p {
   margin-right: 20px;
 }
-.finance__panel .panel-header p span:nth-child(2), .tools__panel .panel-header p span:nth-child(2), .promo__panel .panel-header p span:nth-child(2), .leads__panel .panel-header p span:nth-child(2) {
+.finance__panel .panel-header p span:nth-child(2), .tools__panel .panel-header p span:nth-child(2), .promo__panel .panel-header p span:nth-child(2), .offers-entities__list .panel .panel-header p span:nth-child(2), .offers-entities__list .users__panel .panel-header p span:nth-child(2), .offers-entities__list .panel-filters .panel-header p span:nth-child(2), .offers-entities__list .sidebar-bar .panel-header p span:nth-child(2), .offers-entities__list .panel-stats .panel-header p span:nth-child(2), .offers-entities__list .profile-panel .panel-header p span:nth-child(2), .offers-entities__list .crm-panel .panel-header p span:nth-child(2), .offers-entities__list .source__panel .panel-header p span:nth-child(2), .offers-entities__list .ticket-panel .panel-header p span:nth-child(2), .offers-entities__list .events__panel .panel-header p span:nth-child(2), .offers-entities__list .news-panel .panel-header p span:nth-child(2), .offers__panel .panel-header p span:nth-child(2), .leads__panel .panel-header p span:nth-child(2) {
   color: #6e6e86;
   margin-left: 4px;
 }
-.finance__panel .panel-block, .tools__panel .panel-block, .promo__panel .panel-block, .leads__panel .panel-block {
+.finance__panel .panel-block, .tools__panel .panel-block, .promo__panel .panel-block, .offers-entities__list .panel .panel-block, .offers-entities__list .users__panel .panel-block, .offers-entities__list .panel-filters .panel-block, .offers-entities__list .sidebar-bar .panel-block, .offers-entities__list .panel-stats .panel-block, .offers-entities__list .profile-panel .panel-block, .offers-entities__list .crm-panel .panel-block, .offers-entities__list .source__panel .panel-block, .offers-entities__list .ticket-panel .panel-block, .offers-entities__list .events__panel .panel-block, .offers-entities__list .news-panel .panel-block, .offers__panel .panel-block, .leads__panel .panel-block {
   padding: 0;
 }
-.finance__panel .panel-body, .tools__panel .panel-body, .promo__panel .panel-body, .leads__panel .panel-body {
+.finance__panel .panel-body, .tools__panel .panel-body, .promo__panel .panel-body, .offers-entities__list .panel .panel-body, .offers-entities__list .users__panel .panel-body, .offers-entities__list .panel-filters .panel-body, .offers-entities__list .sidebar-bar .panel-body, .offers-entities__list .panel-stats .panel-body, .offers-entities__list .profile-panel .panel-body, .offers-entities__list .crm-panel .panel-body, .offers-entities__list .source__panel .panel-body, .offers-entities__list .ticket-panel .panel-body, .offers-entities__list .events__panel .panel-body, .offers-entities__list .news-panel .panel-body, .offers__panel .panel-body, .leads__panel .panel-body {
   padding: 0;
 }
-.finance__panel .panel-body .panel-row, .tools__panel .panel-body .panel-row, .promo__panel .panel-body .panel-row, .leads__panel .panel-body .panel-row {
+.finance__panel .panel-body .panel-row, .tools__panel .panel-body .panel-row, .promo__panel .panel-body .panel-row, .offers-entities__list .panel .panel-body .panel-row, .offers-entities__list .users__panel .panel-body .panel-row, .offers-entities__list .panel-filters .panel-body .panel-row, .offers-entities__list .sidebar-bar .panel-body .panel-row, .offers-entities__list .panel-stats .panel-body .panel-row, .offers-entities__list .profile-panel .panel-body .panel-row, .offers-entities__list .crm-panel .panel-body .panel-row, .offers-entities__list .source__panel .panel-body .panel-row, .offers-entities__list .ticket-panel .panel-body .panel-row, .offers-entities__list .events__panel .panel-body .panel-row, .offers-entities__list .news-panel .panel-body .panel-row, .offers__panel .panel-body .panel-row, .leads__panel .panel-body .panel-row {
   gap: 20px;
 }
-.finance__panel .panel-body .panel-block, .tools__panel .panel-body .panel-block, .promo__panel .panel-body .panel-block, .leads__panel .panel-body .panel-block {
+.finance__panel .panel-body .panel-block, .tools__panel .panel-body .panel-block, .promo__panel .panel-body .panel-block, .offers-entities__list .panel .panel-body .panel-block, .offers-entities__list .users__panel .panel-body .panel-block, .offers-entities__list .panel-filters .panel-body .panel-block, .offers-entities__list .sidebar-bar .panel-body .panel-block, .offers-entities__list .panel-stats .panel-body .panel-block, .offers-entities__list .profile-panel .panel-body .panel-block, .offers-entities__list .crm-panel .panel-body .panel-block, .offers-entities__list .source__panel .panel-body .panel-block, .offers-entities__list .ticket-panel .panel-body .panel-block, .offers-entities__list .events__panel .panel-body .panel-block, .offers-entities__list .news-panel .panel-body .panel-block, .offers__panel .panel-body .panel-block, .leads__panel .panel-body .panel-block {
   border-top: 1px solid #ccccd5;
   padding-top: 10px;
 }
@@ -3995,14 +4353,6 @@
   background-color: transparent;
   padding: 0;
 }
-.ticket-panel .messenger, .news-panel .messenger {
-  height: 100%;
-}
-@media (max-width: 1200px) {
-  .ticket-panel .messenger, .news-panel .messenger {
-    height: auto;
-  }
-}
 .ticket-panel .messenger-dialog__scrolling, .news-panel .messenger-dialog__scrolling {
   padding: 0;
   background: #fbf8fe;
@@ -4017,16 +4367,6 @@
   top: 0;
   height: 100px;
   background: linear-gradient(0deg, rgba(251, 248, 254, 0) 0%, #fbf8fe 100%);
-}
-@media (max-width: 992px) {
-  .ticket-panel .messenger-dialog__scrolling, .news-panel .messenger-dialog__scrolling {
-    max-height: 70vh;
-  }
-}
-@media (max-width: 768px) {
-  .ticket-panel .messenger-dialog__scrolling, .news-panel .messenger-dialog__scrolling {
-    max-height: 60vh;
-  }
 }
 @media (max-width: 576px) {
   .ticket-panel .messenger-write .form-row, .news-panel .messenger-write .form-row {
@@ -4049,13 +4389,12 @@
   }
 }
 
-.tickets, .promo, .news {
-  height: 90vh;
+.tickets, .promo, .offers, .news {
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 1200px) {
-  .tickets, .promo, .news {
+  .tickets, .promo, .offers, .news {
     height: auto;
   }
 }
@@ -4134,11 +4473,11 @@
 .leads__list {
   margin-top: 20px;
 }
-.leads-controls .button_group-row {
+.leads-controls .button_group-row, .offers-controls .button_group-row {
   flex-wrap: wrap;
   align-items: center;
 }
-.leads-controls .button_group-row .checkbox {
+.leads-controls .button_group-row .checkbox, .offers-controls .button_group-row .checkbox {
   margin: 0;
 }
 .leads__panel .panel-header p, .leads__panel .panel-body p {
@@ -4242,35 +4581,35 @@
   margin-left: 0;
 }
 
-.tools__panel, .promo__panel {
+.tools__panel, .promo__panel, .offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel, .offers__panel {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.tools__panel .panel-inner, .promo__panel .panel-inner {
+.tools__panel .panel-inner, .promo__panel .panel-inner, .offers-entities__list .panel .panel-inner, .offers-entities__list .users__panel .panel-inner, .offers-entities__list .panel-filters .panel-inner, .offers-entities__list .sidebar-bar .panel-inner, .offers-entities__list .panel-stats .panel-inner, .offers-entities__list .profile-panel .panel-inner, .offers-entities__list .crm-panel .panel-inner, .offers-entities__list .finance__panel .panel-inner, .offers-entities__list .source__panel .panel-inner, .offers-entities__list .ticket-panel .panel-inner, .offers-entities__list .leads__panel .panel-inner, .offers-entities__list .events__panel .panel-inner, .offers-entities__list .news-panel .panel-inner, .offers__panel .panel-inner {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.tools__panel .panel-inner .checkbox, .promo__panel .panel-inner .checkbox {
+.tools__panel .panel-inner .checkbox, .promo__panel .panel-inner .checkbox, .offers-entities__list .panel .panel-inner .checkbox, .offers-entities__list .users__panel .panel-inner .checkbox, .offers-entities__list .panel-filters .panel-inner .checkbox, .offers-entities__list .sidebar-bar .panel-inner .checkbox, .offers-entities__list .panel-stats .panel-inner .checkbox, .offers-entities__list .profile-panel .panel-inner .checkbox, .offers-entities__list .crm-panel .panel-inner .checkbox, .offers-entities__list .finance__panel .panel-inner .checkbox, .offers-entities__list .source__panel .panel-inner .checkbox, .offers-entities__list .ticket-panel .panel-inner .checkbox, .offers-entities__list .leads__panel .panel-inner .checkbox, .offers-entities__list .events__panel .panel-inner .checkbox, .offers-entities__list .news-panel .panel-inner .checkbox, .offers__panel .panel-inner .checkbox {
   margin-bottom: 0;
 }
-.tools__panel .panel-inner p, .promo__panel .panel-inner p {
+.tools__panel .panel-inner p, .promo__panel .panel-inner p, .offers-entities__list .panel .panel-inner p, .offers-entities__list .users__panel .panel-inner p, .offers-entities__list .panel-filters .panel-inner p, .offers-entities__list .sidebar-bar .panel-inner p, .offers-entities__list .panel-stats .panel-inner p, .offers-entities__list .profile-panel .panel-inner p, .offers-entities__list .crm-panel .panel-inner p, .offers-entities__list .finance__panel .panel-inner p, .offers-entities__list .source__panel .panel-inner p, .offers-entities__list .ticket-panel .panel-inner p, .offers-entities__list .leads__panel .panel-inner p, .offers-entities__list .events__panel .panel-inner p, .offers-entities__list .news-panel .panel-inner p, .offers__panel .panel-inner p {
   margin-bottom: 0;
 }
-.tools__panel .panel-inner p span, .promo__panel .panel-inner p span {
+.tools__panel .panel-inner p span, .promo__panel .panel-inner p span, .offers-entities__list .panel .panel-inner p span, .offers-entities__list .users__panel .panel-inner p span, .offers-entities__list .panel-filters .panel-inner p span, .offers-entities__list .sidebar-bar .panel-inner p span, .offers-entities__list .panel-stats .panel-inner p span, .offers-entities__list .profile-panel .panel-inner p span, .offers-entities__list .crm-panel .panel-inner p span, .offers-entities__list .finance__panel .panel-inner p span, .offers-entities__list .source__panel .panel-inner p span, .offers-entities__list .ticket-panel .panel-inner p span, .offers-entities__list .leads__panel .panel-inner p span, .offers-entities__list .events__panel .panel-inner p span, .offers-entities__list .news-panel .panel-inner p span, .offers__panel .panel-inner p span {
   margin-left: 5px;
 }
-.tools__panel .panel-inner p.stats-price, .promo__panel .panel-inner p.stats-price {
+.tools__panel .panel-inner p.stats-price, .promo__panel .panel-inner p.stats-price, .offers-entities__list .panel .panel-inner p.stats-price, .offers-entities__list .users__panel .panel-inner p.stats-price, .offers-entities__list .panel-filters .panel-inner p.stats-price, .offers-entities__list .sidebar-bar .panel-inner p.stats-price, .offers-entities__list .panel-stats .panel-inner p.stats-price, .offers-entities__list .profile-panel .panel-inner p.stats-price, .offers-entities__list .crm-panel .panel-inner p.stats-price, .offers-entities__list .finance__panel .panel-inner p.stats-price, .offers-entities__list .source__panel .panel-inner p.stats-price, .offers-entities__list .ticket-panel .panel-inner p.stats-price, .offers-entities__list .leads__panel .panel-inner p.stats-price, .offers-entities__list .events__panel .panel-inner p.stats-price, .offers-entities__list .news-panel .panel-inner p.stats-price, .offers__panel .panel-inner p.stats-price {
   flex: 1;
   align-items: flex-end;
 }
-.tools__panel .panel-inner p.stats-price span:first-child, .promo__panel .panel-inner p.stats-price span:first-child {
+.tools__panel .panel-inner p.stats-price span:first-child, .promo__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .panel .panel-inner p.stats-price span:first-child, .offers-entities__list .users__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .panel-filters .panel-inner p.stats-price span:first-child, .offers-entities__list .sidebar-bar .panel-inner p.stats-price span:first-child, .offers-entities__list .panel-stats .panel-inner p.stats-price span:first-child, .offers-entities__list .profile-panel .panel-inner p.stats-price span:first-child, .offers-entities__list .crm-panel .panel-inner p.stats-price span:first-child, .offers-entities__list .finance__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .source__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .ticket-panel .panel-inner p.stats-price span:first-child, .offers-entities__list .leads__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .events__panel .panel-inner p.stats-price span:first-child, .offers-entities__list .news-panel .panel-inner p.stats-price span:first-child, .offers__panel .panel-inner p.stats-price span:first-child {
   margin-left: 0;
 }
-.tools__panel .panel-side_info, .promo__panel .panel-side_info {
+.tools__panel .panel-side_info, .promo__panel .panel-side_info, .offers-entities__list .panel .panel-side_info, .offers-entities__list .users__panel .panel-side_info, .offers-entities__list .panel-filters .panel-side_info, .offers-entities__list .sidebar-bar .panel-side_info, .offers-entities__list .panel-stats .panel-side_info, .offers-entities__list .profile-panel .panel-side_info, .offers-entities__list .crm-panel .panel-side_info, .offers-entities__list .finance__panel .panel-side_info, .offers-entities__list .source__panel .panel-side_info, .offers-entities__list .ticket-panel .panel-side_info, .offers-entities__list .leads__panel .panel-side_info, .offers-entities__list .events__panel .panel-side_info, .offers-entities__list .news-panel .panel-side_info, .offers__panel .panel-side_info {
   flex: initial;
 }
-.tools__panel .panel-block, .promo__panel .panel-block {
+.tools__panel .panel-block, .promo__panel .panel-block, .offers-entities__list .panel .panel-block, .offers-entities__list .users__panel .panel-block, .offers-entities__list .panel-filters .panel-block, .offers-entities__list .sidebar-bar .panel-block, .offers-entities__list .panel-stats .panel-block, .offers-entities__list .profile-panel .panel-block, .offers-entities__list .crm-panel .panel-block, .offers-entities__list .finance__panel .panel-block, .offers-entities__list .source__panel .panel-block, .offers-entities__list .ticket-panel .panel-block, .offers-entities__list .leads__panel .panel-block, .offers-entities__list .events__panel .panel-block, .offers-entities__list .news-panel .panel-block, .offers__panel .panel-block {
   align-items: center;
 }
 
@@ -4308,27 +4647,319 @@
   line-height: 150%;
 }
 
-.promo {
+.promo, .offers {
   margin-bottom: 20px;
 }
-.promo__panel .panel-inner p {
+.promo__panel .panel-inner p, .offers-entities__list .panel .panel-inner p, .offers-entities__list .users__panel .panel-inner p, .offers-entities__list .panel-filters .panel-inner p, .offers-entities__list .sidebar-bar .panel-inner p, .offers-entities__list .panel-stats .panel-inner p, .offers-entities__list .profile-panel .panel-inner p, .offers-entities__list .crm-panel .panel-inner p, .offers-entities__list .finance__panel .panel-inner p, .offers-entities__list .source__panel .panel-inner p, .offers-entities__list .ticket-panel .panel-inner p, .offers-entities__list .leads__panel .panel-inner p, .offers-entities__list .events__panel .panel-inner p, .offers-entities__list .tools__panel .panel-inner p, .offers-entities__list .news-panel .panel-inner p, .offers__panel .panel-inner p {
   margin-bottom: 10px;
 }
 @media (max-width: 576px) {
-  .promo__panel .panel-inner {
+  .promo__panel .panel-inner, .offers-entities__list .panel .panel-inner, .offers-entities__list .users__panel .panel-inner, .offers-entities__list .panel-filters .panel-inner, .offers-entities__list .sidebar-bar .panel-inner, .offers-entities__list .panel-stats .panel-inner, .offers-entities__list .profile-panel .panel-inner, .offers-entities__list .crm-panel .panel-inner, .offers-entities__list .finance__panel .panel-inner, .offers-entities__list .source__panel .panel-inner, .offers-entities__list .ticket-panel .panel-inner, .offers-entities__list .leads__panel .panel-inner, .offers-entities__list .events__panel .panel-inner, .offers-entities__list .tools__panel .panel-inner, .offers-entities__list .news-panel .panel-inner, .offers__panel .panel-inner {
     display: grid;
     grid-template-areas: "general header body" "footer footer footer";
   }
 }
-.promo__panel .panel-side_info {
+.promo__panel .panel-side_info, .offers-entities__list .panel .panel-side_info, .offers-entities__list .users__panel .panel-side_info, .offers-entities__list .panel-filters .panel-side_info, .offers-entities__list .sidebar-bar .panel-side_info, .offers-entities__list .panel-stats .panel-side_info, .offers-entities__list .profile-panel .panel-side_info, .offers-entities__list .crm-panel .panel-side_info, .offers-entities__list .finance__panel .panel-side_info, .offers-entities__list .source__panel .panel-side_info, .offers-entities__list .ticket-panel .panel-side_info, .offers-entities__list .leads__panel .panel-side_info, .offers-entities__list .events__panel .panel-side_info, .offers-entities__list .tools__panel .panel-side_info, .offers-entities__list .news-panel .panel-side_info, .offers__panel .panel-side_info {
   grid-area: footer;
 }
-.promo__panel .panel-side_info .button_group-row {
+.promo__panel .panel-side_info .button_group-row, .offers-entities__list .panel .panel-side_info .button_group-row, .offers-entities__list .users__panel .panel-side_info .button_group-row, .offers-entities__list .panel-filters .panel-side_info .button_group-row, .offers-entities__list .sidebar-bar .panel-side_info .button_group-row, .offers-entities__list .panel-stats .panel-side_info .button_group-row, .offers-entities__list .profile-panel .panel-side_info .button_group-row, .offers-entities__list .crm-panel .panel-side_info .button_group-row, .offers-entities__list .finance__panel .panel-side_info .button_group-row, .offers-entities__list .source__panel .panel-side_info .button_group-row, .offers-entities__list .ticket-panel .panel-side_info .button_group-row, .offers-entities__list .leads__panel .panel-side_info .button_group-row, .offers-entities__list .events__panel .panel-side_info .button_group-row, .offers-entities__list .tools__panel .panel-side_info .button_group-row, .offers-entities__list .news-panel .panel-side_info .button_group-row, .offers__panel .panel-side_info .button_group-row {
   width: 100%;
   justify-content: space-between;
 }
-.promo__panel .panel-block {
+.promo__panel .panel-block, .offers-entities__list .panel .panel-block, .offers-entities__list .users__panel .panel-block, .offers-entities__list .panel-filters .panel-block, .offers-entities__list .sidebar-bar .panel-block, .offers-entities__list .panel-stats .panel-block, .offers-entities__list .profile-panel .panel-block, .offers-entities__list .crm-panel .panel-block, .offers-entities__list .finance__panel .panel-block, .offers-entities__list .source__panel .panel-block, .offers-entities__list .ticket-panel .panel-block, .offers-entities__list .leads__panel .panel-block, .offers-entities__list .events__panel .panel-block, .offers-entities__list .tools__panel .panel-block, .offers-entities__list .news-panel .panel-block, .offers__panel .panel-block {
   align-items: flex-start;
+}
+
+#text-size_medium, .text-size_medium, .offer-description__inner, .table, .choices[data-type*=select-multiple] input.choices__input, .datepicker-container label,
+.datepicker-container label.datepicker-label,
+.rangepicker-container label,
+.rangepicker-container label.datepicker-label, .tabs .tab, .toggler-content, .stats-indicator__name, .chart-legend__item, #profile-entity__item .value, .profile-info__item .value, .profile-offer__panel .value, .profile-payout__panel .value, .chat-entity, .note, .news-content {
+  font-family: "ptsans", sans-serif;
+  font-size: 0.88rem;
+  line-height: 130%;
+}
+
+#text-size_default, .offers-entities__title, .text-size_default, .table .table-row__head th, .toggler-control, .profile-info__item .title, .profile-info__total .title, .messenger-dialog .dialog-name, .ticket-webmaster {
+  font-family: "ptsans", sans-serif;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+#text-size_small, .text-size_small, .choices__list--multiple .choices__item, .folder-name, .folder-number {
+  font-family: "ptsans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+.font-family_default {
+  font-family: "ptsans", sans-serif;
+}
+
+.font-family_secondary {
+  font-family: "jost", sans-serif;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0 0 10px 0;
+}
+
+.offers__list {
+  margin-top: 20px;
+}
+.offers-entities {
+  width: 100%;
+}
+.offers-entities__container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.offers-entities__container:last-of-type {
+  margin-bottom: 0;
+}
+.offers-entities__container:last-of-type .panel:last-child, .offers-entities__container:last-of-type .users__panel:last-child, .offers-entities__container:last-of-type .panel-filters:last-child, .offers-entities__container:last-of-type .sidebar-bar:last-child, .offers-entities__container:last-of-type .panel-stats:last-child, .offers-entities__container:last-of-type .profile-panel:last-child, .offers-entities__container:last-of-type .crm-panel:last-child, .offers-entities__container:last-of-type .finance__panel:last-child, .offers-entities__container:last-of-type .source__panel:last-child, .offers-entities__container:last-of-type .ticket-panel:last-child, .offers-entities__container:last-of-type .leads__panel:last-child, .offers-entities__container:last-of-type .events__panel:last-child, .offers-entities__container:last-of-type .tools__panel:last-child, .offers-entities__container:last-of-type .news-panel:last-child, .offers-entities__container:last-of-type .promo__panel:last-child, .offers-entities__container:last-of-type .offers__panel:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ccccd5;
+}
+.offers-entities__header {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+.offers-entities__title {
+  font-weight: bold;
+  flex: 1;
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccccd5;
+}
+.offers-entities__title + .button, .offers-entities__title + .pagination-nav.pagination-nav__next, .offers-entities__title + .pagination-nav.pagination-nav__prev, .offers-entities__title + .pagination-page, .offers-entities__title + .button_group {
+  width: auto;
+  flex: initial;
+  margin-left: 10px;
+}
+.offers-entities__list {
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+}
+.offers-entities__list .panel, .offers-entities__list .users__panel, .offers-entities__list .panel-filters, .offers-entities__list .sidebar-bar, .offers-entities__list .panel-stats, .offers-entities__list .profile-panel, .offers-entities__list .crm-panel, .offers-entities__list .finance__panel, .offers-entities__list .source__panel, .offers-entities__list .ticket-panel, .offers-entities__list .leads__panel, .offers-entities__list .events__panel, .offers-entities__list .tools__panel, .offers-entities__list .news-panel, .offers-entities__list .promo__panel, .offers-entities__list .offers__panel {
+  box-shadow: none;
+  background-color: #fbf8fe;
+  margin-bottom: 0;
+}
+.offers-entities__list .panel:first-child, .offers-entities__list .users__panel:first-child, .offers-entities__list .panel-filters:first-child, .offers-entities__list .sidebar-bar:first-child, .offers-entities__list .panel-stats:first-child, .offers-entities__list .profile-panel:first-child, .offers-entities__list .crm-panel:first-child, .offers-entities__list .finance__panel:first-child, .offers-entities__list .source__panel:first-child, .offers-entities__list .ticket-panel:first-child, .offers-entities__list .leads__panel:first-child, .offers-entities__list .events__panel:first-child, .offers-entities__list .tools__panel:first-child, .offers-entities__list .news-panel:first-child, .offers-entities__list .promo__panel:first-child, .offers-entities__list .offers__panel:first-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ccccd5;
+}
+.offers-entities__list .panel + .panel:not(:last-child), .offers-entities__list .users__panel + .panel:not(:last-child), .offers-entities__list .panel-filters + .panel:not(:last-child), .offers-entities__list .sidebar-bar + .panel:not(:last-child), .offers-entities__list .panel-stats + .panel:not(:last-child), .offers-entities__list .profile-panel + .panel:not(:last-child), .offers-entities__list .crm-panel + .panel:not(:last-child), .offers-entities__list .finance__panel + .panel:not(:last-child), .offers-entities__list .source__panel + .panel:not(:last-child), .offers-entities__list .ticket-panel + .panel:not(:last-child), .offers-entities__list .leads__panel + .panel:not(:last-child), .offers-entities__list .events__panel + .panel:not(:last-child), .offers-entities__list .tools__panel + .panel:not(:last-child), .offers-entities__list .news-panel + .panel:not(:last-child), .offers-entities__list .promo__panel + .panel:not(:last-child), .offers-entities__list .offers__panel + .panel:not(:last-child), .offers-entities__list .panel + .panel:not(:last-child), .offers-entities__list .users__panel + .panel:not(:last-child), .offers-entities__list .panel-filters + .panel:not(:last-child), .offers-entities__list .sidebar-bar + .panel:not(:last-child), .offers-entities__list .panel-stats + .panel:not(:last-child), .offers-entities__list .profile-panel + .panel:not(:last-child), .offers-entities__list .crm-panel + .panel:not(:last-child), .offers-entities__list .finance__panel + .panel:not(:last-child), .offers-entities__list .source__panel + .panel:not(:last-child), .offers-entities__list .ticket-panel + .panel:not(:last-child), .offers-entities__list .leads__panel + .panel:not(:last-child), .offers-entities__list .events__panel + .panel:not(:last-child), .offers-entities__list .tools__panel + .panel:not(:last-child), .offers-entities__list .news-panel + .panel:not(:last-child), .offers-entities__list .promo__panel + .panel:not(:last-child), .offers-entities__list .offers__panel + .panel:not(:last-child), .offers-entities__list .panel + .users__panel:not(:last-child), .offers-entities__list .users__panel + .users__panel:not(:last-child), .offers-entities__list .panel-filters + .users__panel:not(:last-child), .offers-entities__list .sidebar-bar + .users__panel:not(:last-child), .offers-entities__list .panel-stats + .users__panel:not(:last-child), .offers-entities__list .profile-panel + .users__panel:not(:last-child), .offers-entities__list .crm-panel + .users__panel:not(:last-child), .offers-entities__list .finance__panel + .users__panel:not(:last-child), .offers-entities__list .source__panel + .users__panel:not(:last-child), .offers-entities__list .ticket-panel + .users__panel:not(:last-child), .offers-entities__list .leads__panel + .users__panel:not(:last-child), .offers-entities__list .events__panel + .users__panel:not(:last-child), .offers-entities__list .tools__panel + .users__panel:not(:last-child), .offers-entities__list .news-panel + .users__panel:not(:last-child), .offers-entities__list .promo__panel + .users__panel:not(:last-child), .offers-entities__list .offers__panel + .users__panel:not(:last-child), .offers-entities__list .panel + .users__panel:not(:last-child), .offers-entities__list .users__panel + .users__panel:not(:last-child), .offers-entities__list .panel-filters + .users__panel:not(:last-child), .offers-entities__list .sidebar-bar + .users__panel:not(:last-child), .offers-entities__list .panel-stats + .users__panel:not(:last-child), .offers-entities__list .profile-panel + .users__panel:not(:last-child), .offers-entities__list .crm-panel + .users__panel:not(:last-child), .offers-entities__list .finance__panel + .users__panel:not(:last-child), .offers-entities__list .source__panel + .users__panel:not(:last-child), .offers-entities__list .ticket-panel + .users__panel:not(:last-child), .offers-entities__list .leads__panel + .users__panel:not(:last-child), .offers-entities__list .events__panel + .users__panel:not(:last-child), .offers-entities__list .tools__panel + .users__panel:not(:last-child), .offers-entities__list .news-panel + .users__panel:not(:last-child), .offers-entities__list .promo__panel + .users__panel:not(:last-child), .offers-entities__list .offers__panel + .users__panel:not(:last-child), .offers-entities__list .panel + .panel-filters:not(:last-child), .offers-entities__list .users__panel + .panel-filters:not(:last-child), .offers-entities__list .panel-filters + .panel-filters:not(:last-child), .offers-entities__list .sidebar-bar + .panel-filters:not(:last-child), .offers-entities__list .panel-stats + .panel-filters:not(:last-child), .offers-entities__list .profile-panel + .panel-filters:not(:last-child), .offers-entities__list .crm-panel + .panel-filters:not(:last-child), .offers-entities__list .finance__panel + .panel-filters:not(:last-child), .offers-entities__list .source__panel + .panel-filters:not(:last-child), .offers-entities__list .ticket-panel + .panel-filters:not(:last-child), .offers-entities__list .leads__panel + .panel-filters:not(:last-child), .offers-entities__list .events__panel + .panel-filters:not(:last-child), .offers-entities__list .tools__panel + .panel-filters:not(:last-child), .offers-entities__list .news-panel + .panel-filters:not(:last-child), .offers-entities__list .promo__panel + .panel-filters:not(:last-child), .offers-entities__list .offers__panel + .panel-filters:not(:last-child), .offers-entities__list .panel + .panel-filters:not(:last-child), .offers-entities__list .users__panel + .panel-filters:not(:last-child), .offers-entities__list .panel-filters + .panel-filters:not(:last-child), .offers-entities__list .sidebar-bar + .panel-filters:not(:last-child), .offers-entities__list .panel-stats + .panel-filters:not(:last-child), .offers-entities__list .profile-panel + .panel-filters:not(:last-child), .offers-entities__list .crm-panel + .panel-filters:not(:last-child), .offers-entities__list .finance__panel + .panel-filters:not(:last-child), .offers-entities__list .source__panel + .panel-filters:not(:last-child), .offers-entities__list .ticket-panel + .panel-filters:not(:last-child), .offers-entities__list .leads__panel + .panel-filters:not(:last-child), .offers-entities__list .events__panel + .panel-filters:not(:last-child), .offers-entities__list .tools__panel + .panel-filters:not(:last-child), .offers-entities__list .news-panel + .panel-filters:not(:last-child), .offers-entities__list .promo__panel + .panel-filters:not(:last-child), .offers-entities__list .offers__panel + .panel-filters:not(:last-child), .offers-entities__list .panel + .sidebar-bar:not(:last-child), .offers-entities__list .users__panel + .sidebar-bar:not(:last-child), .offers-entities__list .panel-filters + .sidebar-bar:not(:last-child), .offers-entities__list .sidebar-bar + .sidebar-bar:not(:last-child), .offers-entities__list .panel-stats + .sidebar-bar:not(:last-child), .offers-entities__list .profile-panel + .sidebar-bar:not(:last-child), .offers-entities__list .crm-panel + .sidebar-bar:not(:last-child), .offers-entities__list .finance__panel + .sidebar-bar:not(:last-child), .offers-entities__list .source__panel + .sidebar-bar:not(:last-child), .offers-entities__list .ticket-panel + .sidebar-bar:not(:last-child), .offers-entities__list .leads__panel + .sidebar-bar:not(:last-child), .offers-entities__list .events__panel + .sidebar-bar:not(:last-child), .offers-entities__list .tools__panel + .sidebar-bar:not(:last-child), .offers-entities__list .news-panel + .sidebar-bar:not(:last-child), .offers-entities__list .promo__panel + .sidebar-bar:not(:last-child), .offers-entities__list .offers__panel + .sidebar-bar:not(:last-child), .offers-entities__list .panel + .sidebar-bar:not(:last-child), .offers-entities__list .users__panel + .sidebar-bar:not(:last-child), .offers-entities__list .panel-filters + .sidebar-bar:not(:last-child), .offers-entities__list .sidebar-bar + .sidebar-bar:not(:last-child), .offers-entities__list .panel-stats + .sidebar-bar:not(:last-child), .offers-entities__list .profile-panel + .sidebar-bar:not(:last-child), .offers-entities__list .crm-panel + .sidebar-bar:not(:last-child), .offers-entities__list .finance__panel + .sidebar-bar:not(:last-child), .offers-entities__list .source__panel + .sidebar-bar:not(:last-child), .offers-entities__list .ticket-panel + .sidebar-bar:not(:last-child), .offers-entities__list .leads__panel + .sidebar-bar:not(:last-child), .offers-entities__list .events__panel + .sidebar-bar:not(:last-child), .offers-entities__list .tools__panel + .sidebar-bar:not(:last-child), .offers-entities__list .news-panel + .sidebar-bar:not(:last-child), .offers-entities__list .promo__panel + .sidebar-bar:not(:last-child), .offers-entities__list .offers__panel + .sidebar-bar:not(:last-child), .offers-entities__list .panel + .panel-stats:not(:last-child), .offers-entities__list .users__panel + .panel-stats:not(:last-child), .offers-entities__list .panel-filters + .panel-stats:not(:last-child), .offers-entities__list .sidebar-bar + .panel-stats:not(:last-child), .offers-entities__list .panel-stats + .panel-stats:not(:last-child), .offers-entities__list .profile-panel + .panel-stats:not(:last-child), .offers-entities__list .crm-panel + .panel-stats:not(:last-child), .offers-entities__list .finance__panel + .panel-stats:not(:last-child), .offers-entities__list .source__panel + .panel-stats:not(:last-child), .offers-entities__list .ticket-panel + .panel-stats:not(:last-child), .offers-entities__list .leads__panel + .panel-stats:not(:last-child), .offers-entities__list .events__panel + .panel-stats:not(:last-child), .offers-entities__list .tools__panel + .panel-stats:not(:last-child), .offers-entities__list .news-panel + .panel-stats:not(:last-child), .offers-entities__list .promo__panel + .panel-stats:not(:last-child), .offers-entities__list .offers__panel + .panel-stats:not(:last-child), .offers-entities__list .panel + .panel-stats:not(:last-child), .offers-entities__list .users__panel + .panel-stats:not(:last-child), .offers-entities__list .panel-filters + .panel-stats:not(:last-child), .offers-entities__list .sidebar-bar + .panel-stats:not(:last-child), .offers-entities__list .panel-stats + .panel-stats:not(:last-child), .offers-entities__list .profile-panel + .panel-stats:not(:last-child), .offers-entities__list .crm-panel + .panel-stats:not(:last-child), .offers-entities__list .finance__panel + .panel-stats:not(:last-child), .offers-entities__list .source__panel + .panel-stats:not(:last-child), .offers-entities__list .ticket-panel + .panel-stats:not(:last-child), .offers-entities__list .leads__panel + .panel-stats:not(:last-child), .offers-entities__list .events__panel + .panel-stats:not(:last-child), .offers-entities__list .tools__panel + .panel-stats:not(:last-child), .offers-entities__list .news-panel + .panel-stats:not(:last-child), .offers-entities__list .promo__panel + .panel-stats:not(:last-child), .offers-entities__list .offers__panel + .panel-stats:not(:last-child), .offers-entities__list .panel + .profile-panel:not(:last-child), .offers-entities__list .users__panel + .profile-panel:not(:last-child), .offers-entities__list .panel-filters + .profile-panel:not(:last-child), .offers-entities__list .sidebar-bar + .profile-panel:not(:last-child), .offers-entities__list .panel-stats + .profile-panel:not(:last-child), .offers-entities__list .profile-panel + .profile-panel:not(:last-child), .offers-entities__list .crm-panel + .profile-panel:not(:last-child), .offers-entities__list .finance__panel + .profile-panel:not(:last-child), .offers-entities__list .source__panel + .profile-panel:not(:last-child), .offers-entities__list .ticket-panel + .profile-panel:not(:last-child), .offers-entities__list .leads__panel + .profile-panel:not(:last-child), .offers-entities__list .events__panel + .profile-panel:not(:last-child), .offers-entities__list .tools__panel + .profile-panel:not(:last-child), .offers-entities__list .news-panel + .profile-panel:not(:last-child), .offers-entities__list .promo__panel + .profile-panel:not(:last-child), .offers-entities__list .offers__panel + .profile-panel:not(:last-child), .offers-entities__list .panel + .profile-panel:not(:last-child), .offers-entities__list .users__panel + .profile-panel:not(:last-child), .offers-entities__list .panel-filters + .profile-panel:not(:last-child), .offers-entities__list .sidebar-bar + .profile-panel:not(:last-child), .offers-entities__list .panel-stats + .profile-panel:not(:last-child), .offers-entities__list .profile-panel + .profile-panel:not(:last-child), .offers-entities__list .crm-panel + .profile-panel:not(:last-child), .offers-entities__list .finance__panel + .profile-panel:not(:last-child), .offers-entities__list .source__panel + .profile-panel:not(:last-child), .offers-entities__list .ticket-panel + .profile-panel:not(:last-child), .offers-entities__list .leads__panel + .profile-panel:not(:last-child), .offers-entities__list .events__panel + .profile-panel:not(:last-child), .offers-entities__list .tools__panel + .profile-panel:not(:last-child), .offers-entities__list .news-panel + .profile-panel:not(:last-child), .offers-entities__list .promo__panel + .profile-panel:not(:last-child), .offers-entities__list .offers__panel + .profile-panel:not(:last-child), .offers-entities__list .panel + .crm-panel:not(:last-child), .offers-entities__list .users__panel + .crm-panel:not(:last-child), .offers-entities__list .panel-filters + .crm-panel:not(:last-child), .offers-entities__list .sidebar-bar + .crm-panel:not(:last-child), .offers-entities__list .panel-stats + .crm-panel:not(:last-child), .offers-entities__list .profile-panel + .crm-panel:not(:last-child), .offers-entities__list .crm-panel + .crm-panel:not(:last-child), .offers-entities__list .finance__panel + .crm-panel:not(:last-child), .offers-entities__list .source__panel + .crm-panel:not(:last-child), .offers-entities__list .ticket-panel + .crm-panel:not(:last-child), .offers-entities__list .leads__panel + .crm-panel:not(:last-child), .offers-entities__list .events__panel + .crm-panel:not(:last-child), .offers-entities__list .tools__panel + .crm-panel:not(:last-child), .offers-entities__list .news-panel + .crm-panel:not(:last-child), .offers-entities__list .promo__panel + .crm-panel:not(:last-child), .offers-entities__list .offers__panel + .crm-panel:not(:last-child), .offers-entities__list .panel + .crm-panel:not(:last-child), .offers-entities__list .users__panel + .crm-panel:not(:last-child), .offers-entities__list .panel-filters + .crm-panel:not(:last-child), .offers-entities__list .sidebar-bar + .crm-panel:not(:last-child), .offers-entities__list .panel-stats + .crm-panel:not(:last-child), .offers-entities__list .profile-panel + .crm-panel:not(:last-child), .offers-entities__list .crm-panel + .crm-panel:not(:last-child), .offers-entities__list .finance__panel + .crm-panel:not(:last-child), .offers-entities__list .source__panel + .crm-panel:not(:last-child), .offers-entities__list .ticket-panel + .crm-panel:not(:last-child), .offers-entities__list .leads__panel + .crm-panel:not(:last-child), .offers-entities__list .events__panel + .crm-panel:not(:last-child), .offers-entities__list .tools__panel + .crm-panel:not(:last-child), .offers-entities__list .news-panel + .crm-panel:not(:last-child), .offers-entities__list .promo__panel + .crm-panel:not(:last-child), .offers-entities__list .offers__panel + .crm-panel:not(:last-child), .offers-entities__list .panel + .finance__panel:not(:last-child), .offers-entities__list .users__panel + .finance__panel:not(:last-child), .offers-entities__list .panel-filters + .finance__panel:not(:last-child), .offers-entities__list .sidebar-bar + .finance__panel:not(:last-child), .offers-entities__list .panel-stats + .finance__panel:not(:last-child), .offers-entities__list .profile-panel + .finance__panel:not(:last-child), .offers-entities__list .crm-panel + .finance__panel:not(:last-child), .offers-entities__list .finance__panel + .finance__panel:not(:last-child), .offers-entities__list .source__panel + .finance__panel:not(:last-child), .offers-entities__list .ticket-panel + .finance__panel:not(:last-child), .offers-entities__list .leads__panel + .finance__panel:not(:last-child), .offers-entities__list .events__panel + .finance__panel:not(:last-child), .offers-entities__list .tools__panel + .finance__panel:not(:last-child), .offers-entities__list .news-panel + .finance__panel:not(:last-child), .offers-entities__list .promo__panel + .finance__panel:not(:last-child), .offers-entities__list .offers__panel + .finance__panel:not(:last-child), .offers-entities__list .panel + .finance__panel:not(:last-child), .offers-entities__list .users__panel + .finance__panel:not(:last-child), .offers-entities__list .panel-filters + .finance__panel:not(:last-child), .offers-entities__list .sidebar-bar + .finance__panel:not(:last-child), .offers-entities__list .panel-stats + .finance__panel:not(:last-child), .offers-entities__list .profile-panel + .finance__panel:not(:last-child), .offers-entities__list .crm-panel + .finance__panel:not(:last-child), .offers-entities__list .finance__panel + .finance__panel:not(:last-child), .offers-entities__list .source__panel + .finance__panel:not(:last-child), .offers-entities__list .ticket-panel + .finance__panel:not(:last-child), .offers-entities__list .leads__panel + .finance__panel:not(:last-child), .offers-entities__list .events__panel + .finance__panel:not(:last-child), .offers-entities__list .tools__panel + .finance__panel:not(:last-child), .offers-entities__list .news-panel + .finance__panel:not(:last-child), .offers-entities__list .promo__panel + .finance__panel:not(:last-child), .offers-entities__list .offers__panel + .finance__panel:not(:last-child), .offers-entities__list .panel + .source__panel:not(:last-child), .offers-entities__list .users__panel + .source__panel:not(:last-child), .offers-entities__list .panel-filters + .source__panel:not(:last-child), .offers-entities__list .sidebar-bar + .source__panel:not(:last-child), .offers-entities__list .panel-stats + .source__panel:not(:last-child), .offers-entities__list .profile-panel + .source__panel:not(:last-child), .offers-entities__list .crm-panel + .source__panel:not(:last-child), .offers-entities__list .finance__panel + .source__panel:not(:last-child), .offers-entities__list .source__panel + .source__panel:not(:last-child), .offers-entities__list .ticket-panel + .source__panel:not(:last-child), .offers-entities__list .leads__panel + .source__panel:not(:last-child), .offers-entities__list .events__panel + .source__panel:not(:last-child), .offers-entities__list .tools__panel + .source__panel:not(:last-child), .offers-entities__list .news-panel + .source__panel:not(:last-child), .offers-entities__list .promo__panel + .source__panel:not(:last-child), .offers-entities__list .offers__panel + .source__panel:not(:last-child), .offers-entities__list .panel + .source__panel:not(:last-child), .offers-entities__list .users__panel + .source__panel:not(:last-child), .offers-entities__list .panel-filters + .source__panel:not(:last-child), .offers-entities__list .sidebar-bar + .source__panel:not(:last-child), .offers-entities__list .panel-stats + .source__panel:not(:last-child), .offers-entities__list .profile-panel + .source__panel:not(:last-child), .offers-entities__list .crm-panel + .source__panel:not(:last-child), .offers-entities__list .finance__panel + .source__panel:not(:last-child), .offers-entities__list .source__panel + .source__panel:not(:last-child), .offers-entities__list .ticket-panel + .source__panel:not(:last-child), .offers-entities__list .leads__panel + .source__panel:not(:last-child), .offers-entities__list .events__panel + .source__panel:not(:last-child), .offers-entities__list .tools__panel + .source__panel:not(:last-child), .offers-entities__list .news-panel + .source__panel:not(:last-child), .offers-entities__list .promo__panel + .source__panel:not(:last-child), .offers-entities__list .offers__panel + .source__panel:not(:last-child), .offers-entities__list .panel + .ticket-panel:not(:last-child), .offers-entities__list .users__panel + .ticket-panel:not(:last-child), .offers-entities__list .panel-filters + .ticket-panel:not(:last-child), .offers-entities__list .sidebar-bar + .ticket-panel:not(:last-child), .offers-entities__list .panel-stats + .ticket-panel:not(:last-child), .offers-entities__list .profile-panel + .ticket-panel:not(:last-child), .offers-entities__list .crm-panel + .ticket-panel:not(:last-child), .offers-entities__list .finance__panel + .ticket-panel:not(:last-child), .offers-entities__list .source__panel + .ticket-panel:not(:last-child), .offers-entities__list .ticket-panel + .ticket-panel:not(:last-child), .offers-entities__list .leads__panel + .ticket-panel:not(:last-child), .offers-entities__list .events__panel + .ticket-panel:not(:last-child), .offers-entities__list .tools__panel + .ticket-panel:not(:last-child), .offers-entities__list .news-panel + .ticket-panel:not(:last-child), .offers-entities__list .promo__panel + .ticket-panel:not(:last-child), .offers-entities__list .offers__panel + .ticket-panel:not(:last-child), .offers-entities__list .panel + .ticket-panel:not(:last-child), .offers-entities__list .users__panel + .ticket-panel:not(:last-child), .offers-entities__list .panel-filters + .ticket-panel:not(:last-child), .offers-entities__list .sidebar-bar + .ticket-panel:not(:last-child), .offers-entities__list .panel-stats + .ticket-panel:not(:last-child), .offers-entities__list .profile-panel + .ticket-panel:not(:last-child), .offers-entities__list .crm-panel + .ticket-panel:not(:last-child), .offers-entities__list .finance__panel + .ticket-panel:not(:last-child), .offers-entities__list .source__panel + .ticket-panel:not(:last-child), .offers-entities__list .ticket-panel + .ticket-panel:not(:last-child), .offers-entities__list .leads__panel + .ticket-panel:not(:last-child), .offers-entities__list .events__panel + .ticket-panel:not(:last-child), .offers-entities__list .tools__panel + .ticket-panel:not(:last-child), .offers-entities__list .news-panel + .ticket-panel:not(:last-child), .offers-entities__list .promo__panel + .ticket-panel:not(:last-child), .offers-entities__list .offers__panel + .ticket-panel:not(:last-child), .offers-entities__list .panel + .leads__panel:not(:last-child), .offers-entities__list .users__panel + .leads__panel:not(:last-child), .offers-entities__list .panel-filters + .leads__panel:not(:last-child), .offers-entities__list .sidebar-bar + .leads__panel:not(:last-child), .offers-entities__list .panel-stats + .leads__panel:not(:last-child), .offers-entities__list .profile-panel + .leads__panel:not(:last-child), .offers-entities__list .crm-panel + .leads__panel:not(:last-child), .offers-entities__list .finance__panel + .leads__panel:not(:last-child), .offers-entities__list .source__panel + .leads__panel:not(:last-child), .offers-entities__list .ticket-panel + .leads__panel:not(:last-child), .offers-entities__list .leads__panel + .leads__panel:not(:last-child), .offers-entities__list .events__panel + .leads__panel:not(:last-child), .offers-entities__list .tools__panel + .leads__panel:not(:last-child), .offers-entities__list .news-panel + .leads__panel:not(:last-child), .offers-entities__list .promo__panel + .leads__panel:not(:last-child), .offers-entities__list .offers__panel + .leads__panel:not(:last-child), .offers-entities__list .panel + .leads__panel:not(:last-child), .offers-entities__list .users__panel + .leads__panel:not(:last-child), .offers-entities__list .panel-filters + .leads__panel:not(:last-child), .offers-entities__list .sidebar-bar + .leads__panel:not(:last-child), .offers-entities__list .panel-stats + .leads__panel:not(:last-child), .offers-entities__list .profile-panel + .leads__panel:not(:last-child), .offers-entities__list .crm-panel + .leads__panel:not(:last-child), .offers-entities__list .finance__panel + .leads__panel:not(:last-child), .offers-entities__list .source__panel + .leads__panel:not(:last-child), .offers-entities__list .ticket-panel + .leads__panel:not(:last-child), .offers-entities__list .leads__panel + .leads__panel:not(:last-child), .offers-entities__list .events__panel + .leads__panel:not(:last-child), .offers-entities__list .tools__panel + .leads__panel:not(:last-child), .offers-entities__list .news-panel + .leads__panel:not(:last-child), .offers-entities__list .promo__panel + .leads__panel:not(:last-child), .offers-entities__list .offers__panel + .leads__panel:not(:last-child), .offers-entities__list .panel + .events__panel:not(:last-child), .offers-entities__list .users__panel + .events__panel:not(:last-child), .offers-entities__list .panel-filters + .events__panel:not(:last-child), .offers-entities__list .sidebar-bar + .events__panel:not(:last-child), .offers-entities__list .panel-stats + .events__panel:not(:last-child), .offers-entities__list .profile-panel + .events__panel:not(:last-child), .offers-entities__list .crm-panel + .events__panel:not(:last-child), .offers-entities__list .finance__panel + .events__panel:not(:last-child), .offers-entities__list .source__panel + .events__panel:not(:last-child), .offers-entities__list .ticket-panel + .events__panel:not(:last-child), .offers-entities__list .leads__panel + .events__panel:not(:last-child), .offers-entities__list .events__panel + .events__panel:not(:last-child), .offers-entities__list .tools__panel + .events__panel:not(:last-child), .offers-entities__list .news-panel + .events__panel:not(:last-child), .offers-entities__list .promo__panel + .events__panel:not(:last-child), .offers-entities__list .offers__panel + .events__panel:not(:last-child), .offers-entities__list .panel + .events__panel:not(:last-child), .offers-entities__list .users__panel + .events__panel:not(:last-child), .offers-entities__list .panel-filters + .events__panel:not(:last-child), .offers-entities__list .sidebar-bar + .events__panel:not(:last-child), .offers-entities__list .panel-stats + .events__panel:not(:last-child), .offers-entities__list .profile-panel + .events__panel:not(:last-child), .offers-entities__list .crm-panel + .events__panel:not(:last-child), .offers-entities__list .finance__panel + .events__panel:not(:last-child), .offers-entities__list .source__panel + .events__panel:not(:last-child), .offers-entities__list .ticket-panel + .events__panel:not(:last-child), .offers-entities__list .leads__panel + .events__panel:not(:last-child), .offers-entities__list .events__panel + .events__panel:not(:last-child), .offers-entities__list .tools__panel + .events__panel:not(:last-child), .offers-entities__list .news-panel + .events__panel:not(:last-child), .offers-entities__list .promo__panel + .events__panel:not(:last-child), .offers-entities__list .offers__panel + .events__panel:not(:last-child), .offers-entities__list .panel + .tools__panel:not(:last-child), .offers-entities__list .users__panel + .tools__panel:not(:last-child), .offers-entities__list .panel-filters + .tools__panel:not(:last-child), .offers-entities__list .sidebar-bar + .tools__panel:not(:last-child), .offers-entities__list .panel-stats + .tools__panel:not(:last-child), .offers-entities__list .profile-panel + .tools__panel:not(:last-child), .offers-entities__list .crm-panel + .tools__panel:not(:last-child), .offers-entities__list .finance__panel + .tools__panel:not(:last-child), .offers-entities__list .source__panel + .tools__panel:not(:last-child), .offers-entities__list .ticket-panel + .tools__panel:not(:last-child), .offers-entities__list .leads__panel + .tools__panel:not(:last-child), .offers-entities__list .events__panel + .tools__panel:not(:last-child), .offers-entities__list .tools__panel + .tools__panel:not(:last-child), .offers-entities__list .news-panel + .tools__panel:not(:last-child), .offers-entities__list .promo__panel + .tools__panel:not(:last-child), .offers-entities__list .offers__panel + .tools__panel:not(:last-child), .offers-entities__list .panel + .tools__panel:not(:last-child), .offers-entities__list .users__panel + .tools__panel:not(:last-child), .offers-entities__list .panel-filters + .tools__panel:not(:last-child), .offers-entities__list .sidebar-bar + .tools__panel:not(:last-child), .offers-entities__list .panel-stats + .tools__panel:not(:last-child), .offers-entities__list .profile-panel + .tools__panel:not(:last-child), .offers-entities__list .crm-panel + .tools__panel:not(:last-child), .offers-entities__list .finance__panel + .tools__panel:not(:last-child), .offers-entities__list .source__panel + .tools__panel:not(:last-child), .offers-entities__list .ticket-panel + .tools__panel:not(:last-child), .offers-entities__list .leads__panel + .tools__panel:not(:last-child), .offers-entities__list .events__panel + .tools__panel:not(:last-child), .offers-entities__list .tools__panel + .tools__panel:not(:last-child), .offers-entities__list .news-panel + .tools__panel:not(:last-child), .offers-entities__list .promo__panel + .tools__panel:not(:last-child), .offers-entities__list .offers__panel + .tools__panel:not(:last-child), .offers-entities__list .panel + .news-panel:not(:last-child), .offers-entities__list .users__panel + .news-panel:not(:last-child), .offers-entities__list .panel-filters + .news-panel:not(:last-child), .offers-entities__list .sidebar-bar + .news-panel:not(:last-child), .offers-entities__list .panel-stats + .news-panel:not(:last-child), .offers-entities__list .profile-panel + .news-panel:not(:last-child), .offers-entities__list .crm-panel + .news-panel:not(:last-child), .offers-entities__list .finance__panel + .news-panel:not(:last-child), .offers-entities__list .source__panel + .news-panel:not(:last-child), .offers-entities__list .ticket-panel + .news-panel:not(:last-child), .offers-entities__list .leads__panel + .news-panel:not(:last-child), .offers-entities__list .events__panel + .news-panel:not(:last-child), .offers-entities__list .tools__panel + .news-panel:not(:last-child), .offers-entities__list .news-panel + .news-panel:not(:last-child), .offers-entities__list .promo__panel + .news-panel:not(:last-child), .offers-entities__list .offers__panel + .news-panel:not(:last-child), .offers-entities__list .panel + .news-panel:not(:last-child), .offers-entities__list .users__panel + .news-panel:not(:last-child), .offers-entities__list .panel-filters + .news-panel:not(:last-child), .offers-entities__list .sidebar-bar + .news-panel:not(:last-child), .offers-entities__list .panel-stats + .news-panel:not(:last-child), .offers-entities__list .profile-panel + .news-panel:not(:last-child), .offers-entities__list .crm-panel + .news-panel:not(:last-child), .offers-entities__list .finance__panel + .news-panel:not(:last-child), .offers-entities__list .source__panel + .news-panel:not(:last-child), .offers-entities__list .ticket-panel + .news-panel:not(:last-child), .offers-entities__list .leads__panel + .news-panel:not(:last-child), .offers-entities__list .events__panel + .news-panel:not(:last-child), .offers-entities__list .tools__panel + .news-panel:not(:last-child), .offers-entities__list .news-panel + .news-panel:not(:last-child), .offers-entities__list .promo__panel + .news-panel:not(:last-child), .offers-entities__list .offers__panel + .news-panel:not(:last-child), .offers-entities__list .panel + .promo__panel:not(:last-child), .offers-entities__list .users__panel + .promo__panel:not(:last-child), .offers-entities__list .panel-filters + .promo__panel:not(:last-child), .offers-entities__list .sidebar-bar + .promo__panel:not(:last-child), .offers-entities__list .panel-stats + .promo__panel:not(:last-child), .offers-entities__list .profile-panel + .promo__panel:not(:last-child), .offers-entities__list .crm-panel + .promo__panel:not(:last-child), .offers-entities__list .finance__panel + .promo__panel:not(:last-child), .offers-entities__list .source__panel + .promo__panel:not(:last-child), .offers-entities__list .ticket-panel + .promo__panel:not(:last-child), .offers-entities__list .leads__panel + .promo__panel:not(:last-child), .offers-entities__list .events__panel + .promo__panel:not(:last-child), .offers-entities__list .tools__panel + .promo__panel:not(:last-child), .offers-entities__list .news-panel + .promo__panel:not(:last-child), .offers-entities__list .promo__panel + .promo__panel:not(:last-child), .offers-entities__list .offers__panel + .promo__panel:not(:last-child), .offers-entities__list .panel + .promo__panel:not(:last-child), .offers-entities__list .users__panel + .promo__panel:not(:last-child), .offers-entities__list .panel-filters + .promo__panel:not(:last-child), .offers-entities__list .sidebar-bar + .promo__panel:not(:last-child), .offers-entities__list .panel-stats + .promo__panel:not(:last-child), .offers-entities__list .profile-panel + .promo__panel:not(:last-child), .offers-entities__list .crm-panel + .promo__panel:not(:last-child), .offers-entities__list .finance__panel + .promo__panel:not(:last-child), .offers-entities__list .source__panel + .promo__panel:not(:last-child), .offers-entities__list .ticket-panel + .promo__panel:not(:last-child), .offers-entities__list .leads__panel + .promo__panel:not(:last-child), .offers-entities__list .events__panel + .promo__panel:not(:last-child), .offers-entities__list .tools__panel + .promo__panel:not(:last-child), .offers-entities__list .news-panel + .promo__panel:not(:last-child), .offers-entities__list .promo__panel + .promo__panel:not(:last-child), .offers-entities__list .offers__panel + .promo__panel:not(:last-child), .offers-entities__list .panel + .offers__panel:not(:last-child), .offers-entities__list .users__panel + .offers__panel:not(:last-child), .offers-entities__list .panel-filters + .offers__panel:not(:last-child), .offers-entities__list .sidebar-bar + .offers__panel:not(:last-child), .offers-entities__list .panel-stats + .offers__panel:not(:last-child), .offers-entities__list .profile-panel + .offers__panel:not(:last-child), .offers-entities__list .crm-panel + .offers__panel:not(:last-child), .offers-entities__list .finance__panel + .offers__panel:not(:last-child), .offers-entities__list .source__panel + .offers__panel:not(:last-child), .offers-entities__list .ticket-panel + .offers__panel:not(:last-child), .offers-entities__list .leads__panel + .offers__panel:not(:last-child), .offers-entities__list .events__panel + .offers__panel:not(:last-child), .offers-entities__list .tools__panel + .offers__panel:not(:last-child), .offers-entities__list .news-panel + .offers__panel:not(:last-child), .offers-entities__list .promo__panel + .offers__panel:not(:last-child), .offers-entities__list .offers__panel + .offers__panel:not(:last-child), .offers-entities__list .panel + .offers__panel:not(:last-child), .offers-entities__list .users__panel + .offers__panel:not(:last-child), .offers-entities__list .panel-filters + .offers__panel:not(:last-child), .offers-entities__list .sidebar-bar + .offers__panel:not(:last-child), .offers-entities__list .panel-stats + .offers__panel:not(:last-child), .offers-entities__list .profile-panel + .offers__panel:not(:last-child), .offers-entities__list .crm-panel + .offers__panel:not(:last-child), .offers-entities__list .finance__panel + .offers__panel:not(:last-child), .offers-entities__list .source__panel + .offers__panel:not(:last-child), .offers-entities__list .ticket-panel + .offers__panel:not(:last-child), .offers-entities__list .leads__panel + .offers__panel:not(:last-child), .offers-entities__list .events__panel + .offers__panel:not(:last-child), .offers-entities__list .tools__panel + .offers__panel:not(:last-child), .offers-entities__list .news-panel + .offers__panel:not(:last-child), .offers-entities__list .promo__panel + .offers__panel:not(:last-child), .offers-entities__list .offers__panel + .offers__panel:not(:last-child) {
+  border-radius: 0;
+  border-bottom: 1px solid #ccccd5;
+}
+.offers-entities__list .panel:last-child, .offers-entities__list .users__panel:last-child, .offers-entities__list .panel-filters:last-child, .offers-entities__list .sidebar-bar:last-child, .offers-entities__list .panel-stats:last-child, .offers-entities__list .profile-panel:last-child, .offers-entities__list .crm-panel:last-child, .offers-entities__list .finance__panel:last-child, .offers-entities__list .source__panel:last-child, .offers-entities__list .ticket-panel:last-child, .offers-entities__list .leads__panel:last-child, .offers-entities__list .events__panel:last-child, .offers-entities__list .tools__panel:last-child, .offers-entities__list .news-panel:last-child, .offers-entities__list .promo__panel:last-child, .offers-entities__list .offers__panel:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom: none;
+}
+.offers-entities .pagination {
+  background: #fbf8fe;
+  padding: 20px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.offer-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.offer-header .flag {
+  margin-left: 10px;
+}
+.offer-header > .h3 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.offer-header__side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 576px) {
+  .offer-header {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .offer-header .offer-header__side {
+    grid-row: 2;
+    grid-column: 1/-1;
+    justify-content: flex-start;
+  }
+}
+.offer-detail > .panel, .offer-detail > .users__panel, .offer-detail > .panel-filters, .offer-detail > .sidebar-bar, .offer-detail > .panel-stats, .offer-detail > .profile-panel, .offer-detail > .crm-panel, .offer-detail > .finance__panel, .offer-detail > .source__panel, .offer-detail > .ticket-panel, .offer-detail > .leads__panel, .offer-detail > .events__panel, .offer-detail > .tools__panel, .offer-detail > .news-panel, .offer-detail > .promo__panel, .offer-detail > .offers__panel, .offers-entities__list .offer-detail > .panel, .offers-entities__list .offer-detail > .users__panel, .offers-entities__list .offer-detail > .panel-filters, .offers-entities__list .offer-detail > .sidebar-bar, .offers-entities__list .offer-detail > .panel-stats, .offers-entities__list .offer-detail > .profile-panel, .offers-entities__list .offer-detail > .crm-panel, .offers-entities__list .offer-detail > .finance__panel, .offers-entities__list .offer-detail > .source__panel, .offers-entities__list .offer-detail > .ticket-panel, .offers-entities__list .offer-detail > .leads__panel, .offers-entities__list .offer-detail > .events__panel, .offers-entities__list .offer-detail > .tools__panel, .offers-entities__list .offer-detail > .news-panel, .offers-entities__list .offer-detail > .promo__panel, .offers-entities__list .offer-detail > .offers__panel {
+  padding: 0;
+}
+.offer-detail__edit {
+  padding: 0;
+}
+.offer-detail__edit .panel, .offer-detail__edit .users__panel, .offer-detail__edit .panel-filters, .offer-detail__edit .sidebar-bar, .offer-detail__edit .panel-stats, .offer-detail__edit .profile-panel, .offer-detail__edit .crm-panel, .offer-detail__edit .finance__panel, .offer-detail__edit .source__panel, .offer-detail__edit .ticket-panel, .offer-detail__edit .leads__panel, .offer-detail__edit .events__panel, .offer-detail__edit .tools__panel, .offer-detail__edit .news-panel, .offer-detail__edit .promo__panel, .offer-detail__edit .offers__panel {
+  margin-bottom: 20px;
+}
+.offer-description {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.offer-description__inner {
+  color: #6e6e86;
+}
+.offer-description__inner p {
+  font-size: inherit;
+  line-height: inherit;
+}
+.offer-main__short {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.offer-main__short .offer-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  font-weight: bold;
+}
+.offer-main__short .offer-info__col {
+  display: flex;
+  flex-direction: column;
+}
+.offer-main__short .offer-info__col p > span {
+  margin-left: 5px;
+}
+@media (max-width: 768px) {
+  .offer-main__short {
+    align-items: flex-start;
+  }
+  .offer-main__short .offer-info {
+    gap: initial;
+  }
+}
+@media (max-width: 576px) {
+  .offer-main__short {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .offer-main__short .offer-image {
+    grid-row: 1;
+  }
+  .offer-main__short .offer-info {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/2;
+    grid-column: 1/-1;
+  }
+  .offer-main__short .offer-control {
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: flex-end;
+    display: flex;
+  }
+}
+.offer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.offer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.offer-edit__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1400px) {
+  .offer-edit__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .offer-edit__container {
+    grid-template-columns: 1fr;
+  }
+}
+.offer-edit__row-3 {
+  grid-column: 1/-1;
+}
+.offer-landing__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.offer-landing__item {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  font-weight: bold;
+  grid-column-gap: 10px;
+  border-bottom: 1px solid #ccccd5;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .offer-landing__item {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .offer-landing__item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .offer-landing__item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.offer-landing__item p {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistic .panel, .statistic .users__panel, .statistic .panel-filters, .statistic .sidebar-bar, .statistic .panel-stats, .statistic .profile-panel, .statistic .crm-panel, .statistic .finance__panel, .statistic .source__panel, .statistic .ticket-panel, .statistic .leads__panel, .statistic .events__panel, .statistic .tools__panel, .statistic .news-panel, .statistic .promo__panel, .statistic .offers__panel {
+  margin-bottom: 20px;
+}
+.statistic-form__row, .statistic-form__row_3, .statistic-form__row_2 {
+  display: grid;
+  gap: 10px 20px;
+  margin-bottom: 10px;
+}
+.statistic-form__row_2 {
+  grid-template-columns: 1fr 1fr;
+}
+.statistic-form__row_3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1400px) {
+  .statistic-form__row, .statistic-form__row_3, .statistic-form__row_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .statistic-form__row, .statistic-form__row_3, .statistic-form__row_2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 ::placeholder {
@@ -4371,6 +5002,7 @@ html {
   height: 100%;
   width: 100%;
   color: #2e2e50;
+  background-color: #fbf8fe;
 }
 body input,
 body textarea,
@@ -4544,4 +5176,8 @@ p {
 .price {
   font-family: "jost", sans-serif;
   font-weight: bold;
+}
+.price.price_20 {
+  font-size: 20px;
+  line-height: 130%;
 }

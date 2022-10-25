@@ -9,7 +9,7 @@
 
 @import "logo";
 @import "dropdown";
-@import "modal";
+@import "table";
 
 @import "copy";
 @import "nav";
@@ -18,11 +18,15 @@
 @import "form";
 @import "select";
 @import "checkbox";
+@import "radio";
 @import "link";
 @import "modal";
 @import "entity";
 @import "tooltip";
 @import "datepicker";
+@import "tabs";
+@import "toggler";
+@import "file_uploader";
 
 @import "site/index";
 
@@ -70,6 +74,7 @@ html {
   height: 100%;
   width: 100%;
   color: $dark;
+  background-color: $gray-lighten;
 
   input,
   textarea {
@@ -238,6 +243,11 @@ p {
 .price {
   font-family: $secondary-font;
   font-weight: bold;
+
+  &.price_20 {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 // Always at the end

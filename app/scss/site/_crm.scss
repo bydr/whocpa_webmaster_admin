@@ -1,5 +1,5 @@
 .crm {
-  height: 90vh;
+  //height: 90vh;
   display: flex;
   flex-direction: column;
 
@@ -13,14 +13,6 @@
     padding: 0;
     flex: 1;
     height: 80%;
-
-    .messenger {
-      height: 100%;
-
-      @media (max-width: $grid-breakpoints-xl) {
-        height: auto;
-      }
-    }
 
     @media (max-width: $grid-breakpoints-xl) {
       height: auto;

@@ -10,6 +10,14 @@
 
 .ui-icon {
   @include box(18px, 18px);
+
+  &_accent {
+    color: $accent;
+  }
+
+  &_20 {
+    @include box(20px, 20px);
+  }
 }
 
 .custom-scroll {
@@ -80,6 +88,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .align-content-center {
@@ -165,6 +177,14 @@
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 .text-ellipsis {

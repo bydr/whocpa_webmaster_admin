@@ -147,7 +147,11 @@
     .form {
       width: auto;
       flex: 1;
-      align-items: center;
+      align-items: flex-start;
+
+      .tooltip {
+        min-height: 40px;
+      }
     }
 
     @media (max-width: $grid-breakpoints-lg) {

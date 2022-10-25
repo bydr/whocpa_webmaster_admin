@@ -11,19 +11,9 @@ import "./modules/datepicker"
 import "./modules/toggleButton"
 import "./modules/messenger/tabs"
 import "./modules/formsSteps"
-
-document.addEventListener("DOMContentLoaded", () => {
-  menuToggleInit()
-
-  const textareas = [...document.querySelectorAll(".textarea-element")]
-
-  for (const item of textareas) {
-    item.addEventListener("input", (e) => {
-      e.currentTarget.style.height = `${e.currentTarget.scrollHeight}px`
-      e.currentTarget.classList.add("auto")
-    })
-  }
-})
+import "./modules/toggler"
+import { initToggler } from "./modules/toggler"
+import "./modules/fileUploaderDragDrop"
 
 const menuToggleInit = () => {
   const MODE_CLOSE = "close"
@@ -57,3 +47,20 @@ const menuToggleInit = () => {
     })
   }
 }
+
+const textareaAutoHeightInit = () => {
+  const textareas = [...document.querySelectorAll(".textarea-element")]
+
+  for (const item of textareas) {
+    item.addEventListener("input", (e) => {
+      e.currentTarget.style.height = `${e.currentTarget.scrollHeight}px`
+      e.currentTarget.classList.add("auto")
+    })
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  menuToggleInit()
+  textareaAutoHeightInit()
+  initToggler(".toggler")
+})

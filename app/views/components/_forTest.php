@@ -47,6 +47,34 @@ $pages = [
     [
         "title" => "Промо",
         "url" => "page_promo.php"
+    ],
+    [
+        "title" => "Офферы",
+        "url" => "page_offers.php"
+    ],
+    [
+        "title" => "Оффер обзор",
+        "url" => "page_offer_overview.php"
+    ],
+    [
+        "title" => "Оффер цели",
+        "url" => "page_offer_purpose.php"
+    ],
+    [
+        "title" => "Оффер вебмастера",
+        "url" => "page_offer_webmasters.php"
+    ],
+    [
+        "title" => "Оффер лендинги",
+        "url" => "page_offer_landings.php"
+    ],
+    [
+        "title" => "Оффер редактирование",
+        "url" => "page_offer_edit.php"
+    ],
+    [
+        "title" => "Статистика",
+        "url" => "page_statistic.php"
     ]
 ]
 

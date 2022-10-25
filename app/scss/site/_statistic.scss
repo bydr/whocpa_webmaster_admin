@@ -1,0 +1,29 @@
+.statistic {
+  .panel {
+    margin-bottom: 20px;
+  }
+
+  &-form__row {
+    display: grid;
+    gap: 10px 20px;
+    margin-bottom: 10px;
+
+    &_2 {
+      @extend .statistic-form__row;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &_3 {
+      @extend .statistic-form__row;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: $grid-breakpoints-xxl) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $grid-breakpoints-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

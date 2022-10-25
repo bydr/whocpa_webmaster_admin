@@ -120,6 +120,17 @@
         color: $white;
       }
     }
+
+    &_light {
+      background: $white;
+      color: $dark;
+
+      &:hover,
+      &:active {
+        background: $gray-lighten;
+        color: $darken;
+      }
+    }
   }
 
   span {

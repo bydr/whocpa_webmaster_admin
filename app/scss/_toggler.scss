@@ -1,0 +1,91 @@
+%icon-hidden {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+%icon-visible {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.toggler {
+  &-container {
+    margin-bottom: 10px;
+
+    &.is-active {
+      .toggler {
+        &-control {
+          border-bottom-color: transparent;
+        }
+        &-content {
+          opacity: 1;
+          border-bottom-color: $gray;
+          overflow: visible;
+        }
+      }
+
+      .ui-icon {
+        &__wrapper {
+          .ui-icon {
+            &:first-child {
+              @extend %icon-hidden;
+            }
+            &:last-child {
+              @extend %icon-visible;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-control {
+    @extend .text-size_default;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0;
+    border-bottom: 1px solid $gray;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    .ui-icon {
+      @include box(20px, 20px);
+      color: $gray-darken;
+
+      &__wrapper {
+        .ui-icon {
+          &:first-child {
+            @extend %icon-visible;
+          }
+          &:last-child {
+            @extend %icon-hidden;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    @extend .text-size_medium;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: max-height 0.35s $transitionTimingFunc;
+    opacity: 0;
+    padding: 0;
+    color: $gray-darken;
+    border-bottom: 1px solid transparent;
+
+    &__inner {
+      width: 100%;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
