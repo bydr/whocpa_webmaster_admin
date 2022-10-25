@@ -12,7 +12,6 @@
     @extend .panel_w-shadow;
     padding: 0;
     flex: 1;
-    height: 80%;
 
     @media (max-width: $grid-breakpoints-xl) {
       height: auto;

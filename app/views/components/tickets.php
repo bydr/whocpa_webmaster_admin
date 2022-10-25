@@ -258,6 +258,116 @@ $payload = [
                   <p>Как уже неоднократно упомянуто, явные признаки победы между их старейшин институционализации ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, забывают.</p>
                 </div>
               </div>
+
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Технического прогресса, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. Противоположная точка зрения подразумевает, что независимые государства</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>В целом, конечно, курс о социально-ориентированно национальном</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. Противоположная точка зрения подразумевает, что коричневые есть!</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Противоположная точка зрения подразумевает, что независимые государства лишь добавляют фракционных нужд и заблокированы.</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Добавляют разногласий и заблокированы.</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Как уже неоднократно упомянуто, явные признаки победы между их старейшин институционализации ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, забывают.</p>
+                </div>
+              </div>
+
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Технического прогресса, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. Противоположная точка зрения подразумевает, что независимые государства</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>В целом, конечно, курс о социально-ориентированно национальном</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. Противоположная точка зрения подразумевает, что коричневые есть!</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Противоположная точка зрения подразумевает, что независимые государства лишь добавляют фракционных нужд и заблокированы.</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_user">
+                <div class="chat-entity__user">
+                  <svg class="ui-icon">
+                    <use xlink:href="img/_src/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Добавляют разногласий и заблокированы.</p>
+                </div>
+              </div>
+              <div class="chat-entity chat-entity_role_manager">
+                <div class="chat-entity__user">
+                  <img src="img/_src/mockImage.png" alt="">
+                </div>
+                <div class="chat-entity__msg">
+                  <p>Как уже неоднократно упомянуто, явные признаки победы между их старейшин институционализации ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, забывают.</p>
+                </div>
+              </div>
             </div>
 
           </div>

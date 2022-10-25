@@ -1631,7 +1631,7 @@
   }
 }
 .messenger-folders {
-  padding: 10px;
+  padding: 10px 0 0 0;
   border-right: 1px solid #ccccd5;
   -webkit-overflow-scrolling: touch;
   grid-area: folders;
@@ -1684,7 +1684,7 @@
 }
 .messenger-dialogs {
   padding: 20px 0;
-  height: 100vh;
+  height: 100%;
   grid-area: dialogs;
   width: 100%;
 }
@@ -1728,7 +1728,7 @@
   flex: 1;
   width: 100%;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
   grid-area: detail;
 }
 @media (max-width: 992px) {
@@ -1744,7 +1744,7 @@
   list-style: none;
   overflow: hidden auto;
   -webkit-overflow-scrolling: touch;
-  height: 100vh;
+  height: 100%;
 }
 .messenger-dialog__list::-webkit-scrollbar-thumb {
   background: #b0b0b9;
@@ -1997,7 +1997,6 @@
 .crm-panel {
   padding: 0;
   flex: 1;
-  height: 80%;
 }
 @media (max-width: 1200px) {
   .crm-panel {
@@ -2158,7 +2157,6 @@
 .ticket-panel, .news-panel {
   padding: 0;
   flex: 1;
-  height: 80%;
 }
 .ticket-panel .messenger-dialog__container, .news-panel .messenger-dialog__container {
   background-color: transparent;
