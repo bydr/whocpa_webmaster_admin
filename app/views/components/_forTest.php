@@ -17,8 +17,12 @@ $pages = [
         "url" => "page_crm.php"
     ],
     [
+        "title" => "Финансы",
+        "url" => "page_finance.php"
+    ],
+    [
         "title" => "Финансы «Пополнение баланса» ",
-        "url" => "page_fin_refill_balance.php"
+        "url" => "page_finance_refill.php"
     ],
     [
         "title" => "Источники",
@@ -75,6 +79,10 @@ $pages = [
     [
         "title" => "Статистика",
         "url" => "page_statistic.php"
+    ],
+    [
+        "title" => "Настройки",
+        "url" => "page_settings.php"
     ]
 ]
 

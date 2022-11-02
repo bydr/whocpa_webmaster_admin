@@ -3,7 +3,6 @@ import Choices from "choices.js"
 const selectInit = () => {
   const elements = [...document.querySelectorAll(".custom-select")]
   for (const element of elements) {
-    console.log("element.dataset.search ", element.dataset.search !== undefined)
     const themeName = element.dataset.theme
     const themeSelector = !!themeName ? `${themeName}-theme` : ""
 

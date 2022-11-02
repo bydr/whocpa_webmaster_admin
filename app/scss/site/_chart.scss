@@ -24,6 +24,13 @@
     position: relative;
   }
 
+  &-filter {
+    grid-column: 1 / end;
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+  }
+
   &-legend {
     margin-left: 10px;
     width: 100%;

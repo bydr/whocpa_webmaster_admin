@@ -1,5 +1,5 @@
 <div class="panel-filters">
-    <?php include_once "forms/refillBalanceFilterForm.php" ?>
+    <?php include_once "forms/financeFilterForm.php" ?>
 </div>
 
 <div class="finance-controls">
@@ -27,10 +27,10 @@
               <div class="action-popup">
                 <ul class="action-list">
                   <li>
-                    <button class="action-control" data-modal="#modal-actionFinance">Оплатить</button>
+                    <button class="action-control" data-modal="#modal-changeStatusOffer">Подтвердить</button>
                   </li>
                   <li>
-                    <button class="action-control" data-modal="#modal-activateAccount">Подтвердить</button>
+                    <button class="action-control" data-modal="#modal-actionFinance">Отклонить</button>
                   </li>
                 </ul>
               </div>

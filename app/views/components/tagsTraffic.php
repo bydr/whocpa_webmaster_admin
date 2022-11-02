@@ -9,17 +9,27 @@ $traffic = [
     "Трафик №4",
 ];
 ?>
-<div class="panel panel-stats">
-    <div class="panel-inner">
-        <div class="panel-header panel-header_underline">
-            <p class="text-size_default"><b>Трафик</b></p>
-        </div>
-        <div class="panel-body">
-            <div class="button_group button_group-row">
-                <?php foreach ($traffic as $item) : ?>
-                    <button class="button button_secondary"><?=$item?></button>
-                <?php endforeach; ?>
-            </div>
-        </div>
+<div class="toggler">
+  <div class="toggler-container">
+    <div class="toggler-control">
+      <span>Трафик</span>
+      <div class="ui-icon__wrapper">
+        <svg class="ui-icon">
+          <use xlink:href="img/_src/sprite.svg#plusCircle"></use>
+        </svg>
+        <svg class="ui-icon">
+          <use xlink:href="img/_src/sprite.svg#closeCircle"></use>
+        </svg>
+      </div>
     </div>
+    <div class="toggler-content">
+      <div class="toggler-content__inner">
+        <div class="button_group button_group-row">
+            <?php foreach ($traffic as $item) : ?>
+              <button class="button button_secondary"><?=$item?></button>
+            <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

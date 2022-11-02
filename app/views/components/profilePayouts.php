@@ -8,6 +8,7 @@ $payouts = [
         "date2" => "20/01/2022",
         "sum" => "999 999,99$",
         "wallet" => "6g9y8g2v169fs",
+        "comment" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur aut beatae cum error esse, facere impedit ipsam iure molestias officia perferendis quis reprehenderit similique, velit voluptas voluptatum?"
     ],
     [
         "status" => "on",
@@ -16,6 +17,7 @@ $payouts = [
         "date2" => "20/01/2022",
         "sum" => "999 999,99$",
         "wallet" => "6g9y8g2v169fs",
+        "comment" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur aut beatae cum error esse, facere impedit ipsam iure molestias officia perferendis quis reprehenderit similique, velit voluptas voluptatum?"
     ],
     [
         "status" => "off",
@@ -24,6 +26,7 @@ $payouts = [
         "date2" => "20/01/2022",
         "sum" => "999 999,99$",
         "wallet" => "6g9y8g2v169fs",
+        "comment" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur aut beatae cum error esse, facere impedit ipsam iure molestias officia perferendis quis reprehenderit similique, velit voluptas voluptatum?"
     ],
     [
         "status" => "off",
@@ -32,6 +35,7 @@ $payouts = [
         "date2" => "20/01/2022",
         "sum" => "999 999,99$",
         "wallet" => "6g9y8g2v169fs",
+        "comment" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur aut beatae cum error esse, facere impedit ipsam iure molestias officia perferendis quis reprehenderit similique, velit voluptas voluptatum?"
     ],
     [
         "status" => "on",
@@ -40,6 +44,7 @@ $payouts = [
         "date2" => "20/01/2022",
         "sum" => "999 999,99$",
         "wallet" => "6g9y8g2v169fs",
+        "comment" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci architecto aspernatur aut beatae cum error esse, facere impedit ipsam iure molestias officia perferendis quis reprehenderit similique, velit voluptas voluptatum?"
     ],
 ]
 
@@ -57,6 +62,15 @@ $payouts = [
                   <div class="action-target__point"></div>
                 </div>
                 <p class="text-size_medium c-gray-darken"><b><?=$payout["status"] === "on" ? "Подключен" : "Отключен" ?></b></p>
+              </div>
+              <div class="note-container">
+                <div class="note-popup">
+                  <div class="note">
+                    <span><?=$payout["comment"]?></span>
+                  </div>
+                  <button class="button button_link js-note-hide">Свернуть</button>
+                </div>
+                <button class="button button_link js-note-show">Комментарий</button>
               </div>
             </div>
           </div>

@@ -260,30 +260,40 @@ $payload = [
 
               <?php include_once "tagsVertical.php" ?>
 
-            <div class="panel panel-stats">
-              <div class="panel-inner">
-                <div class="panel-header panel-header_underline">
-                  <p class="text-size_default"><b>Заметки</b></p>
+            <div class="toggler">
+              <div class="toggler-container">
+                <div class="toggler-control">
+                  <span>Заметки</span>
+                  <div class="ui-icon__wrapper">
+                    <svg class="ui-icon">
+                      <use xlink:href="img/_src/sprite.svg#plusCircle"></use>
+                    </svg>
+                    <svg class="ui-icon">
+                      <use xlink:href="img/_src/sprite.svg#closeCircle"></use>
+                    </svg>
+                  </div>
                 </div>
-                <div class="panel-body">
-                  <div class="note__list">
-                    <div class="note note-variant_messenger">
-                      <p class="note-date">21.06.2022</p>
-                      <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
-                    </div>
-                    <div class="note note-variant_messenger">
-                      <p class="note-date">21.06.2022</p>
-                      <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
-                    </div>
-                    <div class="note note-variant_messenger">
-                      <p class="note-date">21.06.2022</p>
-                      <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
+                <div class="toggler-content">
+                  <div class="toggler-content__inner">
+                    <div class="note__list">
+                      <div class="note note-variant_messenger">
+                        <p class="note-date">21.06.2022</p>
+                        <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
+                      </div>
+                      <div class="note note-variant_messenger">
+                        <p class="note-date">21.06.2022</p>
+                        <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
+                      </div>
+                      <div class="note note-variant_messenger">
+                        <p class="note-date">21.06.2022</p>
+                        <p class="note-text">Duis et erat sed arcu venenatis ornare. Vestibulum eros est, condimentum in viverra quis, condimentum non turpis</p>
+                      </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
+
           </div>
 
           <div class="messenger-dialog__fixed">

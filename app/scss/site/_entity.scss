@@ -8,6 +8,7 @@ $ACTION_SIZE: 14px;
     button,
     p {
       margin-left: 5px;
+      margin-bottom: 0;
     }
 
     .action {
@@ -20,6 +21,10 @@ $ACTION_SIZE: 14px;
           min-height: $ACTION_SIZE;
         }
       }
+    }
+
+    + .note-container {
+      margin-top: 10px;
     }
   }
 }

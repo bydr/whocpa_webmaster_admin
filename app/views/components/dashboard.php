@@ -158,9 +158,22 @@
     <div class="panel-body">
       <div class="panel-body">
         <div class="chart chart_line">
+          <div class="chart-filter">
+            <form action="/" class="form">
+              <div class="form-control">
+                <label for="group">Страна</label>
+                <select data-filter="group" name="group" id="group" class="custom-select" >
+                  <option value="null" selected>Все</option>
+                  <option value="th">Тайланд</option>
+                  <option value="id">Индонезия</option>
+                  <option value="mx">Мексика</option>
+                </select>
+              </div>
+            </form>
+          </div>
           <div class="chart-wrapper">
             <div class="chart-config" style="display:none;">
-              <div data-set>
+              <div data-group="null" data-set>
                 <input type="text" name="label1" data-label value="Сегодня">
                 <select name="values1" data-values>
                   <option value="2200"></option>
@@ -178,7 +191,7 @@
                   <option value="3000"></option>
                 </select>
               </div>
-              <div data-set>
+              <div data-group="null" data-set>
                 <input type="text" name="label2" data-label value="Вчера">
                 <select name="values2" data-values>
                   <option value="3000"></option>
@@ -196,7 +209,7 @@
                   <option value="3500"></option>
                 </select>
               </div>
-              <div data-set>
+              <div data-group="null" data-set>
                 <input type="text" name="label3" data-label value="Позавчера">
                 <select name="values3" data-values>
                   <option value="2400"></option>
@@ -214,6 +227,118 @@
                   <option value="3200"></option>
                 </select>
               </div>
+
+              <div data-group="th" data-set>
+                <input type="text" name="label1" data-label value="Сегодня">
+                <select name="values1" data-values>
+                  <option value="2200"></option>
+                  <option value="2400"></option>
+                  <option value="3500"></option>
+                  <option value="3000"></option>
+                  <option value="3250"></option>
+                  <option value="3490"></option>
+                  <option value="2500"></option>
+                  <option value="2400"></option>
+                  <option value="2900"></option>
+                  <option value="3000"></option>
+                  <option value="3250"></option>
+                  <option value="3490"></option>
+                  <option value="3000"></option>
+                </select>
+              </div>
+              <div data-group="th" data-set>
+                <input type="text" name="label2" data-label value="Вчера">
+                <select name="values2" data-values>
+                  <option value="3000"></option>
+                  <option value="2900"></option>
+                  <option value="4000"></option>
+                  <option value="3500"></option>
+                  <option value="3750"></option>
+                  <option value="3990"></option>
+                  <option value="2900"></option>
+                  <option value="3000"></option>
+                  <option value="3500"></option>
+                  <option value="3500"></option>
+                  <option value="3750"></option>
+                  <option value="3990"></option>
+                  <option value="3500"></option>
+                </select>
+              </div>
+              <div data-group="th" data-set>
+                <input type="text" name="label3" data-label value="Позавчера">
+                <select name="values3" data-values>
+                  <option value="2400"></option>
+                  <option value="2600"></option>
+                  <option value="2700"></option>
+                  <option value="2200"></option>
+                  <option value="2450"></option>
+                  <option value="2690"></option>
+                  <option value="2700"></option>
+                  <option value="2600"></option>
+                  <option value="3100"></option>
+                  <option value="3200"></option>
+                  <option value="3450"></option>
+                  <option value="2590"></option>
+                  <option value="3200"></option>
+                </select>
+              </div>
+
+              <div data-group="id" data-set>
+                <input type="text" name="label2" data-label value="Вчера">
+                <select name="values2" data-values>
+                  <option value="3000"></option>
+                  <option value="2900"></option>
+                  <option value="4000"></option>
+                  <option value="3500"></option>
+                  <option value="3750"></option>
+                  <option value="3990"></option>
+                  <option value="2900"></option>
+                  <option value="3000"></option>
+                  <option value="3500"></option>
+                  <option value="3500"></option>
+                  <option value="3750"></option>
+                  <option value="3990"></option>
+                  <option value="3500"></option>
+                </select>
+              </div>
+              <div data-group="id" data-set>
+                <input type="text" name="label3" data-label value="Позавчера">
+                <select name="values3" data-values>
+                  <option value="2400"></option>
+                  <option value="2600"></option>
+                  <option value="2700"></option>
+                  <option value="2200"></option>
+                  <option value="2450"></option>
+                  <option value="2690"></option>
+                  <option value="2700"></option>
+                  <option value="2600"></option>
+                  <option value="3100"></option>
+                  <option value="3200"></option>
+                  <option value="3450"></option>
+                  <option value="2590"></option>
+                  <option value="3200"></option>
+                </select>
+              </div>
+
+              <div data-group="mx" data-set>
+                <input type="text" name="label3" data-label value="Позавчера">
+                <select name="values3" data-values>
+                  <option value="2400"></option>
+                  <option value="2600"></option>
+                  <option value="2700"></option>
+                  <option value="2200"></option>
+                  <option value="2450"></option>
+                  <option value="2690"></option>
+                  <option value="2700"></option>
+                  <option value="2600"></option>
+                  <option value="3100"></option>
+                  <option value="3200"></option>
+                  <option value="3450"></option>
+                  <option value="2590"></option>
+                  <option value="3200"></option>
+                </select>
+              </div>
+
               <select name="labels">
                 <option value="00:00"></option>
                 <option value="02:00"></option>

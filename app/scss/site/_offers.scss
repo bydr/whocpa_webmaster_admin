@@ -10,6 +10,22 @@
 
   &__panel {
     @extend .promo__panel;
+
+    .panel {
+      &-block {
+        align-items: center;
+      }
+      &-inner {
+        align-items: center;
+      }
+      &-col {
+        > p {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 
   &-controls {
@@ -82,6 +98,22 @@
           border-top-left-radius: 0;
           border-top-right-radius: 0;
           border-bottom: none;
+        }
+
+        .panel {
+          &-block {
+            align-items: center;
+          }
+          &-inner {
+            align-items: center;
+          }
+          &-col {
+            > p {
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
         }
       }
     }

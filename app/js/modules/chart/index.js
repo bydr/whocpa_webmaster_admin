@@ -27,12 +27,7 @@ import {
 } from "chart.js"
 import { htmlLegendPlugin } from "./plugins"
 import ChartDataLables from "chartjs-plugin-datalabels"
-import {
-  _getRandomColor,
-  _getTimesLabels,
-  hexToRgbA,
-  PALETTE_DEFAULT,
-} from "./utils"
+import { _getRandomColor, _tranparentizeRgbA, PALETTE_DEFAULT } from "./utils"
 
 Chart.register([
   ArcElement,
@@ -72,7 +67,7 @@ const createChartPie = (
     labels: labels,
     datasets: [
       {
-        label: "My First Dataset",
+        label: "ChartPie",
         data: dataValues,
         backgroundColor: dataValues.map(
           (_, i) => PALETTE_DEFAULT[i] || _getRandomColor(),
@@ -138,6 +133,34 @@ const createChartPie = (
   return new Chart(ctx, config)
 }
 
+const getCustomDatasets = (datasets, ctx) => {
+  return datasets.map((item, index) => {
+    const color = PALETTE_DEFAULT[index] || _getRandomColor()
+    const gradient = ctx.createLinearGradient(
+      0,
+      0,
+      0,
+      ctx.canvas.clientHeight - ctx.canvas.clientHeight * 0.2,
+    )
+
+    gradient.addColorStop(0, _tranparentizeRgbA(color, 0.7))
+    gradient.addColorStop(1, _tranparentizeRgbA(color, 0))
+
+    return {
+      borderWidth: 3,
+      borderColor: color,
+      fill: true,
+      backgroundColor: gradient,
+      tension: 0.4,
+      pointStyle: "circle",
+      datalabels: {
+        display: false,
+      },
+      ...item,
+    }
+  })
+}
+
 const createChartLine = (
   ctx,
   labels = [],
@@ -146,30 +169,7 @@ const createChartLine = (
 ) => {
   let data = {
     labels: labels,
-    datasets: datasets.map((item, index) => {
-      const color = PALETTE_DEFAULT[index] || _getRandomColor()
-      const gradient = ctx.createLinearGradient(
-        0,
-        0,
-        0,
-        ctx.canvas.clientHeight - ctx.canvas.clientHeight * 0.2,
-      )
-      gradient.addColorStop(0, hexToRgbA(color, 0.7))
-      gradient.addColorStop(1, hexToRgbA(color, 0))
-
-      return {
-        borderWidth: 3,
-        borderColor: color,
-        fill: true,
-        backgroundColor: gradient,
-        tension: 0.4,
-        pointStyle: "circle",
-        datalabels: {
-          display: false,
-        },
-        ...item,
-      }
-    }),
+    datasets: getCustomDatasets(datasets, ctx),
   }
 
   const options = {
@@ -253,34 +253,72 @@ const chartLineInit = () => {
     return
   }
 
+  const filterInit = (chartElement, chart) => {
+    let datasets = []
+
+    const datasetItems = [...chartElement.querySelectorAll("[data-set]")]
+    const filters = [...chartElement.querySelectorAll("[data-filter]")]
+
+    const getDataSetsByFilter = (filterName, filterVal) => {
+      return datasetItems
+        .filter((set) =>
+          filterName !== undefined && filterVal !== undefined
+            ? set.dataset[filterName] === filterVal
+            : true,
+        )
+        .map((item) => {
+          return {
+            label: item.querySelector(`[data-label]`)?.value || "",
+            data: [...(item.querySelector(`[data-values]`)?.options || [])].map(
+              (option) => option.value,
+            ),
+          }
+        })
+    }
+
+    const updateChartDataset = (datasets, chart) => {
+      chart.data.datasets = getCustomDatasets(datasets, chart.ctx)
+      chart.update()
+    }
+
+    if (filters.length > 0) {
+      for (const filter of filters) {
+        const filterName = filter.getAttribute("data-filter")
+        datasets = getDataSetsByFilter(filterName, filter.value)
+        updateChartDataset(datasets, chart)
+
+        filter.addEventListener("change", (e) => {
+          datasets = getDataSetsByFilter(filterName, e.target.value)
+          updateChartDataset(datasets, chart)
+        })
+      }
+    } else {
+      datasets = getDataSetsByFilter()
+      updateChartDataset(datasets, chart)
+    }
+
+    return datasets
+  }
+
   charts.forEach((chart) => {
     const canvas = chart.querySelector("canvas")
     if (canvas) {
       const ctx = canvas.getContext("2d")
 
-      const values = [
-        ...(chart.querySelector(`[name="values"]`)?.options || []),
-      ].map((option) => option.value)
       const labels = [
         ...(chart.querySelector(`[name="labels"]`)?.options || []),
       ].map((option) => option.value)
 
-      const datasetItems = [...chart.querySelectorAll("[data-set]")]
-      const datasets = datasetItems.map((item) => {
-        return {
-          label: item.querySelector(`[data-label]`)?.value || "",
-          data: [...(item.querySelector(`[data-values]`)?.options || [])].map(
-            (option) => option.value,
-          ),
-        }
-      })
+      let datasets = []
 
-      createChartLine(
+      const chartLine = createChartLine(
         ctx,
         labels,
         datasets,
         chart.querySelector(".chart-legend") || null,
       )
+
+      filterInit(chart, chartLine)
     }
   })
 }

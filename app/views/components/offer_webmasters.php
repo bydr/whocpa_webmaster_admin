@@ -72,9 +72,6 @@
                             <div class="panel-col">
                               <p class="text-size_default"><b>Ставка:</b><span class="text-size_medium c-gray-darken nowrap">3650$</span></p>
                             </div>
-                            <div class="panel-col">
-                              <p class="text-size_default"><b>Кол-во спец. условий:</b><span class="text-size_medium c-gray-darken nowrap">12</span></p>
-                            </div>
 
                           </div>
 
