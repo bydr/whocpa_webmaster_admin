@@ -70,9 +70,11 @@
                               <p class="text-size_default"><b>Холд:</b><span class="text-size_medium c-gray-darken nowrap">4</span></p>
                             </div>
                             <div class="panel-col">
-                              <p class="text-size_default"><b>Ставка:</b><span class="text-size_medium c-gray-darken nowrap">3650$</span></p>
+                              <p class="text-size_default"><b>Ставка нам:</b><span class="text-size_medium c-gray-darken nowrap">3650$</span></p>
                             </div>
-
+                            <div class="panel-col">
+                              <p class="text-size_default"><b>Ставка вебмастеру:</b><span class="text-size_medium c-gray-darken nowrap">3650$</span></p>
+                            </div>
                           </div>
 
                         </div>

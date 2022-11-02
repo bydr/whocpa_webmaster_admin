@@ -415,162 +415,148 @@ $other = [
   </div>
 
   <div class="panel panel-stats">
-    <div class="toggler">
-      <div class="toggler-container is-active">
-        <div class="toggler-control">
-          <span>Настройка столбцов</span>
-          <div class="ui-icon__wrapper">
-            <svg class="ui-icon">
-              <use xlink:href="img/_src/sprite.svg#plusCircle"></use>
-            </svg>
-            <svg class="ui-icon">
-              <use xlink:href="img/_src/sprite.svg#closeCircle"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="toggler-content">
-          <div class="toggler-content__inner">
-            <div class="panel panel_gray">
-              <div class="table-container">
-                <table class="table table-striped">
-                  <colgroup>
-                    <col span="1" style="">
-                  </colgroup>
-                  <colgroup>
-                    <col span="3" style="">
-                  </colgroup>
-                  <colgroup>
-                    <col span="3" style="">
-                  </colgroup>
-                  <colgroup>
-                    <col span="3" style="">
-                  </colgroup>
-                  <thead>
-                  <tr class="table-row table-row__head">
-                    <th>
-                      <div class="table-cell">
-                        &nbsp;
-                      </div>
-                    </th>
-                    <th colspan="3">
-                      <div class="table-cell">
-                        Лиды
-                      </div>
-                    </th>
-                    <th colspan="3">
-                      <div class="table-cell">
-                        Финансы
-                      </div>
-                    </th>
-                    <th colspan="3">
-                      <div class="table-cell">
-                        Финансы 2
-                      </div>
-                    </th>
-                  </tr>
-                  <tr class="table-row">
-                    <th><div class="table-cell">Дата</div></th>
-                    <th><div class="table-cell">Качественные лиды</div></th>
-                    <th><div class="table-cell">Холд лиды на проверке СРА</div></th>
-                    <th><div class="table-cell">Спам лиды</div></th>
-                    <th><div class="table-cell">PUB реферальные</div></th>
-                    <th><div class="table-cell">Вебмастер спам финансы закрыто</div></th>
-                    <th><div class="table-cell">PUB % реферальных</div></th>
-                    <th><div class="table-cell">PUB реферальные</div></th>
-                    <th><div class="table-cell">Вебмастер спам финансы закрыто</div></th>
-                    <th><div class="table-cell">PUB % реферальных</div></th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                    <td><div class="table-cell">22.06.2022</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">100</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">100</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                    <td><div class="table-cell">9 999</div></td>
-                  </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="table-cell">22.06.2022</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">100</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                      <td><div class="table-cell">9 999</div></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+    <div class="panel-header">
+      <p class="text-size_default"><b>Статистика</b></p>
+    </div>
+    <div class="panel-body">
+      <div class="panel panel_gray">
+        <div class="table-container">
+          <table class="table table-striped">
+            <colgroup>
+              <col span="1" style="">
+            </colgroup>
+            <colgroup>
+              <col span="3" style="">
+            </colgroup>
+            <colgroup>
+              <col span="3" style="">
+            </colgroup>
+            <colgroup>
+              <col span="3" style="">
+            </colgroup>
+            <thead>
+            <tr class="table-row table-row__head">
+              <th>
+                <div class="table-cell">
+                  &nbsp;
+                </div>
+              </th>
+              <th colspan="3">
+                <div class="table-cell">
+                  Лиды
+                </div>
+              </th>
+              <th colspan="3">
+                <div class="table-cell">
+                  Финансы
+                </div>
+              </th>
+              <th colspan="3">
+                <div class="table-cell">
+                  Финансы 2
+                </div>
+              </th>
+            </tr>
+            <tr class="table-row">
+              <th><div class="table-cell">Дата</div></th>
+              <th><div class="table-cell">Качественные лиды</div></th>
+              <th><div class="table-cell">Холд лиды на проверке СРА</div></th>
+              <th><div class="table-cell">Спам лиды</div></th>
+              <th><div class="table-cell">PUB реферальные</div></th>
+              <th><div class="table-cell">Вебмастер спам финансы закрыто</div></th>
+              <th><div class="table-cell">PUB % реферальных</div></th>
+              <th><div class="table-cell">PUB реферальные</div></th>
+              <th><div class="table-cell">Вебмастер спам финансы закрыто</div></th>
+              <th><div class="table-cell">PUB % реферальных</div></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            <tr>
+              <td><div class="table-cell">22.06.2022</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">100</div></td>
+              <td><div class="table-cell">9 999</div></td>
+              <td><div class="table-cell">9 999</div></td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

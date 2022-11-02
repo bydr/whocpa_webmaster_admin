@@ -16,6 +16,7 @@
         </span>
       </label>
     </div>
+    <button class="button button_link js-button_toggle c-accent" data-component="toggleButtonAll" data-toggle-text="Скрыть все">Расширить все</button>
     <button class="button button_link" disabled>На проверку</button>
     <button class="button button_link" disabled>Подтвердить</button>
     <button class="button button_link" disabled>Отклонить</button>
@@ -93,24 +94,42 @@
             <div class="panel-block">
               <div class="panel-col">
                 <p class="text-size_default"><b>Дата создания:</b><span class="text-size_medium c-gray-darken nowrap">20.04.2022 - 21:20</span></p>
-                <p class="text-size_default"><b>Дата редиректа:</b><span class="text-size_medium c-gray-darken nowrap">20.04.2022 - 21:20</span></p>
+
                 <p class="text-size_default"><b>Дата закрытия:</b><span class="text-size_medium c-gray-darken nowrap">20.04.2022 - 21:20</span></p>
-              </div>
-              <div class="panel-col">
-                <p class="text-size_default"><b>Телефон:</b><span class="text-size_medium c-gray-darken">6681***909</span></p>
-                <p class="text-size_default"><b>Холд:</b><span class="text-size_medium c-gray-darken">4</span></p>
-                <p class="stats-price"><span class="c-dark">Паб.:</span><span class="price c-accent"> 9 999,62$</span></p>
+
+                <button class="button button_link js-button_toggle c-accent" data-component="toggleButton" data-toggle-text="Скрыть">Расширить</button>
               </div>
               <div class="panel-col">
                 <p class="text-size_default"><b>Имя:</b><span class="text-size_medium c-gray-darken">Имя человека(20сим.)</span></p>
-                <p class="text-size_default"><b>Подробности:</b><span class="text-size_medium c-gray-darken">Задача организации, в особенности же рамки и место кадров собственно</span></p>
+                <p class="stats-price"><span class="c-dark">Паб.:</span><span class="price c-accent"> 9 999,62$</span></p>
+              </div>
+              <div class="panel-col">
                 <p class="stats-price"><span class="c-dark">Реф.:</span><span class="price c-secondary"> 999 999,62$</span></p>
               </div>
               <div class="panel-col">
-                <p class="text-size_default"><b>Цель:</b><span class="text-size_medium c-gray-darken">[4863] Approved Lead</span></p>
                 <p class="stats-price"><span class="c-dark">Наши.:</span><span class="price c-secondary"> 999 999,62$</span></p>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="panel-detail">
+          <div class="panel-row">
+            <div class="panel-block">
+              <div class="panel-col">
+                <p class="text-size_default"><b>Телефон: </b><span class="text-size_medium c-gray-darken">6681***909</span></p>
+                <p class="text-size_default"><b>Дата редиректа: </b><span class="text-size_medium c-gray-darken nowrap">20.04.2022 - 21:20</span></p>
+
+              </div>
+            </div>
+            <div class="panel-block">
+              <div class="panel-col">
+                <p class="text-size_default"><b>Цель: </b><span class="text-size_medium c-gray-darken">[4863] Approved Lead</span></p>
+                <p class="text-size_default"><b>Холд: </b><span class="text-size_medium c-gray-darken">4</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="panel-row">
+            <p class="text-size_default"><b>Подробности: </b><span class="text-size_medium c-gray-darken">Задача организации, в особенности же рамки и место кадров собственно</span></p>
           </div>
         </div>
       </div>
@@ -123,3 +142,46 @@
 $WITH_PER_PAGE = true;
 include_once "pagination.php" ?>
 
+<script>
+  const buttonsLeads = [...document.querySelectorAll(`.leads__panel [data-component="toggleButton"]`)]
+  const buttonsLeadsAll = [...document.querySelectorAll(`[data-component="toggleButtonAll"]`)]
+
+  const clickAllToggles = () => {
+    buttonsLeads.forEach(b => {
+      b.click()
+    })
+  }
+
+  for (const btn of buttonsLeadsAll) {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault()
+
+      window.whocpa.toggleButton.toggle(btn, {
+        cbActive: () => {
+          clickAllToggles()
+        },
+        cbDisable: () => {
+          clickAllToggles()
+        }
+      })
+    })
+
+  }
+
+  for (const btn of buttonsLeads) {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault()
+      const panel = btn.closest(".leads__panel")
+
+      window.whocpa.toggleButton.toggle(btn, {
+        cbActive: () => {
+          panel.classList.add("is-toggled")
+        },
+        cbDisable: () => {
+          panel.classList.remove("is-toggled")
+        }
+      })
+    })
+  }
+
+</script>
