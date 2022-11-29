@@ -294,7 +294,6 @@ $other = [
                   </div>
                 </div>
               </div>
-              <br>
             </form>
           </div>
         </div>
@@ -407,7 +406,6 @@ $other = [
                 </div>
               </div>
             </div>
-            <br>
           </div>
         </div>
       </div>

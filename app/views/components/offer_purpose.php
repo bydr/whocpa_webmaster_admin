@@ -95,58 +95,11 @@
                   </div>
                   <button class="button button_accent" data-modal="#modal-createSpecialCondition">Добавить спец. условие</button>
                 </div>
+
                 <div class="offers-entities__list">
-                    <?php for($i = 0; $i <= 5; $i++) :?>
-                      <div class="panel">
-                        <div class="panel-inner">
-                          <div class="panel-block">
-                            <div class="panel-col">
-                              <div class="action action_green" data-component="dropdown" data-placement-popup="left">
-                                <button class="action-target" data-target="">
-                                  <span class="action-target__point"></span>
-                                  <svg class="ui-icon action-icon">
-                                    <use xlink:href="img/_src/sprite.svg#angleUp"></use>
-                                  </svg>
-                                </button>
-                                <div class="action-popup">
-                                  <ul class="action-list">
-                                    <li>
-                                      <button class="action-control">Редактировать</button>
-                                    </li>
-                                    <li>
-                                      <button class="action-control">Удалить</button>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="panel-col">
-                              <p class="text-size_default"><b>ID:</b><span class="text-size_medium c-gray-darken nowrap">1699853</span></p>
-                              <p class="text-size_default"><b>Холд:</b><span class="text-size_medium c-gray-darken nowrap">4</span></p>
-                            </div>
-                            <div class="panel-col">
-                              <p class="text-size_default"><b>Nickname:</b><span class="text-size_medium c-gray-darken nowrap">holyjoker3</span></p>
-                              <p class="text-size_default"><b>Оплата:</b><span class="text-size_medium c-gray-darken nowrap">CPA(10$/8$)</span></p>
-                            </div>
-                            <div class="panel-col">
-                              <p class="text-size_default"><b>Оффер:</b><span class="text-size_medium c-gray-darken nowrap">Оффер номер 1</span></p>
-                              <p class="text-size_default"><b>Цель:</b><span class="text-size_medium c-gray-darken nowrap">Краткое описание будет тут</span></p>
-                            </div>
-                            <div class="panel-col">
-                              <p class="text-size_default"><b>Дата создания:</b><span class="text-size_medium c-gray-darken nowrap">23.05.2022</span></p>
-                              <p class="text-size_default"><b>Дата редактирования:</b><span class="text-size_medium c-gray-darken nowrap">23.05.2022</span></p>
-                            </div>
-                          </div>
-                          <div class="panel-side_info">
-                            <div class="panel-col">
-                              <p class="text-size_medium">Ставка паб.:<span class="price c-accent">9 999,62$</span></p>
-                              <p class="text-size_medium">Ставка паб.:<span class="price c-secondary">9 999,62$</span></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    <?php endfor; ?>
+                    <?php include_once "offers_spec_conditions_list.php"?>
                 </div>
+
               </div>
 
                 <?php include_once "pagination.php" ?>
@@ -159,3 +112,23 @@
     </div>
   </div>
 </section>
+
+<script>
+  const buttons3 = [...document.querySelectorAll(`[data-component="toggleButton"]`)]
+  for (const btn of buttons3) {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault()
+      const panel = btn.closest(".panel")
+
+      window.whocpa.toggleButton.toggle(btn, {
+        cbActive: () => {
+          panel.classList.add("is-toggled")
+        },
+        cbDisable: () => {
+          panel.classList.remove("is-toggled")
+        }
+      })
+    })
+  }
+
+</script>

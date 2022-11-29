@@ -2,13 +2,7 @@
   <div class="form-row">
     <div class="form-col">
       <div class="form-control">
-        <select name="publisher" id="publisher" class="js-choice custom-select">
-          <option value="" disabled selected>ID Паблишера</option>
-          <option value="vertical1">Паблишер 1</option>
-          <option value="vertical2">Паблишер 2</option>
-          <option value="vertical3">Паблишер 3</option>
-          <option value="vertical4">Паблишер 4</option>
-        </select>
+        <input type="text" placeholder="ID пользователя">
       </div>
     </div>
     <div class="form-col">
@@ -35,7 +29,7 @@
     </div>
     <div class="form-col flex-initial">
       <div class="form-control">
-        <input type="text" placeholder="Сумма">
+        <input type="text" placeholder="Сумма пополнения">
       </div>
     </div>
   </div>

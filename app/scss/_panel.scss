@@ -70,6 +70,7 @@
           }
           &-general {
             grid-area: general;
+            min-width: 30px;
 
             .checkbox {
               margin-right: 0;
@@ -112,6 +113,13 @@
     position: absolute;
     transition: all 0.3s ease-in-out;
     transform: scale(0.98) translateY(-20px);
+
+    &.panel-detail__reset {
+      margin: 0;
+      grid-template-columns: 30px 10fr;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &.is-toggled {

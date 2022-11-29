@@ -82,6 +82,10 @@
   flex: 2;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .d-flex {
   display: flex;
 }
@@ -100,8 +104,10 @@
 
 .stats-price {
   margin: 0;
-  align-items: center;
   display: inline-flex;
+  flex: 1;
+  align-items: flex-start;
+  width: 100%;
 }
 .stats-price span {
   margin-left: 0;
@@ -109,9 +115,12 @@
 .stats-price span:nth-child(2) {
   font-size: 1rem;
   margin-left: 4px;
+  flex: 1;
+  text-align: right;
 }
 .stats-price span:first-child {
   color: #6e6e86;
+  min-width: 35%;
 }
 
 .mb-0 {
@@ -243,6 +252,7 @@
 }
 .panel-with_general .panel-inner .panel-general {
   grid-area: general;
+  min-width: 30px;
 }
 .panel-with_general .panel-inner .panel-general .checkbox {
   margin-right: 0;
@@ -278,6 +288,12 @@
   position: absolute;
   transition: all 0.3s ease-in-out;
   transform: scale(0.98) translateY(-20px);
+}
+.panel-detail.panel-detail__reset {
+  margin: 0;
+  grid-template-columns: 30px 10fr;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .panel.is-toggled .panel-detail, .is-toggled.settings-panel .panel-detail, .is-toggled.events__panel .panel-detail, .is-toggled.ticket-panel .panel-detail, .is-toggled.news-panel .panel-detail, .is-toggled.source__panel .panel-detail, .is-toggled.finance__panel .panel-detail, .is-toggled.tools__panel .panel-detail, .is-toggled.promo__panel .panel-detail, .is-toggled.offers__panel .panel-detail, .is-toggled.leads__panel .panel-detail, .is-toggled.crm-panel .panel-detail, .is-toggled.profile-panel .panel-detail, .is-toggled.panel-stats .panel-detail, .is-toggled.sidebar-bar .panel-detail, .is-toggled.panel-filters .panel-detail, .is-toggled.users__panel .panel-detail {
   opacity: 1;
@@ -2516,6 +2532,12 @@
 
 .font-family_secondary {
   font-family: "jost", sans-serif;
+}
+
+.h2 {
+  font-size: 22px;
+  line-height: 120%;
+  margin: 0 0 10px 0;
 }
 
 .h3 {

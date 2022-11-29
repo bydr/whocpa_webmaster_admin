@@ -25,6 +25,10 @@ $pages = [
         "url" => "page_finance_refill.php"
     ],
     [
+        "title" => "Финансы (Журнал операций)",
+        "url" => "page_finance_transaction_log.php"
+    ],
+    [
         "title" => "Источники",
         "url" => "page_sources.php"
     ],
@@ -75,6 +79,10 @@ $pages = [
     [
         "title" => "Оффер редактирование",
         "url" => "page_offer_edit.php"
+    ],
+    [
+        "title" => "Оффер спец. условия",
+        "url" => "page_offers_spec_conditions.php"
     ],
     [
         "title" => "Статистика",
