@@ -43,6 +43,72 @@ $nav = [
         "children" => []
     ],
     [
+        "icon" => "user",
+        "name" => "Пользователи",
+        "children" => [
+            [
+                "icon" => "users",
+                "name" => "Все пользователи"
+            ],
+            [
+                "icon" => "userAdd",
+                "name" => "Добавить"
+            ],
+            [
+                "icon" => "userRemove",
+                "name" => "Удалить"
+            ],
+            [
+                "icon" => "userTag",
+                "name" => "Партнёры и Рекламодатели"
+            ],
+        ]
+    ],
+    [
+        "icon" => "user",
+        "name" => "Пользователи",
+        "children" => [
+            [
+                "icon" => "users",
+                "name" => "Все пользователи"
+            ],
+            [
+                "icon" => "userAdd",
+                "name" => "Добавить"
+            ],
+            [
+                "icon" => "userRemove",
+                "name" => "Удалить"
+            ],
+            [
+                "icon" => "userTag",
+                "name" => "Партнёры и Рекламодатели"
+            ],
+        ]
+    ],
+    [
+        "icon" => "user",
+        "name" => "Пользователи",
+        "children" => [
+            [
+                "icon" => "users",
+                "name" => "Все пользователи"
+            ],
+            [
+                "icon" => "userAdd",
+                "name" => "Добавить"
+            ],
+            [
+                "icon" => "userRemove",
+                "name" => "Удалить"
+            ],
+            [
+                "icon" => "userTag",
+                "name" => "Партнёры и Рекламодатели"
+            ],
+        ]
+    ],
+    [
         "icon" => "people",
         "name" => "Лиды",
         "children" => []
@@ -130,6 +196,16 @@ $nav = [
                                     <use xlink:href="img/_src/sprite.svg#<?=$item['icon'] ?>"></use>
                                 </svg>
                                 <span><?=$item['name'] ?></span>
+
+                              <span class="badge__list">
+                                <span class="badge badge_private">
+                                  <span class="text-size_small"><b>10</b></span>
+                                </span>
+                                <span class="badge badge_accent">
+                                  <span class="text-size_small"><b>2</b></span>
+                                </span>
+                              </span>
+
                             </span>
                                 <svg class="ui-icon dropdown-icon">
                                     <use xlink:href="img/_src/sprite.svg#angleUp"></use>
@@ -157,6 +233,16 @@ $nav = [
                             <use xlink:href="img/_src/sprite.svg#<?=$item['icon'] ?>"></use>
                         </svg>
                         <span><?=$item['name'] ?></span>
+
+                          <span class="badge__list">
+                            <span class="badge badge_private">
+                                <span class="text-size_small"><b>10</b></span>
+                              </span>
+                              <span class="badge badge_accent">
+                                <span class="text-size_small"><b>2</b></span>
+                              </span>
+                          </span>
+
                     </a>
                 <?php endif; ?>
             </li>
