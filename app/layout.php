@@ -18,6 +18,7 @@
 <?php require_once('views/modals/modal_activateAccount.php'); ?>
 <?php require_once('views/modals/modal_passwordSendSuccess.php'); ?>
 <?php require_once('views/modals/modal_passwordReset.php'); ?>
+<?php require_once('views/modals/modal_passwordUpdate.php'); ?>
 <?php require_once('views/modals/modal_approveChangeStatusOffer.php'); ?>
 <?php require_once('views/modals/modal_sendNewProfileData.php'); ?>
 <?php require_once('views/modals/modal_editProfile.php'); ?>

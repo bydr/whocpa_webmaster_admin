@@ -91,6 +91,10 @@ $pages = [
     [
         "title" => "Настройки",
         "url" => "page_settings.php"
+    ],
+    [
+        "title" => "Авторизация",
+        "url" => "page_signIn.php"
     ]
 ]
 

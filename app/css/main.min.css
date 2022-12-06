@@ -629,7 +629,6 @@
   font-size: 1rem;
   margin-left: 4px;
   flex: 1;
-  text-align: right;
 }
 .stats-price span:first-child {
   color: #6e6e86;
@@ -2334,7 +2333,6 @@
   font-size: 1rem;
   margin-left: 4px;
   flex: 1;
-  text-align: right;
 }
 .stats-price span:first-child {
   color: #6e6e86;
@@ -5281,4 +5279,8 @@ p {
 .price.price_20 {
   font-size: 20px;
   line-height: 130%;
+}
+
+.panel-auth {
+  max-width: 500px;
 }

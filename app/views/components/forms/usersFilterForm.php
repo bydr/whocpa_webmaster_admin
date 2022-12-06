@@ -66,5 +66,10 @@
           </label>
         </div>
       </div>
+      <div class="form-col flex-initial">
+        <div class="form-control">
+          <button class="button button_accent">Фильтр</button>
+        </div>
+      </div>
     </div>
 </form>
