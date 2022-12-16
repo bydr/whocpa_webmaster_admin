@@ -15,6 +15,7 @@ import "./modules/toggler"
 import { initToggler } from "./modules/toggler"
 import "./modules/fileUploaderDragDrop"
 
+
 const menuToggleInit = () => {
   const MODE_CLOSE = "close"
   const MODE_OPEN = "open"
@@ -46,6 +47,7 @@ const menuToggleInit = () => {
       }
     })
   }
+
 }
 
 const textareaAutoHeightInit = () => {

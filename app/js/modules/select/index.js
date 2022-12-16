@@ -1,4 +1,7 @@
 import Choices from "choices.js"
+import { setGlobalImplementation } from "../helpers/utils"
+
+const MODULE_NAME = "select"
 
 const selectInit = () => {
   const elements = [...document.querySelectorAll(".custom-select")]
@@ -44,10 +47,21 @@ const selectInit = () => {
         noResults: "has-no-results",
         noChoices: "has-no-choices",
       },
+      callbackOnInit: () => {
+        console.log("select is init ", this)
+      }
+
     })
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   selectInit()
+})
+
+setGlobalImplementation({
+  moduleName: MODULE_NAME,
+  payload: {
+    globalInit: selectInit,
+  },
 })
