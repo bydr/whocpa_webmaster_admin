@@ -2,12 +2,14 @@
   <div class="form-row">
     <div class="form-col">
       <div class="form-control">
-        <select name="publisher" id="publisher" class="js-choice custom-select">
+        <select name="publisher" id="publisher" class="js-choice custom-select"
+                data-search
+                data-select-type="ajax"
+                data-endpoint-url="https://jsonplaceholder.typicode.com/users"
+                data-endpoint-params="name^=#macros#"
+                data-endpoint-fields="id,name"
+        >
           <option value="" disabled selected>Паблишер</option>
-          <option value="vertical1">Паблишер 1</option>
-          <option value="vertical2">Паблишер 2</option>
-          <option value="vertical3">Паблишер 3</option>
-          <option value="vertical4">Паблишер 4</option>
         </select>
       </div>
     </div>
