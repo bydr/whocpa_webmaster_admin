@@ -1,39 +1,58 @@
 import { Datepicker, DateRangePicker } from "vanillajs-datepicker"
 import ru from "vanillajs-datepicker/locales/ru"
+import { setGlobalImplementation } from "../helpers/utils"
 
-document.addEventListener("DOMContentLoaded", () => {
-  Object.assign(Datepicker.locales, ru)
+const MODULE_NAME = "datepicker"
 
+const LANGUAGE = "ru"
+Object.assign(Datepicker.locales, ru)
+
+const initDatePickers = () => {
   const datepickers = [
     ...document.querySelectorAll(`[data-component="datepicker"]`),
   ]
-  const rangepickers = [
-    ...document.querySelectorAll(`[data-component="rangepicker"]`),
-  ]
+
   for (const datepicker of datepickers) {
     const input = datepicker.querySelector("[data-input]")
     if (input) {
       new Datepicker(input, {
-        // ...options
-        language: "ru",
+        language: LANGUAGE,
       })
-      datepicker.addEventListener("change", (e) => {
-        console.log("value ", e.target.value)
-      })
+      // datepicker.addEventListener("change", (e) => {
+      //   console.log("value ", e.target.value)
+      // })
     }
   }
+}
+
+const initRangePickers = () => {
+  const rangepickers = [
+    ...document.querySelectorAll(`[data-component="rangepicker"]`),
+  ]
 
   for (const rangepicker of rangepickers) {
     const inputStart = rangepicker.querySelector("[data-input-start]")
     const inputEnd = rangepicker.querySelector("[data-input-end]")
 
     new DateRangePicker(rangepicker, {
-      // ...options
-      language: "ru",
+      language: LANGUAGE,
       inputs: [inputStart, inputEnd],
     })
-    rangepicker.addEventListener("change", (e) => {
-      console.log("value ", e.target.value)
-    })
+    // rangepicker.addEventListener("change", (e) => {
+    //   console.log("value ", e.target.value)
+    // })
   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // initDatePickers()
+  // initRangePickers()
+})
+
+setGlobalImplementation({
+  moduleName: MODULE_NAME,
+  payload: {
+    initDatePickers: initDatePickers,
+    initRangePickers: initRangePickers,
+  },
 })
