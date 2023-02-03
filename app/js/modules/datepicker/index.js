@@ -45,8 +45,8 @@ const initRangePickers = () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // initDatePickers()
-  // initRangePickers()
+  initDatePickers()
+  initRangePickers()
 })
 
 setGlobalImplementation({
