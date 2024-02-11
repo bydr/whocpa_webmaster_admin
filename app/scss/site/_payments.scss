@@ -1,0 +1,39 @@
+.payment {
+  &-row {
+    display: inline-flex;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 12px;
+  }
+
+  &-icon {
+    display: flex;
+    height: 30px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &-icon {
+    &.payment-icon_size {
+
+      &-40 {
+        height: 40px;
+      }
+
+      &-30 {
+        height: 30px;
+      }
+
+      &-20 {
+        height: 20px;
+      }
+    }
+  }
+}

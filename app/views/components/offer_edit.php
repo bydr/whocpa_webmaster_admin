@@ -24,6 +24,10 @@
           <div class="panel-inner">
             <div class="panel-header panel-header_underline">
               <p class="text-size_default"><b>Редактирование оффера</b></p>
+              <div class="button_group button_group-row">
+                <button type="submit" class="button button_accent">Сохранить</button>
+                <button type="button" class="button button_dark">Отменить</button>
+              </div>
             </div>
             <div class="panel-body">
 
@@ -62,6 +66,9 @@
                   </div>
                 </div>
                 <div class="form-col">
+
+
+
                     <?php include "fileUploader.php"?>
                 </div>
               </div>

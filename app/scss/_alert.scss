@@ -1,0 +1,108 @@
+@import "_mixins/box";
+@import "vars";
+
+@mixin theme($color: "inherit", $lighten: 47) {
+  border-color: $color;
+  background: lighten($color, $lighten);
+  color: $color;
+}
+
+.alert {
+  display: flex;
+  border-radius: $border-radius-field;
+  width: 100%;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: $white;
+  border: 2px solid $gray;
+  color: $black;
+  margin: 20px 0;
+  transition: all .2s ease-in-out;
+  transform: translateY(15px);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -999;
+  user-select: none;
+  position: absolute;
+  min-height: 50px;
+
+  &.is-active {
+    position: relative;
+    display: flex;
+    user-select: initial;
+    z-index: initial;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &_warning {
+    @include theme($orange-darken, 40);
+  }
+  &_success {
+    @include theme($green);
+  }
+  &_error {
+    @include theme($red);
+  }
+  &_info {
+    @include theme($secondary);
+  }
+
+  &-heading {
+    @extend .h3;
+    color: inherit;
+    margin: 0;
+  }
+
+  & &-heading {
+    margin: 0;
+  }
+
+
+  &-message {
+    @extend .text-size_default;
+    color: inherit;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  & &-close {
+    @extend .button_reset;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    padding: 0;
+    color: inherit;
+
+    &:hover {
+      background: $white;
+    }
+
+    .ui-icon {
+      @include box(14px, 14px);
+      color: inherit;
+    }
+
+    * {
+      cursor: pointer;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    width: auto;
+    flex: 1;
+    margin-right: 30px;
+    gap: 14px;
+  }
+}

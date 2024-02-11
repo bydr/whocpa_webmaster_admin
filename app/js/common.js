@@ -3,6 +3,7 @@
 import "./modules/dropdown"
 import "./modules/copyToClipboard"
 import "./modules/modal"
+import "./modules/alert"
 import "./modules/chart"
 import "./modules/note"
 import "./modules/tooltip"
@@ -64,3 +65,4 @@ document.addEventListener("DOMContentLoaded", () => {
   textareaAutoHeightInit()
   initToggler(".toggler")
 })
+

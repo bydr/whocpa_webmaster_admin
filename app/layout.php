@@ -37,6 +37,7 @@
 <?php require_once('views/modals/modal_createPromo.php'); ?>
 <?php require_once('views/modals/modal_createPurpose.php'); ?>
 <?php require_once('views/modals/modal_createSpecialCondition.php'); ?>
+<?php require_once('views/modals/modal_editSpecialCondition.php'); ?>
 <?php require_once('views/modals/modal_connectWebmaster.php'); ?>
 <?php require_once('views/modals/modal_createLanding.php'); ?>
 <?php require_once('foot.php'); ?>

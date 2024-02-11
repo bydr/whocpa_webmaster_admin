@@ -145,11 +145,17 @@
   }
 
   &-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 10px;
     width: 100%;
+    gap: 12px;
+
 
     p {
       margin: 0;
+      flex: 1;
     }
 
     &_underline {

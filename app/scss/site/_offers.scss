@@ -322,3 +322,32 @@
     }
   }
 }
+
+.form-offers-filter {
+  .form-col {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .form-col__submit {
+    grid-column: span 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    & > .button {
+      width: auto;
+    }
+
+    @media (max-width: $grid-breakpoints-md) {
+      grid-column: end;
+
+      & > .button {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $grid-breakpoints-sm) {
+      grid-column: span 2;
+
+    }
+  }
+}

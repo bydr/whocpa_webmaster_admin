@@ -1,6 +1,6 @@
-<form class="form form_view-row" action="#">
+<form class="form" action="#">
   <div class="form-row">
-    <div class="form-col flex-4">
+    <div class="form-col">
       <div class="form-control">
         <div class="input-element input-element__w-button">
           <input type="text" placeholder="Поиск">
@@ -33,8 +33,49 @@
         </select>
       </div>
     </div>
+    <div class="form-col form-col__submit">
+      <div class="button_group button_group-row justify-end">
+        <button class="button button_accent" type="button">Применить</button>
+        <button class="button button_dark" type="button">Сброс</button>
+      </div>
+    </div>
   </div>
   <div class="form-row">
+    <div class="form-col flex-4">
+      <div class="form-row">
+        <div class="form-control">
+          <div class="rangepicker-container" data-component="rangepicker" data-format="yyyy-mm-dd">
+            <label class="rangepicker-label text-size_medium">Дата создания:</label>
+            <div class="rangepicker-range">
+              <div class="rangepicker-start">
+                <label for="rp-s">от</label>
+                <input type="text" id="rp-s" class="rangepicker-input" data-input-start>
+              </div>
+              <div class="rangepicker-end">
+                <label for="rp-e">до</label>
+                <input type="text" id="rp-e" class="rangepicker-input" data-input-end>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-control">
+          <div class="rangepicker-container" data-component="rangepicker">
+            <label class="rangepicker-label text-size_medium">Дата закрытия:</label>
+            <div class="rangepicker-range">
+              <div class="rangepicker-start">
+                <label for="rp-s2">от</label>
+                <input type="text" id="rp-s2" class="rangepicker-input" data-input-start>
+              </div>
+              <div class="rangepicker-end">
+                <label for="rp-e2">до</label>
+                <input type="text" id="rp-e2" class="rangepicker-input" data-input-end>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="form-col">
       <div class="form-control">
         <select name="publisher" id="publisher" class="js-choice custom-select" data-search>
@@ -55,40 +96,6 @@
           <option value="vertical3">Тип кошелька 3</option>
           <option value="vertical4">Тип кошелька 4</option>
         </select>
-      </div>
-    </div>
-    <div class="form-col flex-2">
-      <div class="form-control">
-        <div class="rangepicker-container" data-component="rangepicker">
-          <label class="rangepicker-label text-size_medium">Дата создания:</label>
-          <div class="rangepicker-range">
-            <div class="rangepicker-start">
-              <label for="rp-s">от</label>
-              <input type="text" id="rp-s" class="rangepicker-input" data-input-start>
-            </div>
-            <div class="rangepicker-end">
-              <label for="rp-e">до</label>
-              <input type="text" id="rp-e" class="rangepicker-input" data-input-end>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="form-col flex-2">
-      <div class="form-control">
-        <div class="rangepicker-container" data-component="rangepicker">
-          <label class="rangepicker-label text-size_medium">Дата закрытия:</label>
-          <div class="rangepicker-range">
-            <div class="rangepicker-start">
-              <label for="rp-s2">от</label>
-              <input type="text" id="rp-s2" class="rangepicker-input" data-input-start>
-            </div>
-            <div class="rangepicker-end">
-              <label for="rp-e2">до</label>
-              <input type="text" id="rp-e2" class="rangepicker-input" data-input-end>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

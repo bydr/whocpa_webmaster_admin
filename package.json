@@ -37,7 +37,6 @@
 		"chart.js": "^3.9.1",
 		"chartjs-plugin-datalabels": "^2.1.0",
 		"choices.js": "^10.1.0",
-		"gulp-blade": "^1.0.1",
 		"gulp-connect-php": "^0.0.2"
 	}
 }

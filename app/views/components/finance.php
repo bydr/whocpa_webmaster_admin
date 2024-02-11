@@ -38,8 +38,8 @@
 
             <br>
 
-            <label class="checkbox checkbox-type__check">
-              <input type="checkbox" name="checkbox">
+            <label class="checkbox checkbox-type__check" disabled>
+              <input type="checkbox" name="checkbox" disabled>
               <span class="checkbox-inner">
                 <span class="checkbox-box">
                   <svg class="ui-icon">

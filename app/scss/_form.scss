@@ -179,6 +179,25 @@
       }
     }
   }
+
+  &-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    @media (max-width: $grid-breakpoints-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $grid-breakpoints-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $grid-breakpoints-xs) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
 
 .input-element {

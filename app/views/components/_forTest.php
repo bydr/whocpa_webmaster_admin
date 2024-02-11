@@ -1,6 +1,10 @@
 <?php
 $pages = [
     [
+        "title" => "[ИНСТРУКЦИЯ] - алерты",
+        "url" => "page_test_alerts.php"
+    ],
+    [
         "title" => "Дашборд",
         "url" => "page_dashboard.php"
     ],

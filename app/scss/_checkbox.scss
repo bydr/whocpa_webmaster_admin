@@ -9,6 +9,12 @@
     position: absolute;
   }
 
+  &[disabled] {
+    opacity: .6;
+    user-select: none;
+    cursor: default;
+  }
+
   &-wrapper {
     @extend .panel_w-shadow;
     background: $white;
@@ -106,6 +112,14 @@
       }
       &-text {
         margin-left: 10px;
+      }
+    }
+
+    &[disabled] {
+      .checkbox {
+        &-box {
+          background: $gray-lighten;
+        }
       }
     }
 

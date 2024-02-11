@@ -13,7 +13,7 @@
             <div class="action-popup">
               <ul class="action-list">
                 <li>
-                  <button class="action-control">Редактировать</button>
+                  <button class="action-control" data-modal="#modal-editSpecialCondition">Редактировать</button>
                 </li>
                 <li>
                   <button class="action-control">Удалить</button>
