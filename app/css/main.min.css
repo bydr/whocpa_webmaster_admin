@@ -4685,7 +4685,11 @@
 }
 .leads__panel .panel-header p.stats-price, .leads__panel .panel-body p.stats-price {
   flex: 1;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.leads__panel .panel-header p.stats-price span, .leads__panel .panel-body p.stats-price span {
+  flex: initial;
 }
 .leads__panel .panel-header p.stats-price span:first-child, .leads__panel .panel-body p.stats-price span:first-child {
   margin-left: 0;

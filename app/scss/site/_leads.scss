@@ -134,9 +134,12 @@
 
           &.stats-price {
             flex: 1;
-            align-items: flex-end;
+            align-items: flex-start;
+            justify-content: flex-end;
 
             span {
+              flex: initial;
+
               &:first-child {
                 margin-left: 0;
               }
