@@ -1,3 +1,12 @@
+%note_short {
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
 .avatar {
   @include box(40px, 40px);
   border-radius: 50px;
@@ -123,6 +132,7 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 
     .profile-info__item {
       margin-bottom: 12px;
@@ -278,12 +288,50 @@
   &-offer {
     &__panel {
       @extend #profile-entity__item;
+
+      .panel-block {
+        min-height: 95px;
+
+        &:last-child {
+          p {
+
+            > b {
+              width: 100%;
+              display: block;
+            }
+
+            > span {
+              @extend %note_short;
+
+            }
+          }
+        }
+      }
     }
   }
 
   &-payout {
     &__panel {
       @extend #profile-entity__item;
+
+      .panel-block {
+        min-height: 95px;
+
+        &:last-child {
+          p {
+
+            > b {
+              width: 100%;
+              display: block;
+            }
+
+            > span {
+              @extend %note_short;
+
+            }
+          }
+        }
+      }
     }
   }
 
@@ -365,11 +413,7 @@
   flex: 1;
 
   &.note_short {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 120px;
-    display: inline-block;
-    overflow: hidden;
+    @extend %note_short;
   }
 
   &-container {
