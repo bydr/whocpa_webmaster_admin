@@ -6,6 +6,12 @@ const MODULE_NAME = "select"
 const MACROS_ALIAS = "#macros#"
 const THROTTLE_DEFAULT = 500
 
+const MOCK_ITEMS = [
+  { value: 'One', label: 'Label One', disabled: true },
+  { value: 'Two', label: 'Label Two', selected: false },
+  { value: 'Three', label: 'Label Three' },
+]
+
 const initializedStack = {}
 const searchAjaxHandle =
   (event) =>
@@ -141,6 +147,32 @@ const initGlobal = () => {
   }
 }
 
+/*
+* id - строка, ключ объекта initialized
+* items - массив объектов вида
+* { value: 'Two', label: 'Label Two', selected: false, disabled: false }
+* value, label - обязательные
+* isReplaceChoices - true / false - перезаписывать текущий список значений
+* */
+const setValuesById = ({id = "", items = [], isReplaceChoices = false}) => {
+  const itemsChoice = initializedStack[id]
+    if (!itemsChoice) {
+      return false
+    }
+
+    // может быть несколько селектов с одним id
+  for (const item of itemsChoice) {
+    item.setChoices(
+      items,
+      'value',
+      'label',
+      isReplaceChoices,
+    )
+  }
+
+
+}
+
 const initByElement = (id) => {
   if (!id) {
     return
@@ -180,5 +212,7 @@ setGlobalImplementation({
     globalInit: initGlobal,
     elementInit: (id) => initByElement(id),
     initialized: initializedStack,
+    setValuesById: setValuesById,
+    _MOCK_ITEMS: MOCK_ITEMS
   },
 })
